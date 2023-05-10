@@ -1,0 +1,12 @@
+:root {
+    --img-size: 100px;
+}
+
+img {
+    height: var(--img-size);
+}
+
+td {
+    height: var(--img-size);
+    border: 1px solid black;
+}
