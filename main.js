@@ -290,17 +290,16 @@ colors.forEach(color => {
   document.getElementById(color).onclick = () => {
 
     // TO-DO: (de)selects select all
-    if (!document.getElementById(color).checked) {
-      document.getElementById("selectAll").checked = false;
-    }
-    else {
-      let selectAllFlag = true;
+    if (document.getElementById(color).checked) {
+      document.getElementById("selectAll").checked = true;
       colors.forEach(col => {
         if (!document.getElementById(col).checked) {
-          selectAllFlag = false;
+          document.getElementById("selectAll").checked = false;
         }
       });
-      document.getElementById("selectAll").checked = selectAllFlag;
+    }
+    else {
+      document.getElementById("selectAll").checked = false;
     }
 
     // hides all rows
