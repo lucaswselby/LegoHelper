@@ -10,3 +10,13 @@ td {
     height: var(--img-size);
     border: 1px solid black;
 }
+
+header div {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+    header div {
+        display: block;
+    }
+}

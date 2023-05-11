@@ -284,10 +284,24 @@ allPieces.forEach(piece => {
   }
 });
 colors.forEach(color => {
-  document.getElementsByTagName("HEADER")[0].innerHTML += `<input type="checkbox" id="${color}" name="${color}" checked><label for="${color}">${color}</label>`;
+  document.getElementById("colorFilters").innerHTML += `<div><input type="checkbox" id="${color}" name="${color}" checked><label for="${color}">${color}</label></div>`;
 });
 colors.forEach(color => {
   document.getElementById(color).onclick = () => {
+
+    // TO-DO: (de)selects select all
+    if (!document.getElementById(color).checked) {
+      document.getElementById("selectAll").checked = false;
+    }
+    else {
+      let selectAllFlag = true;
+      colors.forEach(col => {
+        if (!document.getElementById(col).checked) {
+          selectAllFlag = false;
+        }
+      });
+      document.getElementById("selectAll").checked = selectAllFlag;
+    }
 
     // hides all rows
     allPieces.forEach(piece => {
@@ -306,3 +320,27 @@ colors.forEach(color => {
     });
   }
 });
+
+// select all colors
+document.getElementById("selectAll").onclick = () => {
+
+  // displays all colors
+  if (document.getElementById("selectAll").checked) {
+    colors.forEach(color => {
+      document.getElementById(color).checked = true;
+      allPieces.forEach(piece => {
+        document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
+      });
+    });
+  }
+
+  // hides all colors
+  else {
+    colors.forEach(color => {
+      document.getElementById(color).checked = false;
+      allPieces.forEach(piece => {
+        document.getElementById(`l${piece.numbers[0]}row`).style.display = "none";
+      });
+    });
+  }
+}
