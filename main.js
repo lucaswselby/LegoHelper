@@ -272,46 +272,32 @@ sets.forEach(set => {
 });
 
 // display pieces with counters
-for (let i = 0; i < s10123.pieces.length; i++) {
+s10123.pieces.forEach(piece => {
   document.getElementsByTagName("TABLE")[0].innerHTML +=
-    `<tr id="l${s10123.pieces[i].numbers[0]}row">
-      <td>${s10123.pieces[i].picture}</td><td class="description">${s10123.pieces[i].name}</td>
+    `<tr id="l${piece.numbers[0]}row">
+      <td>${piece.picture}</td>
+      <td class="description">${piece.name}</td>
       <td>
         <div class="custom-number-input">
-          <input type="number" id="l${s10123.pieces[i].numbers[0]}" min="0" value="0">
-          <button class="arrow up">▲</button>
-          <button class="arrow down">▼</button>
+          <input type="number" id="l${piece.numbers[0]}" min="0" value="0">
+          <button class="arrow up" id="l${piece.numbers[0]}up">▲</button>
+          <button class="arrow down" id="l${piece.numbers[0]}down">▼</button>
         </div>
       </td>
     </tr>`;
+});
 
-  // source: ChatGPT
-  // Get the input element
-  const input = document.querySelector('.custom-number-input input');
-  // Get the arrow buttons
-  const upButton = document.querySelector('.custom-number-input .arrow.up');
-  const downButton = document.querySelector('.custom-number-input .arrow.down');
-  // Add event listeners to the arrow buttons
-  upButton.addEventListener('click', () => {
-    incrementValue(1);
-  });
-  downButton.addEventListener('click', () => {
-    incrementValue(-1);
-  });
-  // Function to increment or decrement the value of the input
-  function incrementValue(increment) {
-    const step = input.step ? parseFloat(input.step) : 1;
-    const newValue = parseFloat(input.value) + step * increment;
-    
-    if (input.max && newValue > parseFloat(input.max)) {
-      input.value = input.max;
-    } else if (input.min && newValue < parseFloat(input.min)) {
-      input.value = input.min;
-    } else {
-      input.value = newValue;
+// arrow buttons increment the value
+s10123.pieces.forEach(piece => {
+  document.getElementById(`l${piece.numbers[0]}up`).onclick = () => {
+    document.getElementById(`l${piece.numbers[0]}`).value++;
+  };
+  document.getElementById(`l${piece.numbers[0]}down`).onclick = () => {
+    if (document.getElementById(`l${piece.numbers[0]}`).value > 0) {
+      document.getElementById(`l${piece.numbers[0]}`).value--;
     }
-  }
-}
+  };
+});
 
 // add color filters
 let colors = [];

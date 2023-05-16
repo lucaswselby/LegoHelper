@@ -23,7 +23,7 @@ header div {
     display: inline-block;
 }
   .custom-number-input input {
-    padding-right: 40px; /* Provide space for the arrow buttons */
+    padding-right: var(--arrow-width); /* Provide space for the arrow buttons */
     height: var(--img-size);
     width: 2em;
     font-size: 6vw;
