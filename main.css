@@ -26,7 +26,7 @@ header div {
     padding-right: 40px; /* Provide space for the arrow buttons */
     height: var(--img-size);
     width: 2em;
-    font-size: var(--img-size);
+    font-size: 6vw;
   }
     .custom-number-input input::-webkit-inner-spin-button {
         display: none;

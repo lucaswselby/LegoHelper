@@ -311,7 +311,6 @@ for (let i = 0; i < s10123.pieces.length; i++) {
       input.value = newValue;
     }
   }
-
 }
 
 // add color filters
