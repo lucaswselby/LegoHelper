@@ -1,5 +1,6 @@
 :root {
     --img-size: 100px;
+    --arrow-width: 50px;
 }
 
 img {
@@ -9,10 +10,48 @@ img {
 td {
     height: var(--img-size);
     border: 1px solid black;
+    font-size: 3vw;
 }
 
 header div {
     display: inline-block;
+}
+
+/* source: ChatGPT */
+.custom-number-input {
+    position: relative;
+    display: inline-block;
+}
+  .custom-number-input input {
+    padding-right: 40px; /* Provide space for the arrow buttons */
+    height: var(--img-size);
+    width: 2em;
+    font-size: var(--img-size);
+  }
+    .custom-number-input input::-webkit-inner-spin-button {
+        display: none;
+    }
+        .custom-number-input input:hover::-webkit-inner-spin-button {
+            display: none;
+        }
+  .custom-number-input .arrow {
+    position: absolute;
+    width: var(--arrow-width);
+    height: calc(var(--img-size) / 2);
+    font-size: calc(var(--img-size) / 4);
+    text-align: center;
+    cursor: pointer;
+  }
+  .custom-number-input .arrow.up {
+    left: calc(100% - var(--arrow-width));
+  }
+  .custom-number-input .arrow.down {
+    left: calc(100% - var(--arrow-width));
+    top: 50%;
+  }  
+
+.description {
+    width: calc(100vw - var(--img-size) - 2em);
 }
 
 @media only screen and (max-width: 600px) {
