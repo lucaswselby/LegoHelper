@@ -503,9 +503,13 @@ const sets = [s10123, s8624, s7020];
 // source: ChatGPT
 const allPieces = sets.flatMap(set => set.pieces).filter((piece, index, self) => self.indexOf(piece) === index);
 
-// adds pictures to Lego objects
 allPieces.forEach(piece => {
+
+  // adds pictures to Lego objects
   piece.picture = `<img src="images/${piece.numbers[0]}.jpg" alt="${piece.numbers[0]}" title="${piece.numbers[0]}">`;
+
+  // adds options to search list
+  document.getElementById("pieces").innerHTML += `<option value="${piece.name}">`;
 });
 
 // catches if set.pieces.length != set.numberOfPieces.length
@@ -557,7 +561,7 @@ colors.forEach(color => {
 colors.forEach(color => {
   document.getElementById(color).onclick = () => {
 
-    // TO-DO: (de)selects select all
+    // (de)selects select all
     if (document.getElementById(color).checked) {
       document.getElementById("selectAll").checked = true;
       colors.forEach(col => {
@@ -575,13 +579,20 @@ colors.forEach(color => {
       document.getElementById(`l${piece.numbers[0]}row`).style.display = "none";
     });
 
-    // shows rows that have checked colors
+    // resets search options
+    document.getElementById("pieces").innerHTML = "";
+
     colors.forEach(col => {
       if (document.getElementById(col).checked) {
         allPieces.forEach(piece => {
           if (piece.color === col) {
+        
+            // shows rows that have checked colors
             document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
-          }
+
+            // adds selected colors to search
+            document.getElementById("pieces").innerHTML += `<option value="${piece.name}">`;
+          }          
         });
       }
     });
@@ -591,13 +602,20 @@ colors.forEach(color => {
 // select all colors
 document.getElementById("selectAll").onclick = () => {
 
-  // displays all colors
+  // resets search options
+  document.getElementById("pieces").innerHTML = "";
+
   if (document.getElementById("selectAll").checked) {
     colors.forEach(color => {
       document.getElementById(color).checked = true;
-      allPieces.forEach(piece => {
-        document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
-      });
+    });
+    allPieces.forEach(piece => {
+      
+      // displays all colors
+      document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
+
+      // adds all colors to search
+      document.getElementById("pieces").innerHTML += `<option value="${piece.name}">`;
     });
   }
 
@@ -610,4 +628,22 @@ document.getElementById("selectAll").onclick = () => {
       });
     });
   }
+}
+
+// show only searched pieces
+document.getElementById("search").onchange = () => {
+  allPieces.forEach(piece => {
+    if (piece.name.includes(document.getElementById("search").value)) {
+      document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
+
+      // highlights searched value in the description
+      document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].innerHTML = document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].textContent.replace(document.getElementById("search").value, `<span style="background-color: yellow;">${document.getElementById("search").value}</span>`);
+    }
+    else {
+      document.getElementById(`l${piece.numbers[0]}row`).style.display = "none";
+
+      // unhighlights searched words
+      document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].innerHTML = document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].textContent.replace(`<span style="background-color: yellow;">${document.getElementById("search").value}</span>`, document.getElementById("search").value);
+    }
+  });
 }
