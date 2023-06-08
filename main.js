@@ -536,14 +536,25 @@ allPieces.forEach(piece => {
     </tr>`;
 });
 
+// lists the current count of all pieces in the footer
+const listPieceCounts = () => {
+  document.getElementsByTagName("FOOTER")[0].innerHTML = allPieces.map(piece => {
+    return document.getElementById(`l${piece.numbers[0]}`).value
+  }).reduce((prev, curr) => {
+    return `${prev}, ${curr}`;
+  });
+};
+
 // arrow buttons increment the value
 allPieces.forEach(piece => {
   document.getElementById(`l${piece.numbers[0]}up`).onclick = () => {
     document.getElementById(`l${piece.numbers[0]}`).value++;
+    listPieceCounts();
   };
   document.getElementById(`l${piece.numbers[0]}down`).onclick = () => {
     if (document.getElementById(`l${piece.numbers[0]}`).value > 0) {
       document.getElementById(`l${piece.numbers[0]}`).value--;
+      listPieceCounts();
     }
   };
 });
