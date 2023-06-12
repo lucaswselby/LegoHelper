@@ -54,6 +54,10 @@ header div {
     width: calc(100vw - var(--img-size) - 2em);
 }
 
+#errorText {
+  color: red;
+}
+
 @media only screen and (max-width: 600px) {
     header div {
         display: block;

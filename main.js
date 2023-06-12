@@ -567,8 +567,8 @@ allPieces.forEach(piece => {
 
 // lists the current count of all pieces in the footer
 const listPieceCounts = () => {
-  document.getElementsByTagName("FOOTER")[0].innerHTML = allPieces.map(piece => {
-    return document.getElementById(`l${piece.numbers[0]}`).value
+  document.getElementById("pieceCounts").value = allPieces.map(piece => {
+    return document.getElementById(`l${piece.numbers[0]}`).value;
   }).reduce((prev, curr) => {
     return `${prev}, ${curr}`;
   });
@@ -686,4 +686,18 @@ document.getElementById("search").onchange = () => {
       document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].innerHTML = document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].textContent.replace(`<span style="background-color: yellow;">${document.getElementById("search").value}</span>`, document.getElementById("search").value);
     }
   });
+}
+
+// submit button updates piece counters
+document.getElementById("pieceCountsSubmit").onclick = () => {
+  const counts = document.getElementById("pieceCounts").value.split(", ");
+  if (counts.length === allPieces.length) {
+    for (let i = 0; i < counts.length; i++) {
+      document.getElementById(`l${allPieces[i].numbers[0]}`).value = counts[i];
+    }
+    document.getElementById("errorText").innerHTML = "Piece Counts Updated";
+  }
+  else {
+    document.getElementById("errorText").innerHTML = "Input does not match number of pieces.";
+  }
 }
