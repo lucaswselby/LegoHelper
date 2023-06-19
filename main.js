@@ -516,7 +516,311 @@ const l4260486 = new Lego([4260486, 4504376], "Slope 30 1 x 1 x 2/3", "Reddish B
 const l4211219 = new Lego([4211219], "Tile, Modified 1 x 2 with Bar Handle", "Reddish Brown");
 const l614101 = new Lego([614101], "Plate, Round 1 x 1", "White");
 const l4515349 = new Lego([4515349], "Plate, Round 4 x 4 with Hole", "Yellow");
+const l4612327 = new Lego([4612327, 4667794], "Hips and Black Legs with Gray Belt and Black Markings Print", "Black");
+const l4612652 = new Lego([4612652, 4613387, 6023653], "Torso Robe, Brown Rope, Gold Medallion and Black Undershirt Print, Black Arms and Hands", "Black");
+const l4114503 = new Lego([4114503, 4551359, 4569110, 4646772, 6030459], "Wrap, Ninja, with Clip", "Black");
+const l4611426 = new Lego([4611426, 4613392, 6044996], "Minifig Head Cole, Raised Bushy Eyebrows, White Pupils, Chin Dimple Print", "Yellow");
+const l4581280 = new Lego([4581280], "Arch 1 x 3 x 2", "Black");
+const l233926 = new Lego([233926, 4159140, 4519925, 6075062], "Arch 1 x 5 x 4 - Continuous Bow", "Black");
+const l4116854 = new Lego([4116854], "Arch 1 x 5 x 4 Inverted", "Black");
+const l245426 = new Lego([245426], "Brick 1 x 2 x 5 - Blocked Open Studs or Hollow Studs", "Black");
+const l300826 = new Lego([300826], "Brick 1 x 8", "Black");
+const l4515356 = new Lego([4515356, 4533771], "Brick, Modified 1 x 1 with Open U Clip (Vertical Grip) - Solid Stud", "Black");
+const l4558957 = new Lego([4558957], "Brick, Round 4 x 4 with Hole", "Black");
+const l4533572 = new Lego([4533572, 4535834, 6337273], "Door, Frame 1 x 4 x 6 with 2 Holes on Top and Bottom", "Black");
+const l452826 = new Lego([452826], "Minifigure, Utensil Frying Pan", "Black");
+const l4537058 = new Lego([4537058], "Panel 1 x 4 x 5 Wall with Window", "Black");
+const l3024626 = new Lego([3024626, 4271754], "Panel 3 x 4 x 6 Turret Wall with Window", "Black");
+const l408526 = new Lego([408526], "Plate, Modified 1 x 1 with U Clip Thick (Vertical Grip)", "Black");
+const l379426 = new Lego([379426], "Plate, Modified 1 x 2 with 1 Stud without Groove (Jumper)", "Black");
+const l4565323 = new Lego([4565323], "Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)", "Black");
+const l403226 = new Lego([403226], "Plate, Round 2 x 2 with Axle Hole", "Black");
+const l609126 = new Lego([609126, 6184784, 6383142], "Slope, Curved 2 x 1 x 1 1/3 with Recessed Stud", "Black");
+const l4185272 = new Lego([4185272, 6021752], "Slope, Curved 2 x 2 with 3 Side Ports Recessed", "Black");
+const l3203926 = new Lego([3203926, 4107081, 6331716], "Technic, Axle Connector with Axle Hole", "Black");
+const l4548278 = new Lego([4548278, 4562148, 6173124], "Technic, Liftarm, Modified Bar 1 x 2", "Black");
+const l4289542 = new Lego([4289542, 6278155, 6439040], "Bar 1L with Clip Mechanical Claw - Cut Edges and Hole on Side", "Dark Bluish Gray");
+const l4211095 = new Lego([4211095], "Brick, Modified 1 x 2 with Log Profile", "Dark Bluish Gray");
+const l4268139 = new Lego([4268139], "Brick, Modified 1 x 4 with Log Profile", "Dark Bluish Gray");
+const l4210678 = new Lego([4210678], "Plate 2 x 10", "Dark Bluish Gray");
+const l3032199 = new Lego([3032199, 4211115], "Plate 4 x 6", "Dark Bluish Gray");
+const l4226358 = new Lego([4226358], "Plate 6 x 16", "Dark Bluish Gray");
+const l4210967 = new Lego([4210967], "Plate, Modified 1 x 8 with Door Rail", "Dark Bluish Gray");
+const l4211045 = new Lego([4211045], "Slope 33 3 x 1", "Dark Bluish Gray");
+const l4261715 = new Lego([4261715], "Slope 33 3 x 4", "Dark Bluish Gray");
+const l4226221 = new Lego([4226221], "Slope 45 2 x 1 Double with Bottom Stud Holder", "Dark Bluish Gray");
+const l4211068 = new Lego([4211068], "Slope, Inverted 33 3 x 1", "Dark Bluish Gray");
+const l4210639 = new Lego([4210639], "Technic, Brick 1 x 1 with Hole", "Dark Bluish Gray");
+const l4211052 = new Lego([4211052], "Tile 1 x 2 with Groove", "Dark Bluish Gray");
+const l4211069 = new Lego([4211069, 6030710], "Tile, Modified 1 x 1 with Clip", "Dark Bluish Gray");
+const l4540178 = new Lego([4540178], "Wheel Hard Plastic with Small Cleats and Flanges", "Dark Bluish Gray");
+const l4566532 = new Lego([4566532], "Plate 1 x 10", "Dark Purple");
+const l4566522 = new Lego([4566522], "Plate, Round 1 x 1", "Dark Purple");
+const l4225265 = new Lego([4225265, 6109814], "Slope 45 2 x 1", "Dark Purple");
+const l4218700 = new Lego([4218700, 4579024, 6109766], "Slope, Curved 2 x 2 x 2/3 with Two Studs and Curved Sides", "Dark Purple");
+const l4566804 = new Lego([4566804, 6167896], "Vehicle, Mudguard 2 x 4 with Flared Wings", "Dark Purple");
+const l4566927 = new Lego([4566927, 6031821], "Technic, Axle  3L with Stud", "Dark Tan");
+const l4612900 = new Lego([4612900], "Minifigure, Weapon Sword, Shamshir/Katana (Square Guard) with Uncapped Pommel and Hole in Hilt", "Flat Silver");
+const l4211628 = new Lego([4211628, 6116608], "Bar 4L (Lightsaber Blade / Wand)", "Light Bluish Gray");
+const l4599496 = new Lego([4599496], "Bar 1 x 4 x 6 Grille with End Protrusions", "Light Bluish Gray");
+const l4211428 = new Lego([4211428], "Brick 1 x 3", "Light Bluish Gray");
+const l4211392 = new Lego([4211392], "Brick 1 x 8", "Light Bluish Gray");
+const l4211795 = new Lego([4211795, 4274668], "Brick 2 x 6", "Light Bluish Gray");
+const l4558953 = new Lego([4558953], "Brick, Modified 1 x 1 with Stud on Side", "Light Bluish Gray");
+const l4211580 = new Lego([4211580], "Brick, Modified 1 x 2 with Bar Handle on Side", "Light Bluish Gray");
+const l4211526 = new Lego([4211526], "Brick, Round 2 x 2 with Axle Hole", "Light Bluish Gray");
+const l4211582 = new Lego([4211582, 4512049, 4516716, 6258886, 6292172], "Chain 21 Links (16-17L)", "Light Bluish Gray");
+const l4519882 = new Lego([4519882, 4610149], "Door 1 x 4 x 6 Barred with Stud Handle", "Light Bluish Gray");
+const l4212074 = new Lego([4212074, 4539481, 4581155], "Minifigure, Weapon Lightsaber Hilt Straight", "Light Bluish Gray");
+const l4215513 = new Lego([4215513], "Panel 1 x 1 x 1 Corner", "Light Bluish Gray");
+const l4211445 = new Lego([4211445], "Plate 1 x 4", "Light Bluish Gray");
+const l4211353 = new Lego([4211353], "Plate 2 x 2 Corner", "Light Bluish Gray");
+const l4211406 = new Lego([4211406], "Plate 2 x 8", "Light Bluish Gray");
+const l4239371 = new Lego([4239371, 4293831], "Plate 6 x 14", "Light Bluish Gray");
+const l4211451 = new Lego([4211451], "Plate, Modified 1 x 2 with 1 Stud without Groove (Jumper)", "Light Bluish Gray");
+const l4612621 = new Lego([4612621], "Plate, Modified 4 x 4 with 2 x 2 Open Center", "Light Bluish Gray");
+const l4515351 = new Lego([4515351], "Plate, Round 4 x 4 with Hole", "Light Bluish Gray");
+const l4211773 = new Lego([4211773], "Slope 45 2 x 3", "Light Bluish Gray");
+const l4211519 = new Lego([4211519, 6285778], "Slope, Curved 2 x 1 x 1 1/3 with Recessed Stud", "Light Bluish Gray");
+const l4179576 = new Lego([4179576], "Support 1 x 1 x 6 Solid Pillar", "Light Bluish Gray");
+const l4211805 = new Lego([4211805, 44294194], "Technic, Axle 7L", "Light Bluish Gray");
+const l4211550 = new Lego([4211550, 6296859], "Technic, Axle and Pin Connector Angled #1", "Light Bluish Gray");
+const l4502595 = new Lego([4502595], "Technic, Axle Connector Hub with 3 Axles", "Light Bluish Gray");
+const l4520320 = new Lego([4520320, 6347715], "Technic, Pin 1/2 with 2L Bar Extension (Flick Missile)", "Light Bluish Gray");
+const l2555194 = new Lego([2555194, 4211369, 6030711], "Tile, Modified 1 x 1 with Clip", "Light Bluish Gray");
+const l4211357 = new Lego([4211357], "Tile, Modified 1 x 2 with Bar Handle", "Light Bluish Gray");
+const l4600267 = new Lego([4600267, 6147169], "Bar 4L (Lightsaber Blade / Wand)", "Pearl Gold");
+const l4600271 = new Lego([4600271, 4640843, 6328909], "Bar 1L with Top Stud and 2 Side Studs (Connector Perpendicular)", "Pearl Gold");
+const l4611904 = new Lego([4611904, 4617082], "Barb / Claw / Horn / Tooth - Medium", "Pearl Gold");
+const l4600501 = new Lego([4600501, 6323688], "Chain 5 Links", "Pearl Gold");
+const l4505990 = new Lego([4505990], "Minifigure, Utensil Goblet", "Pearl Gold");
+const l4538126 = new Lego([4538126], "Minifigure, Utensil Telescope", "Pearl Gold");
+const l4600519 = new Lego([4600519], "Minifigure, Weapon Throwing Star (Shuriken) with Smooth Grips", "Pearl Gold");
+const l393821 = new Lego([393821, 6078079], "Hinge Brick 1 x 2 Top Plate", "Red");
+const l265421 = new Lego([265421, 4163711, 4248830, 4278275, 4617080], "Plate, Round 2 x 2 with Rounded Bottom (Boat Stud)", "Red");
+const s2505 = new Set("Garmadon's Dark Fortress", 2505, [l4581280, l233926, l4116854, l300426, l245426, l300826, l611226, l4515356, l4584274, l4558957, l4533572, l452826, l4114206, l4537058, l3024626, l302026, l408526, l379426, l4565323, l403226, l4143982, l609126, l4185272, l370526, l370726, l3203926, l370126, l4548278, l278026, l306926, l4143005, l4289542, l4211095, l4268139, l4210678, l3032199, l4226358, l4210967, l4182993, l4211045, l4261715, l4226221, l4211068, l4210639, l4211052, l4211069, l4210984, l4540178, l4566532, l4566522, l4225265, l4218700, l4566804, l4566927, l4612900, l4211628, l4599496, l4211428, l4211392, l4211795, l4558953, l4211580, l4211526, l4211582, l4519882, l4212074, l4215513, l4211445, l4211353, l4211406, l4239371, l4211451, l4612621, l4515351, l4211773, l4211519, l4179576, l4211815, l4211805, l4211550, l4502595, l4520320, l4211483, l2555194, l4211357, l4600267, l4600271, l4611904, l4600501, l4505990, l4538126, l4600519, l393821, l265421], [2, 4, 6, 4, 6, 1, 2, 2, 16, 2, 5, 1, 1, 6, 4, 1, 2, 6, 2, 5, 2, 2, 1, 1, 2, 2, 3, 2, 4, 4, 5, 2, 6, 13, 1, 3, 1, 2, 4, 4, 6, 6, 2, 4, 3, 1, 2, 2, 4, 21, 6, 2, 2, 1, 1, 1, 4, 4, 2, 2, 10, 6, 3, 2, 1, 1, 4, 11, 2, 1, 2, 8, 1, 3, 2, 2, 8, 2, 2, 4, 2, 4, 4, 1, 1, 1, 3, 1, 1, 1, 2, 1, 1, 3]);
 /*
+Spider with Round Abdomen and Clip
+1	30238	Red Spider with Round Abdomen and Clip
+Catalog: Parts: Animal, Land
+4593768
+Technic Ball Joint with Through Axle Hole
+1	53585	Red Technic Ball Joint with Through Axle Hole
+Catalog: Parts: Technic
+4543094, 4615070
+Technic Bush
+1	3713	Red Technic Bush
+Catalog: Parts: Technic
+4227155, 6271820
+Technic, Axle  2L Notched
+1	32062	Red Technic, Axle 2L Notched
+Catalog: Parts: Technic, Axle
+4142865
+Technic, Axle and Pin Connector Angled #1
+1	32013	Red Technic, Axle and Pin Connector Angled #1
+Catalog: Parts: Technic, Connector
+4119033, 4163144, 4190216, 4254606, 6332580
+Technic, Axle Connector 2L (Smooth with x Hole + Orientation)
+1	6538c	Red Technic, Axle Connector 2L (Smooth with x Hole + Orientation)
+Catalog: Parts: Technic, Connector
+4513174
+Brick, Modified 1 x 1 with Headlight
+2	4070	Reddish Brown Brick, Modified 1 x 1 with Headlight
+Catalog: Parts: Brick, Modified
+4225469
+Container, Box 2 x 2 x 2 - Top Opening
+2	61780	Reddish Brown Container, Box 2 x 2 x 2 - Top Opening
+Catalog: Parts: Container
+4520638
+Plate 1 x 2
+1	3023	Reddish Brown Plate 1 x 2
+Catalog: Parts: Plate
+4211150
+Plate 1 x 8
+2	3460	Reddish Brown Plate 1 x 8
+Catalog: Parts: Plate
+4216945
+Plate 2 x 4
+4	3020	Reddish Brown Plate 2 x 4
+Catalog: Parts: Plate
+4211186
+Plate 2 x 6
+1	3795	Reddish Brown Plate 2 x 6
+Catalog: Parts: Plate
+4211247
+Plate 4 x 8
+1	3035	Reddish Brown Plate 4 x 8
+Catalog: Parts: Plate
+4211207
+Plate 6 x 12
+2	3028	Reddish Brown Plate 6 x 12
+Catalog: Parts: Plate
+4264669
+Stairs 7 x 4 x 6 Straight Open
+2	30134	Reddish Brown Stairs 7 x 4 x 6 Straight Open
+Catalog: Parts: Stairs
+4211282, 4277751
+Tile 1 x 6
+1	6636	Reddish Brown Tile 1 x 6
+Catalog: Parts: Tile
+4211204
+Minifigure, Weapon Axe Head with Clip
+2	53454	Speckle Black-Silver Minifigure, Weapon Axe Head with Clip
+Catalog: Parts: Minifigure, Weapon
+4273965, 6051378, 6108518
+Plate 1 x 3
+2	3623	Tan Plate 1 x 3
+Catalog: Parts: Plate
+362305, 4121921
+Technic, Brick 1 x 2 with Holes
+2	32000	Tan Technic, Brick 1 x 2 with Holes
+Catalog: Parts: Technic, Brick
+4101763, 4143352, 4523145
+Tile 2 x 2 with Groove
+1	3068b	Tan Tile 2 x 2 with Groove
+Catalog: Parts: Tile
+4185177, 4251986
+Wave Angular Double with Bar Handle (Electric Zigzag) with Marbled Trans-Purple Pattern
+1	59233pb01	Trans-Light Blue Wave Angular Double with Bar Handle (Electric Zigzag) with Marbled Trans-Purple Pattern
+Catalog: Parts: Energy Effect
+4514700, 6163898, 6321092, 6450487
+Minifigure, Plume Feather Triple Compact / Flame / Water
+2	64647	Trans-Neon Orange Minifigure, Plume Feather Triple Compact / Flame / Water
+Catalog: Parts: Minifigure, Headgear Accessory
+4540865, 4640865, 6100033, 6289248
+Bar with Light Cover (Bulb) / Bionicle Barraki Eye
+4	58176	Trans-Red Bar with Light Cover (Bulb) / Bionicle Barraki Eye
+Catalog: Parts: Bar
+4497943, 6171762
+Brick, Round 1 x 1 Open Stud
+1	3062b	Trans-Red Brick, Round 1 x 1 Open Stud
+Catalog: Parts: Brick, Round
+3006841, 6238673
+Rock 1 x 1 Jewel 24 Facet
+1	30153	Trans-Red Rock 1 x 1 Jewel 24 Facet
+Catalog: Parts: Rock
+4113954, 6247785
+Tile 1 x 2 with Groove
+3	3069b	Trans-Red Tile 1 x 2 with Groove
+Catalog: Parts: Tile
+4189801, 6251290
+Wave Rounded Straight Large with Bar End (Flame) with Marbled Trans-Orange Pattern
+2	85959pb01a	Trans-Red Wave Rounded Straight Large with Bar End (Flame) with Marbled Trans-Orange Pattern
+Catalog: Parts: Energy Effect
+4548009
+Arm Mechanical, Exo-Force / Bionicle, Thin Support
+12	53989	White Arm Mechanical, Exo-Force / Bionicle, Thin Support
+Catalog: Parts: Minifigure, Body Part
+4296948, 4622904
+Barb / Claw / Horn / Tooth - Medium
+12	87747	White Barb / Claw / Horn / Tooth - Medium
+Catalog: Parts: Animal, Body Part
+4566256, 4613941, 6270092
+Barb / Claw / Horn / Tooth - Small
+4	53451	White Barb / Claw / Horn / Tooth - Small
+Catalog: Parts: Animal, Body Part
+4273397, 4568387, 6270106
+Bone, Long
+2	92691	White Bone, Long
+Catalog: Parts: Animal, Accessory
+4600307
+Bone, Short
+1	93160	White Bone, Short
+Catalog: Parts: Animal, Accessory
+4600294
+Brick 1 x 16
+1	2465	White Brick 1 x 16
+Catalog: Parts: Brick
+246501
+Brick 2 x 4
+3	3001	White Brick 2 x 4
+Catalog: Parts: Brick
+300101
+Brick, Round 1 x 1 Open Stud
+15	3062b	White Brick, Round 1 x 1 Open Stud
+Catalog: Parts: Brick, Round
+306201
+Brick, Round 2 x 2 with Axle Hole
+3	3941	White Brick, Round 2 x 2 with Axle Hole
+Catalog: Parts: Brick, Round
+614301
+Dinosaur Tail End Section / Horn
+6	40379	White Dinosaur Tail End Section / Horn
+Catalog: Parts: Animal, Body Part
+4182304, 4508454, 6110023
+Large Figure Tail
+6	87846	White Large Figure Tail
+Catalog: Parts: Large Figure Part
+4603309
+Minifigure, Head Skull Standard Pattern - Blocked Open Stud
+4	3626bpb0001	White Minifigure, Head Skull Standard Pattern - Blocked Open Stud
+Catalog: Parts: Minifigure, Head
+82359
+Panel 1 x 2 x 1
+2	4865	White Panel 1 x 2 x 1
+Catalog: Parts: Panel
+486501
+Plate 1 x 2
+7	3023	White Plate 1 x 2
+Catalog: Parts: Plate
+302301
+Plate, Modified 1 x 1 with Light Attachment - Thick Ring
+2	4081b	White Plate, Modified 1 x 1 with Light Attachment - Thick Ring
+Catalog: Parts: Plate, Modified
+408101, 4632566, 6281990
+Plate, Modified 1 x 2 with 2 U Clips (Horizontal Grip)
+2	60470	White Plate, Modified 1 x 2 with 2 U Clips (Horizontal Grip)
+Catalog: Parts: Plate, Modified
+4556152
+Plate, Modified 1 x 2 with Bar Handle on Side - Closed Ends
+2	48336	White Plate, Modified 1 x 2 with Bar Handle on Side - Closed Ends
+Catalog: Parts: Plate, Modified
+4222017
+Plate, Modified 2 x 2 with Bar Frame Octagonal
+1	30033	White Plate, Modified 2 x 2 with Bar Frame Octagonal
+Catalog: Parts: Plate, Modified
+3003301
+Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)
+1	87580	White Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)
+Catalog: Parts: Plate, Modified
+4565324, 6126046
+Slope 45 2 x 1 Triple with Inside Bar
+2	3048c	White Slope 45 2 x 1 Triple with Inside Bar
+Catalog: Parts: Slope
+4191825
+Support 1 x 6 x 5 Girder Rectangular
+2	64448	White Support 1 x 6 x 5 Girder Rectangular
+Catalog: Parts: Support
+4542616
+Technic, Axle and Pin Connector Angled #2 - 180 degrees
+6	32034	White Technic, Axle and Pin Connector Angled #2 - 180 degrees
+Catalog: Parts: Technic, Connector
+4125554, 6271870
+Technic, Brick 1 x 2 with Axle Hole
+5	32064	White Technic, Brick 1 x 2 with Axle Hole
+Catalog: Parts: Technic, Brick
+4125562, 4233486, 6178921
+Technic, Plate 2 x 4 with 3 Holes
+4	3709b	White Technic, Plate 2 x 4 with 3 Holes
+Catalog: Parts: Technic, Plate
+370901
+Tile, Modified 1 x 1 with Clip
+4	2555	White Tile, Modified 1 x 1 with Clip
+Catalog: Parts: Tile, Modified
+255501, 6030716
+Wedge, Plate 3 x 2 Left
+3	43723	White Wedge, Plate 3 x 2 Left
+Catalog: Parts: Wedge, Plate
+4179875
+Wedge, Plate 3 x 2 Right
+3	43722	White Wedge, Plate 3 x 2 Right
+Catalog: Parts: Wedge, Plate
+4179874
+Technic Bush 1/2 Smooth
+4	4265c	Yellow Technic Bush 1/2 Smooth
+Catalog: Parts: Technic
+3212324, 4239601, 6271167
+// TO-DO: minifigures
 copy details from https://www.bricklink.com/v2/main.page
 use pictures from https://rebrickable.com/
 */
@@ -525,8 +829,8 @@ use pictures from https://rebrickable.com/
 const s10123 = new Set("Cloud City", 10123, [l0, l4164067, l611226, l300426, l4188306, l362226, l301026, l4218987, l300326, l300226, l300126, l245626, l300726, l330823, l265326, l434926, l613426, l73587, l371026, l346026, l244526, l302126, l302026, l303026, l303226, l395826, l304826, l4143982, l244926, l4100333, l370826, l4144025, l662826, l306926, l243126, l663626, l255526, l368026, l4206482, l4143005, l4218968, l4124050, l4164069, l300527, l611127, l300427, l245427, l301027, l300927, l300327, l300727, l4118869, l4118868, l365927, l330727, l245827, l4144532, l3000027, l4108048, l4106728, l302327, l371027, l302227, l302027, l4113911, l4121924, l4107763, l4114127, l4133505, l4124098, l428627, l4121970, l4109984, l1, l4112039, l394027, l4114529, l4109979, l4108155, l416227, l306827, l395702, l4185274, l245302, l611102, l300402, l4107533, l362202, l235702, l300102, l4114248, l614302, l4214931, l4159736, l4113203, l458902, l393702, l2, l3, l486502, l4171667, l302302, l302102, l302002, l614102, l403202, l254002, l379402, l4109642, l303902, l446002, l368402, l366502, l4220070, l655302, l4186007, l3200002, l370102, l4141499, l371302, l4141455, l367302, l281902, l4, l243102, l5, l6, l243202, l4116842, l7, l4160344, l4160326, l330705, l306205, l4114053, l4114055, l362305, l4107588, l4140562, l254005, l65625, l654105, l4108151, l416205, l4185177, l8, l306510, l3006840, l4124073, l4101716, l4107106, l614149, l3006447, l4153468, l614147, l4109765, l4124108, l3006841, l614141, l241241, l300401, l300901, l300301, l235701, l300101, l614301, l4203583, l4143254, l302101, l379501, l265401, l9, l428601, l10, l4143976, l366001, l4140502, l243101, l663601, l416201, l415001, l11, l4143673, l4141630, l12, l13, l4140068, l14, l4124172, l9339, l4124171, l4275310, l15, l16, l390125, l17, l18, l390126, l4219380, l19, l20, l21, l4124069, l4275334, l22, l23, l24, l25, l26, l74326, l27, l4275255, l28], [1, 2, 2, 10, 1, 2, 2, 1, 9, 1, 7, 2, 14, 2, 6, 4, 1, 1, 3, 2, 1, 2, 3, 2, 2, 1, 4, 6, 1, 1, 1, 1, 4, 1, 7, 1, 8, 1, 1, 3, 2, 2, 1, 12, 4, 1, 17, 6, 1, 6, 2, 5, 1, 6, 1, 8, 2, 1, 6, 1, 3, 8, 36, 4, 5, 1, 1, 1, 1, 7, 4, 4, 1, 1, 2, 1, 10, 8, 6, 8, 10, 2, 4, 2, 2, 4, 2, 4, 2, 5, 7, 1, 4, 2, 4, 1, 1, 1, 2, 1, 1, 2, 2, 4, 11, 3, 2, 1, 2, 1, 4, 6, 8, 1, 2, 2, 2, 6, 1, 2, 1, 1, 1, 1, 1, 2, 8, 1, 1, 1, 1, 1, 1, 11, 21, 2, 1, 1, 5, 1, 2, 3, 12, 4, 2, 1, 2, 2, 1, 2, 8, 22, 8, 4, 12, 10, 1, 2, 4, 9, 3, 4, 5, 2, 2, 1, 1, 3, 1, 1, 1, 4, 2, 1, 3, 2, 4, 2, 1, 2, 6, 1, 1, 4, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
 const s8624 = new Set("Race for the Mask of Life", 8624, [l362226, l301026, l246526, l300126, l420226, l4110045, l4209683, l4143372, l302326, l371026, l303126, l303226, l303026, l303326, l4185583, l428626, l655326, l370526, l370626, l370726, l373726, l370826, l4107085, l653826, l370026, l370126, l389426, l370226, l389526, l370326, l3253226, l3252326, l4140429, l4049026, l4128603, l4156980, l655826, l4144024, l4144023, l4119589, l613426, l278026, l3200126, l656526, l656426, l4160349, l4200486, l4251394, l4251393, l4206482, l29, l4578106, l4194991, l4205004, l4278114, l4288824, l4210978, l4211060, l4211105, l4210697, l4210892, l4210650, l4211094, l4211065, l4210997, l4210802, l4299022, l4210637, l4211054, l4210779, l4263624, l4211137, l4210751, l4210755, l4289258, l4211053, l4211055, l4211129, l4210866, l4210867, l4210786, l4210785, l4180470, l4210984, l4163454, l4228230, l4183880, l4267885, l30, l4276180, l4211499, l4211515, l4211396, l4211763, l4211728, l4215353, l4211622, l4211573, l4211815, l4211639, l4211567, l4211779, l4211543, l4211553, l4211705, l4211634, l4211885, l4211635, l4211565, l4211510, l4211741, l4211483, l3673194, l4211444, l4211449, l4279763, l4287937, l4175938, l4276534, l4256503, l4252695, l4178663, l4279767, l4279768, l4194984, l4194983, l4227872, l4288100, l4275510, l31, l4288839, l32, l33, l34, l35, l36, l37, l38, l39, l40, l41, l4276053, l302021, l4142865, l4140806, l65625, l4296577, l4233225, l70905, l4222196, l4288111, l4294538, l4296949, l4294145, l4294141, l4294996, l4294543, l4296954, l4288838, l4294140, l4288836, l4294993, l4294537, l4296955, l4294150, l4294995, l4294542, l4296952, l4294148, l4296947, l4294541, l4298919, l4296946, l4296943, l4297126, l4298916, l4297125, l4294550], [2, 4, 2, 4, 1, 1, 1, 1, 2, 6, 1, 1, 2, 4, 4, 2, 1, 1, 3, 2, 7, 3, 7, 8, 7, 2, 1, 1, 5, 2, 1, 1, 1, 2, 2, 6, 2, 4, 4, 4, 2, 35, 1, 1, 1, 2, 4, 1, 1, 4, 4, 4, 2, 3, 1, 1, 4, 8, 5, 4, 1, 3, 8, 7, 2, 1, 2, 2, 2, 4, 3, 2, 2, 4, 2, 2, 7, 4, 1, 1, 1, 1, 2, 1, 8, 6, 4, 2, 2, 2, 1, 1, 3, 4, 2, 2, 7, 3, 4, 3, 1, 2, 6, 18, 1, 2, 1, 1, 1, 1, 2, 4, 5, 3, 2, 2, 2, 2, 1, 2, 2, 8, 1, 2, 2, 1, 2, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 2, 5, 2, 5, 2, 2, 1, 16, 4, 2, 1, 2, 3, 4, 2, 1, 1, 3, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1]);
 const s7020 = new Set("Army of Vikings with Heavy Artillery Wagon", 7020, [l300326, l265326, l233526, l613426, l302326, l366626, l242026, l303426, l244526, l303226, l254026, l366526, l4142816, l370826, l370026, l370226, l4107558, l4111998, l278026, l370926, l306826, l255526, l4206482, l4222196, l4211066, l4211001, l4210997, l4211119, l4225733, l4244373, l4211135, l4211000, l3894199, l4211137, l4210755, l4210631, l4210788, l4210782, l4490374, l4211438, l4211397, l4211568, l4211503, l4211573, l4211815, l4211639, l4211553, l4211599, l4211688, l4211483, l4211709, l4211794, l4211791, l4278076, l4267358, l4226318, l449521, l4178640, l4227155, l4125189, l4186678, l75854, l4211236, l4211294, l4211147, l4211162, l4211163, l4211152, l4216945, l4211247, l4211159, l4490372, l4205470, l4205469, l4209002, l4209012, l4272994, l4273893, l4273892, l4273891, l4273896, l614105, l4119483, l4113955, l6247790, l6270106, l306201, l4170326, l234324], [1, 2, 2, 2, 2, 2, 2, 3, 4, 1, 2, 1, 2, 1, 9, 2, 2, 4, 13, 2, 2, 4, 6, 6, 2, 6, 2, 8, 4, 4, 2, 2, 3, 2, 2, 2, 1, 1, 4, 3, 2, 8, 2, 4, 1, 10, 2, 3, 1, 2, 4, 1, 1, 1, 5, 1, 1, 10, 5, 1, 4, 1, 6, 2, 1, 1, 1, 12, 5, 2, 1, 2, 3, 3, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 18, 1, 2, 2]);
-const s2516 = new Set("Ninja Training Outpost", 2516, [l395726, l245326, l459526, l4584274, l449726, l4114206, l242026, l4550017, l254026, l614126, l4109969, l403223, l4211087, l4219836, l4182993, l4211111, l4536677, l4114348, l4535738, l4523159, l4563682, l302321, l4588003, l4244371, l4142865, l4211200, l4507139, l4260486, l4211219, l614101, l4515349], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 4, 2, 1, 1, 2, 1, 1, 1, 2, 2, 3, 1]);
-const sets = [s10123, s8624, s7020, s2516];
+const s2516 = new Set("Ninja Training Outpost", 2516, [l395726, l245326, l459526, l4584274, l449726, l4114206, l242026, l4550017, l254026, l614126, l4109969, l403223, l4211087, l4219836, l4182993, l4211111, l4536677, l4114348, l4535738, l4523159, l4563682, l302321, l4588003, l4244371, l4142865, l4211200, l4507139, l4260486, l4211219, l614101, l4515349, l4612327, l4612652, l4114503, l4611426], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 4, 2, 1, 1, 2, 1, 1, 1, 2, 2, 3, 1, 1, 1, 1, 1]);
+const sets = [s10123, s8624, s7020, s2516, s2505];
 
 // initializes allPieces array
 // source: ChatGPT
@@ -565,7 +869,7 @@ allPieces.forEach(piece => {
     </tr>`;
 });
 
-// lists the current count of all pieces in the footer
+// lists the current count of all pieces
 const listPieceCounts = () => {
   document.getElementById("pieceCounts").value = allPieces.map(piece => {
     return document.getElementById(`l${piece.numbers[0]}`).value;
@@ -573,6 +877,11 @@ const listPieceCounts = () => {
     return `${prev}, ${curr}`;
   });
 };
+
+// updates piece counts with typed input
+allPieces.forEach(piece => {
+  document.getElementById(`l${piece.numbers[0]}`).onchange = listPieceCounts;
+});
 
 // arrow buttons increment the value
 allPieces.forEach(piece => {
@@ -673,7 +982,7 @@ document.getElementById("selectAll").onclick = () => {
 // show only searched pieces
 document.getElementById("search").onchange = () => {
   allPieces.forEach(piece => {
-    if (piece.name.includes(document.getElementById("search").value)) {
+    if (piece.name.includes(document.getElementById("search").value) && document.getElementById(piece.color).checked) {
       document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
 
       // highlights searched value in the description
