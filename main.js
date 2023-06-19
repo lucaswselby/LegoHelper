@@ -598,168 +598,38 @@ const l4538126 = new Lego([4538126], "Minifigure, Utensil Telescope", "Pearl Gol
 const l4600519 = new Lego([4600519], "Minifigure, Weapon Throwing Star (Shuriken) with Smooth Grips", "Pearl Gold");
 const l393821 = new Lego([393821, 6078079], "Hinge Brick 1 x 2 Top Plate", "Red");
 const l265421 = new Lego([265421, 4163711, 4248830, 4278275, 4617080], "Plate, Round 2 x 2 with Rounded Bottom (Boat Stud)", "Red");
-const s2505 = new Set("Garmadon's Dark Fortress", 2505, [l4581280, l233926, l4116854, l300426, l245426, l300826, l611226, l4515356, l4584274, l4558957, l4533572, l452826, l4114206, l4537058, l3024626, l302026, l408526, l379426, l4565323, l403226, l4143982, l609126, l4185272, l370526, l370726, l3203926, l370126, l4548278, l278026, l306926, l4143005, l4289542, l4211095, l4268139, l4210678, l3032199, l4226358, l4210967, l4182993, l4211045, l4261715, l4226221, l4211068, l4210639, l4211052, l4211069, l4210984, l4540178, l4566532, l4566522, l4225265, l4218700, l4566804, l4566927, l4612900, l4211628, l4599496, l4211428, l4211392, l4211795, l4558953, l4211580, l4211526, l4211582, l4519882, l4212074, l4215513, l4211445, l4211353, l4211406, l4239371, l4211451, l4612621, l4515351, l4211773, l4211519, l4179576, l4211815, l4211805, l4211550, l4502595, l4520320, l4211483, l2555194, l4211357, l4600267, l4600271, l4611904, l4600501, l4505990, l4538126, l4600519, l393821, l265421], [2, 4, 6, 4, 6, 1, 2, 2, 16, 2, 5, 1, 1, 6, 4, 1, 2, 6, 2, 5, 2, 2, 1, 1, 2, 2, 3, 2, 4, 4, 5, 2, 6, 13, 1, 3, 1, 2, 4, 4, 6, 6, 2, 4, 3, 1, 2, 2, 4, 21, 6, 2, 2, 1, 1, 1, 4, 4, 2, 2, 10, 6, 3, 2, 1, 1, 4, 11, 2, 1, 2, 8, 1, 3, 2, 2, 8, 2, 2, 4, 2, 4, 4, 1, 1, 1, 3, 1, 1, 1, 2, 1, 1, 3]);
+const l4593768 = new Lego([4593768], "Spider with Round Abdomen and Clip", "Red");
+const l4543094 = new Lego([4543094, 4615070], "Technic Ball Joint with Through Axle Hole", "Red");
+const l4119033 = new Lego([4119033, 4163144, 4190216, 4254606, 6332580], "Technic, Axle and Pin Connector Angled #1", "Red");
+const l4513174 = new Lego([4513174], "Technic, Axle Connector 2L (Smooth with x Hole + Orientation)", "Red");
+const l4225469 = new Lego([4225469], "Brick, Modified 1 x 1 with Headlight", "Reddish Brown");
+const l4520638 = new Lego([4520638], "Container, Box 2 x 2 x 2 - Top Opening", "Reddish Brown");
+const l4211150 = new Lego([4211150], "Plate 1 x 2", "Reddish Brown");
+const l4211186 = new Lego([4211186], "Plate 2 x 4", "Reddish Brown");
+const l4211207 = new Lego([4211207], "Plate 4 x 8", "Reddish Brown");
+const l4264669 = new Lego([4264669], "Plate 6 x 12", "Reddish Brown");
+const l4211282 = new Lego([4211282, 4277751], "Stairs 7 x 4 x 6 Straight Open", "Reddish Brown");
+const l4211204 = new Lego([4211204], "Tile 1 x 6", "Reddish Brown");
+const l4273965 = new Lego([4273965, 6051378, 6108518], "Minifigure, Weapon Axe Head with Clip", "Speckle Black-Silver");
+const l4101763 = new Lego([4101763, 4143352, 4523145], "Technic, Brick 1 x 2 with Holes", "Tan");
+const l4514700 = new Lego([4514700, 6163898, 6321092, 6450487], "Wave Angular Double with Bar Handle (Electric Zigzag) with Marbled Trans-Purple Pattern", "Trans-Light Blue");
+const l4540865 = new Lego([4540865, 4640865, 6100033, 6289248], "Minifigure, Plume Feather Triple Compact / Flame / Water", "Trans-Neon Orange");
+const l4497943 = new Lego([4497943, 6171762], "Bar with Light Cover (Bulb) / Bionicle Barraki Eye", "Trans-Red");
+const l4113954 = new Lego([4113954, 6247785], "Rock 1 x 1 Jewel 24 Facet", "Trans-Red");
+const l4189801 = new Lego([4189801, 6251290], "Tile 1 x 2 with Groove", "Trans-Red");
+const l4548009 = new Lego([4548009], "Wave Rounded Straight Large with Bar End (Flame) with Marbled Trans-Orange Pattern", "Trans-Red");
+const l4296948 = new Lego([4296948, 4622904], "Arm Mechanical, Exo-Force / Bionicle, Thin Support", "White");
+const l4566256 = new Lego([4566256, 4613941, 6270092], "Barb / Claw / Horn / Tooth - Medium", "White");
+const l4273397 = new Lego([4273397, 4568387, 6270106], "Barb / Claw / Horn / Tooth - Small", "White");
+const l4600307 = new Lego([4600307], "Bone, Long", "White");
+const l4600294 = new Lego([4600294], "Bone, Short", "White");
+const l246501 = new Lego([246501], "Brick 1 x 16", "White");
+const l4182304 = new Lego([4182304, 4508454, 6110023], "Dinosaur Tail End Section / Horn", "White");
+const l4603309 = new Lego([4603309], "Large Figure Tail", "White");
+const l82359 = new Lego([82359], "Minifigure, Head Skull Standard Pattern - Blocked Open Stud", "White");
+const l486501 = new Lego([486501], "Panel 1 x 2 x 1", "White");
+const s2505 = new Set("Garmadon's Dark Fortress", 2505, [l4581280, l233926, l4116854, l300426, l245426, l300826, l611226, l4515356, l4584274, l4558957, l4533572, l452826, l4114206, l4537058, l3024626, l302026, l408526, l379426, l4565323, l403226, l4143982, l609126, l4185272, l370526, l370726, l3203926, l370126, l4548278, l278026, l306926, l4143005, l4289542, l4211095, l4268139, l4210678, l3032199, l4226358, l4210967, l4182993, l4211045, l4261715, l4226221, l4211068, l4210639, l4211052, l4211069, l4210984, l4540178, l4566532, l4566522, l4225265, l4218700, l4566804, l4566927, l4612900, l4211628, l4599496, l4211428, l4211392, l4211795, l4558953, l4211580, l4211526, l4211582, l4519882, l4212074, l4215513, l4211445, l4211353, l4211406, l4239371, l4211451, l4612621, l4515351, l4211773, l4211519, l4179576, l4211815, l4211805, l4211550, l4502595, l4520320, l4211483, l2555194, l4211357, l4600267, l4600271, l4611904, l4600501, l4505990, l4538126, l4600519, l393821, l265421, l4593768, l4543094, l4227155, l4142865, l4119033, l4513174, l4225469, l4520638, l4211150, l4216945, l4211186, l4211247, l4211207, l4264669, l4211282, l4211204, l4273965, l362305, l4101763, l4185177, l4514700, l4540865, l4497943, l3006841, l4113954, l4189801, l4548009, l4296948, l4566256, l4273397, l4600307, l4600294, l246501, l300101, l306201, l614301, l4182304, l4603309, l82359, l486501], [2, 4, 6, 4, 6, 1, 2, 2, 16, 2, 5, 1, 1, 6, 4, 1, 2, 6, 2, 5, 2, 2, 1, 1, 2, 2, 3, 2, 4, 4, 5, 2, 6, 13, 1, 3, 1, 2, 4, 4, 6, 6, 2, 4, 3, 1, 2, 2, 4, 21, 6, 2, 2, 1, 1, 1, 4, 4, 2, 2, 10, 6, 3, 2, 1, 1, 4, 11, 2, 1, 2, 8, 1, 3, 2, 2, 8, 2, 2, 4, 2, 4, 4, 1, 1, 1, 3, 1, 1, 1, 2, 1, 1, 3, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 4, 1, 1, 2, 2, 1, 2, 2, 2, 1, 1, 2, 4, 1, 1, 3, 2, 12, 12, 4, 2, 1, 1, 3, 15, 3, 6, 6, 4, 2]);
 /*
-Spider with Round Abdomen and Clip
-1	30238	Red Spider with Round Abdomen and Clip
-Catalog: Parts: Animal, Land
-4593768
-Technic Ball Joint with Through Axle Hole
-1	53585	Red Technic Ball Joint with Through Axle Hole
-Catalog: Parts: Technic
-4543094, 4615070
-Technic Bush
-1	3713	Red Technic Bush
-Catalog: Parts: Technic
-4227155, 6271820
-Technic, Axle  2L Notched
-1	32062	Red Technic, Axle 2L Notched
-Catalog: Parts: Technic, Axle
-4142865
-Technic, Axle and Pin Connector Angled #1
-1	32013	Red Technic, Axle and Pin Connector Angled #1
-Catalog: Parts: Technic, Connector
-4119033, 4163144, 4190216, 4254606, 6332580
-Technic, Axle Connector 2L (Smooth with x Hole + Orientation)
-1	6538c	Red Technic, Axle Connector 2L (Smooth with x Hole + Orientation)
-Catalog: Parts: Technic, Connector
-4513174
-Brick, Modified 1 x 1 with Headlight
-2	4070	Reddish Brown Brick, Modified 1 x 1 with Headlight
-Catalog: Parts: Brick, Modified
-4225469
-Container, Box 2 x 2 x 2 - Top Opening
-2	61780	Reddish Brown Container, Box 2 x 2 x 2 - Top Opening
-Catalog: Parts: Container
-4520638
-Plate 1 x 2
-1	3023	Reddish Brown Plate 1 x 2
-Catalog: Parts: Plate
-4211150
-Plate 1 x 8
-2	3460	Reddish Brown Plate 1 x 8
-Catalog: Parts: Plate
-4216945
-Plate 2 x 4
-4	3020	Reddish Brown Plate 2 x 4
-Catalog: Parts: Plate
-4211186
-Plate 2 x 6
-1	3795	Reddish Brown Plate 2 x 6
-Catalog: Parts: Plate
-4211247
-Plate 4 x 8
-1	3035	Reddish Brown Plate 4 x 8
-Catalog: Parts: Plate
-4211207
-Plate 6 x 12
-2	3028	Reddish Brown Plate 6 x 12
-Catalog: Parts: Plate
-4264669
-Stairs 7 x 4 x 6 Straight Open
-2	30134	Reddish Brown Stairs 7 x 4 x 6 Straight Open
-Catalog: Parts: Stairs
-4211282, 4277751
-Tile 1 x 6
-1	6636	Reddish Brown Tile 1 x 6
-Catalog: Parts: Tile
-4211204
-Minifigure, Weapon Axe Head with Clip
-2	53454	Speckle Black-Silver Minifigure, Weapon Axe Head with Clip
-Catalog: Parts: Minifigure, Weapon
-4273965, 6051378, 6108518
-Plate 1 x 3
-2	3623	Tan Plate 1 x 3
-Catalog: Parts: Plate
-362305, 4121921
-Technic, Brick 1 x 2 with Holes
-2	32000	Tan Technic, Brick 1 x 2 with Holes
-Catalog: Parts: Technic, Brick
-4101763, 4143352, 4523145
-Tile 2 x 2 with Groove
-1	3068b	Tan Tile 2 x 2 with Groove
-Catalog: Parts: Tile
-4185177, 4251986
-Wave Angular Double with Bar Handle (Electric Zigzag) with Marbled Trans-Purple Pattern
-1	59233pb01	Trans-Light Blue Wave Angular Double with Bar Handle (Electric Zigzag) with Marbled Trans-Purple Pattern
-Catalog: Parts: Energy Effect
-4514700, 6163898, 6321092, 6450487
-Minifigure, Plume Feather Triple Compact / Flame / Water
-2	64647	Trans-Neon Orange Minifigure, Plume Feather Triple Compact / Flame / Water
-Catalog: Parts: Minifigure, Headgear Accessory
-4540865, 4640865, 6100033, 6289248
-Bar with Light Cover (Bulb) / Bionicle Barraki Eye
-4	58176	Trans-Red Bar with Light Cover (Bulb) / Bionicle Barraki Eye
-Catalog: Parts: Bar
-4497943, 6171762
-Brick, Round 1 x 1 Open Stud
-1	3062b	Trans-Red Brick, Round 1 x 1 Open Stud
-Catalog: Parts: Brick, Round
-3006841, 6238673
-Rock 1 x 1 Jewel 24 Facet
-1	30153	Trans-Red Rock 1 x 1 Jewel 24 Facet
-Catalog: Parts: Rock
-4113954, 6247785
-Tile 1 x 2 with Groove
-3	3069b	Trans-Red Tile 1 x 2 with Groove
-Catalog: Parts: Tile
-4189801, 6251290
-Wave Rounded Straight Large with Bar End (Flame) with Marbled Trans-Orange Pattern
-2	85959pb01a	Trans-Red Wave Rounded Straight Large with Bar End (Flame) with Marbled Trans-Orange Pattern
-Catalog: Parts: Energy Effect
-4548009
-Arm Mechanical, Exo-Force / Bionicle, Thin Support
-12	53989	White Arm Mechanical, Exo-Force / Bionicle, Thin Support
-Catalog: Parts: Minifigure, Body Part
-4296948, 4622904
-Barb / Claw / Horn / Tooth - Medium
-12	87747	White Barb / Claw / Horn / Tooth - Medium
-Catalog: Parts: Animal, Body Part
-4566256, 4613941, 6270092
-Barb / Claw / Horn / Tooth - Small
-4	53451	White Barb / Claw / Horn / Tooth - Small
-Catalog: Parts: Animal, Body Part
-4273397, 4568387, 6270106
-Bone, Long
-2	92691	White Bone, Long
-Catalog: Parts: Animal, Accessory
-4600307
-Bone, Short
-1	93160	White Bone, Short
-Catalog: Parts: Animal, Accessory
-4600294
-Brick 1 x 16
-1	2465	White Brick 1 x 16
-Catalog: Parts: Brick
-246501
-Brick 2 x 4
-3	3001	White Brick 2 x 4
-Catalog: Parts: Brick
-300101
-Brick, Round 1 x 1 Open Stud
-15	3062b	White Brick, Round 1 x 1 Open Stud
-Catalog: Parts: Brick, Round
-306201
-Brick, Round 2 x 2 with Axle Hole
-3	3941	White Brick, Round 2 x 2 with Axle Hole
-Catalog: Parts: Brick, Round
-614301
-Dinosaur Tail End Section / Horn
-6	40379	White Dinosaur Tail End Section / Horn
-Catalog: Parts: Animal, Body Part
-4182304, 4508454, 6110023
-Large Figure Tail
-6	87846	White Large Figure Tail
-Catalog: Parts: Large Figure Part
-4603309
-Minifigure, Head Skull Standard Pattern - Blocked Open Stud
-4	3626bpb0001	White Minifigure, Head Skull Standard Pattern - Blocked Open Stud
-Catalog: Parts: Minifigure, Head
-82359
-Panel 1 x 2 x 1
-2	4865	White Panel 1 x 2 x 1
-Catalog: Parts: Panel
-486501
 Plate 1 x 2
 7	3023	White Plate 1 x 2
 Catalog: Parts: Plate
