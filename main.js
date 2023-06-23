@@ -628,69 +628,43 @@ const l4182304 = new Lego([4182304, 4508454, 6110023], "Dinosaur Tail End Sectio
 const l4603309 = new Lego([4603309], "Large Figure Tail", "White");
 const l82359 = new Lego([82359], "Minifigure, Head Skull Standard Pattern - Blocked Open Stud", "White");
 const l486501 = new Lego([486501], "Panel 1 x 2 x 1", "White");
-const s2505 = new Set("Garmadon's Dark Fortress", 2505, [l4581280, l233926, l4116854, l300426, l245426, l300826, l611226, l4515356, l4584274, l4558957, l4533572, l452826, l4114206, l4537058, l3024626, l302026, l408526, l379426, l4565323, l403226, l4143982, l609126, l4185272, l370526, l370726, l3203926, l370126, l4548278, l278026, l306926, l4143005, l4289542, l4211095, l4268139, l4210678, l3032199, l4226358, l4210967, l4182993, l4211045, l4261715, l4226221, l4211068, l4210639, l4211052, l4211069, l4210984, l4540178, l4566532, l4566522, l4225265, l4218700, l4566804, l4566927, l4612900, l4211628, l4599496, l4211428, l4211392, l4211795, l4558953, l4211580, l4211526, l4211582, l4519882, l4212074, l4215513, l4211445, l4211353, l4211406, l4239371, l4211451, l4612621, l4515351, l4211773, l4211519, l4179576, l4211815, l4211805, l4211550, l4502595, l4520320, l4211483, l2555194, l4211357, l4600267, l4600271, l4611904, l4600501, l4505990, l4538126, l4600519, l393821, l265421, l4593768, l4543094, l4227155, l4142865, l4119033, l4513174, l4225469, l4520638, l4211150, l4216945, l4211186, l4211247, l4211207, l4264669, l4211282, l4211204, l4273965, l362305, l4101763, l4185177, l4514700, l4540865, l4497943, l3006841, l4113954, l4189801, l4548009, l4296948, l4566256, l4273397, l4600307, l4600294, l246501, l300101, l306201, l614301, l4182304, l4603309, l82359, l486501], [2, 4, 6, 4, 6, 1, 2, 2, 16, 2, 5, 1, 1, 6, 4, 1, 2, 6, 2, 5, 2, 2, 1, 1, 2, 2, 3, 2, 4, 4, 5, 2, 6, 13, 1, 3, 1, 2, 4, 4, 6, 6, 2, 4, 3, 1, 2, 2, 4, 21, 6, 2, 2, 1, 1, 1, 4, 4, 2, 2, 10, 6, 3, 2, 1, 1, 4, 11, 2, 1, 2, 8, 1, 3, 2, 2, 8, 2, 2, 4, 2, 4, 4, 1, 1, 1, 3, 1, 1, 1, 2, 1, 1, 3, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 4, 1, 1, 2, 2, 1, 2, 2, 2, 1, 1, 2, 4, 1, 1, 3, 2, 12, 12, 4, 2, 1, 1, 3, 15, 3, 6, 6, 4, 2]);
+const l302301 = new Lego([302301], "Plate 1 x 2", "White");
+const l408101 = new Lego([408101, 4632566, 6281990], "Plate, Modified 1 x 1 with Light Attachment - Thick Ring", "White");
+const l4556152 = new Lego([4556152], "Plate, Modified 1 x 2 with 2 U Clips (Horizontal Grip)", "White");
+const l4222017 = new Lego([4222017], "Plate, Modified 1 x 2 with Bar Handle on Side - Closed Ends", "White");
+const l3003301 = new Lego([3003301], "Plate, Modified 2 x 2 with Bar Frame Octagonal", "White");
+const l4565324 = new Lego([4565324, 6126046], "Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)", "White");
+const l4191825 = new Lego([4191825], "Slope 45 2 x 1 Triple with Inside Bar", "White");
+const l4542616 = new Lego([4542616], "Support 1 x 6 x 5 Girder Rectangular", "White");
+const l4125554 = new Lego([4125554, 6271870], "Technic, Axle and Pin Connector Angled #2 - 180 degrees", "White");
+const l4125562 = new Lego([4125562, 4233486, 6178921], "Technic, Brick 1 x 2 with Axle Hole", "White");
+const l370901 = new Lego([370901], "Technic, Plate 2 x 4 with 3 Holes", "White");
+const l255501 = new Lego([255501, 6030716], "Tile, Modified 1 x 1 with Clip", "White");
+const l4179875 = new Lego([4179875], "Wedge, Plate 3 x 2 Left", "White");
+const l4179874 = new Lego([4179874], "Wedge, Plate 3 x 2 Right", "White");
+const l3212324 = new Lego([3212324, 4239601, 6271167], "Technic Bush 1/2 Smooth", "Yellow");
+const l4602970 = new Lego([4602970, 6045042, 6152382, 6296334], "Leg Skeleton with Black Square Foot", "White");
+const l4609295 = new Lego([4609295, 6037870, 6146060, 6252200], "Arm Skeleton Bent with Clips at 90° [Vertical Grip]", "White");
+const l4612347 = new Lego([4612347], "Torso Skeleton - Angular Rib Cage with Black Holes and Cracks and White Loincloth Print", "White");
+const l4612985 = new Lego([4612985, 4613928], "Minifig Head Bonezai, Skull Cracked with Red Eyes and Grin Print [Blocked Open Stud]", "White");
+const l4612346 = new Lego([4612346], "Torso Skeleton - Angular Rib Cage with Black Holes and Cracks and Gray Loincloth Print", "White");
+const l4611434 = new Lego([4611434], "Minifig Head Chopov, Cracked Skull with Holes Print [Blocked Open Stud]", "White");
+const l4612333 = new Lego([4612333, 4614105, 4631529, 4667796], "Hips and Red Legs with Dark Red Belt Print", "Red");
+const l3017721 = new Lego([3017721, 4121918, 4610823, 4614104, 4641677, 6020153], "Wrap, Ninja, with Clip", "Red");
+const l4611424 = new Lego([4611424, 4613390], "Minifig Head Kai, Stern Eyebrows, White Pupils, Frown, Scar Across Left Eye Print [Blocked Open Stud]", "Yellow");
+const l4612645 = new Lego([4612645, 4612999, 6023483], "Torso Robe with Brown Rope, Gold Medallion and Dark Red Undershirt Print, Red Arms, Black Hands", "Red");
+const l4616331 = new Lego([4616331], "Helmet Ninja, Samurai", "Flat Silver");
+const l4616311 = new Lego([4616311, 4630112], "Minifig Head Garmadon, Red Eyes, White Teeth and Silver Wrinkles Print [Blocked Open Stud]", "Black");
+const l4616334 = new Lego([4616334, 4630117, 6023669], "Torso Muscles and Purple Belt Print, Black Arms and Hands", "Black");
+const l4526756 = new Lego([4526756, 6155002], "Hair Short Bob Cut", "Black");
+const l4631535 = new Lego([4631535, 4667798, 6023508], "Hips and Red Legs with Ninja Robes and Gold Fireball Print", "Red");
+const l4616366 = new Lego([4616366, 4617505, 6023677], "Torso Robe and Gold Fireball Print, Yellow Arms and Hands", "Red");
+const l4616378 = new Lego([4616378, 4617510], "Minifig Head Nya, Eyelashes, Red Eyeshadow, Red Lips / Red Bandanna Covering Mouth Print", "Yellow");
+const l4602984 = new Lego([4602984, 6034840], "Torso Skeleton, Angular Rib Cage with Black Holes and Cracks and Red Loincloth Print", "White");
+const l4611924 = new Lego([4611924, 6020678], "Minifig Head Special, Skull with Bar, Lower Jaw with Ninjago Cracked Dark Red Skull Print", "White");
+const l4612771 = new Lego([4612771, 6020675], "Minifig Head Special, Skull with Clip, Upper Jaw with Forehead Nails Print", "White");
+const s2505 = new Set("Garmadon's Dark Fortress", 2505, [l4581280, l233926, l4116854, l300426, l245426, l300826, l611226, l4515356, l4584274, l4558957, l4533572, l452826, l4114206, l4537058, l3024626, l302026, l408526, l379426, l4565323, l403226, l4143982, l609126, l4185272, l370526, l370726, l3203926, l370126, l4548278, l278026, l306926, l4143005, l4289542, l4211095, l4268139, l4210678, l3032199, l4226358, l4210967, l4182993, l4211045, l4261715, l4226221, l4211068, l4210639, l4211052, l4211069, l4210984, l4540178, l4566532, l4566522, l4225265, l4218700, l4566804, l4566927, l4612900, l4211628, l4599496, l4211428, l4211392, l4211795, l4558953, l4211580, l4211526, l4211582, l4519882, l4212074, l4215513, l4211445, l4211353, l4211406, l4239371, l4211451, l4612621, l4515351, l4211773, l4211519, l4179576, l4211815, l4211805, l4211550, l4502595, l4520320, l4211483, l2555194, l4211357, l4600267, l4600271, l4611904, l4600501, l4505990, l4538126, l4600519, l393821, l265421, l4593768, l4543094, l4227155, l4142865, l4119033, l4513174, l4225469, l4520638, l4211150, l4216945, l4211186, l4211247, l4211207, l4264669, l4211282, l4211204, l4273965, l362305, l4101763, l4185177, l4514700, l4540865, l4497943, l3006841, l4113954, l4189801, l4548009, l4296948, l4566256, l4273397, l4600307, l4600294, l246501, l300101, l306201, l614301, l4182304, l4603309, l82359, l486501, l302301, l408101, l4556152, l4222017, l3003301, l4565324, l4191825, l4542616, l4125562, l370901, l255501, l4179875, l4179874, l4602970, l4609295, l4612347, l4612985, l4612346, l4611434, l4612333, l3017721, l4611424, l4612645, l9339, l4616331, l4616311, l4616334, l4526756, l4631535, l4616366, l4616378, l4602984, l4611924, l4612771], [2, 4, 6, 4, 6, 1, 2, 2, 16, 2, 5, 1, 1, 6, 4, 1, 2, 6, 2, 5, 2, 2, 1, 1, 2, 2, 3, 2, 4, 4, 5, 2, 6, 13, 1, 3, 1, 2, 4, 4, 6, 6, 2, 4, 3, 1, 2, 2, 4, 21, 6, 2, 2, 1, 1, 1, 4, 4, 2, 2, 10, 6, 3, 2, 1, 1, 4, 11, 2, 1, 2, 8, 1, 3, 2, 2, 8, 2, 2, 4, 2, 4, 4, 1, 1, 1, 3, 1, 1, 1, 2, 1, 1, 3, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 4, 1, 1, 2, 2, 1, 2, 2, 2, 1, 1, 2, 4, 1, 1, 3, 2, 12, 12, 4, 2, 2, 1, 3, 15, 3, 6, 6, 4, 2, 7, 2, 2, 2, 1, 1, 2, 2, 5, 4, 4, 3, 3, 6, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
 /*
-Plate 1 x 2
-7	3023	White Plate 1 x 2
-Catalog: Parts: Plate
-302301
-Plate, Modified 1 x 1 with Light Attachment - Thick Ring
-2	4081b	White Plate, Modified 1 x 1 with Light Attachment - Thick Ring
-Catalog: Parts: Plate, Modified
-408101, 4632566, 6281990
-Plate, Modified 1 x 2 with 2 U Clips (Horizontal Grip)
-2	60470	White Plate, Modified 1 x 2 with 2 U Clips (Horizontal Grip)
-Catalog: Parts: Plate, Modified
-4556152
-Plate, Modified 1 x 2 with Bar Handle on Side - Closed Ends
-2	48336	White Plate, Modified 1 x 2 with Bar Handle on Side - Closed Ends
-Catalog: Parts: Plate, Modified
-4222017
-Plate, Modified 2 x 2 with Bar Frame Octagonal
-1	30033	White Plate, Modified 2 x 2 with Bar Frame Octagonal
-Catalog: Parts: Plate, Modified
-3003301
-Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)
-1	87580	White Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)
-Catalog: Parts: Plate, Modified
-4565324, 6126046
-Slope 45 2 x 1 Triple with Inside Bar
-2	3048c	White Slope 45 2 x 1 Triple with Inside Bar
-Catalog: Parts: Slope
-4191825
-Support 1 x 6 x 5 Girder Rectangular
-2	64448	White Support 1 x 6 x 5 Girder Rectangular
-Catalog: Parts: Support
-4542616
-Technic, Axle and Pin Connector Angled #2 - 180 degrees
-6	32034	White Technic, Axle and Pin Connector Angled #2 - 180 degrees
-Catalog: Parts: Technic, Connector
-4125554, 6271870
-Technic, Brick 1 x 2 with Axle Hole
-5	32064	White Technic, Brick 1 x 2 with Axle Hole
-Catalog: Parts: Technic, Brick
-4125562, 4233486, 6178921
-Technic, Plate 2 x 4 with 3 Holes
-4	3709b	White Technic, Plate 2 x 4 with 3 Holes
-Catalog: Parts: Technic, Plate
-370901
-Tile, Modified 1 x 1 with Clip
-4	2555	White Tile, Modified 1 x 1 with Clip
-Catalog: Parts: Tile, Modified
-255501, 6030716
-Wedge, Plate 3 x 2 Left
-3	43723	White Wedge, Plate 3 x 2 Left
-Catalog: Parts: Wedge, Plate
-4179875
-Wedge, Plate 3 x 2 Right
-3	43722	White Wedge, Plate 3 x 2 Right
-Catalog: Parts: Wedge, Plate
-4179874
-Technic Bush 1/2 Smooth
-4	4265c	Yellow Technic Bush 1/2 Smooth
-Catalog: Parts: Technic
-3212324, 4239601, 6271167
-// TO-DO: minifigures
 copy details from https://www.bricklink.com/v2/main.page
 use pictures from https://rebrickable.com/
 */
@@ -731,7 +705,15 @@ allPieces.forEach(piece => {
       <td class="description">${piece.name}</td>
       <td>
         <div class="custom-number-input">
-          <input type="number" id="l${piece.numbers[0]}" min="0" value="0">
+          <input type="number" id="l${piece.numbers[0]}" min="0" value="${sets.reduce((prev, next) => {
+            let pieceCount = 0;
+            for (let i = 0; i < next.pieces.length; i++) {
+              if (next.pieces[i] === piece) {
+                pieceCount += next.numberOfPieces[i];
+              }
+            }
+            return prev + pieceCount;
+          }, 0)}">
           <button class="arrow up" id="l${piece.numbers[0]}up">▲</button>
           <button class="arrow down" id="l${piece.numbers[0]}down">▼</button>
         </div>
