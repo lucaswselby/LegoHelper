@@ -727,17 +727,21 @@ allPieces.forEach(piece => {
 });
 
 // lists the current count of all pieces
+const pieceCounts = () => allPieces.map(piece => {
+  return document.getElementById(`l${piece.numbers[0]}`).value;
+});
 const listPieceCounts = () => {
-  document.getElementById("pieceCounts").value = allPieces.map(piece => {
-    return document.getElementById(`l${piece.numbers[0]}`).value;
-  }).reduce((prev, curr) => {
+  document.getElementById("pieceCounts").value = pieceCounts().reduce((prev, curr) => {
     return `${prev}, ${curr}`;
   });
 };
 
 // updates piece counts with typed input
 allPieces.forEach(piece => {
-  document.getElementById(`l${piece.numbers[0]}`).onchange = listPieceCounts;
+  document.getElementById(`l${piece.numbers[0]}`).onchange = () => {
+    listPieceCounts();
+    listCompletedSets();
+  };
 });
 
 // arrow buttons increment the value
@@ -745,11 +749,13 @@ allPieces.forEach(piece => {
   document.getElementById(`l${piece.numbers[0]}up`).onclick = () => {
     document.getElementById(`l${piece.numbers[0]}`).value++;
     listPieceCounts();
+    listCompletedSets();
   };
   document.getElementById(`l${piece.numbers[0]}down`).onclick = () => {
     if (document.getElementById(`l${piece.numbers[0]}`).value > 0) {
       document.getElementById(`l${piece.numbers[0]}`).value--;
       listPieceCounts();
+      listCompletedSets();
     }
   };
 });
@@ -867,3 +873,38 @@ document.getElementById("pieceCountsSubmit").onclick = () => {
     document.getElementById("errorText").innerHTML = "Input does not match number of pieces.";
   }
 }
+
+// removes incomplete sets
+const removeIncompleteSets = (organizedSets, currentPieceCounts) => {
+  return organizedSets.filter(set => {
+    for (let i = 0; i < set.pieces.length; i++) {
+      if (currentPieceCounts[allPieces.indexOf(set.pieces[i])] < set.numberOfPieces[i]) {
+        return false;
+      }
+    }
+    return true;
+  });
+};
+
+// lists the sets you are able to complete
+const listCompletedSets = () => {
+  // organizes sets by age and removes incomplete sets
+  let currentPieceCounts = [...pieceCounts()];
+  let organizedCompleteSets = removeIncompleteSets(sets.sort((a, b) => a.year - b.year), currentPieceCounts);
+
+  // while there are sets remaining...
+  document.getElementById("organizedCompleteSets").innerHTML = "";
+  while (organizedCompleteSets.length) {
+
+    // adds next set to completable sets
+    document.getElementById("organizedCompleteSets").innerHTML += `<li>${organizedCompleteSets[0].name}</li>`;
+
+    // subtract set pieces from currentPieceCounts
+    for (let i = 0; i < organizedCompleteSets[0].pieces.length; i++) {
+      currentPieceCounts[allPieces.indexOf(organizedCompleteSets[0].pieces[i])] -= organizedCompleteSets[0].numberOfPieces[i];
+    }
+
+    // removes incomplete sets
+    organizedCompleteSets = removeIncompleteSets(organizedCompleteSets, currentPieceCounts);
+  }
+};
