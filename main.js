@@ -1,3 +1,6 @@
+// Command Prompt:
+// cd OneDrive\Documents\GitHub\LegoHelper
+// tsc
 var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
         if (ar || !(i in from)) {
@@ -784,7 +787,7 @@ allPieces.forEach(function (piece) {
         }
     };
 });
-// add color filters
+// add color filter
 var colors = [];
 allPieces.forEach(function (piece) {
     if (!colors.includes(piece.color)) {
@@ -792,66 +795,27 @@ allPieces.forEach(function (piece) {
     }
 });
 colors.forEach(function (color) {
-    document.getElementById("colorFilters").innerHTML += "<div><input type=\"checkbox\" id=\"".concat(color, "\" name=\"").concat(color, "\" checked><label for=\"").concat(color, "\">").concat(color, "</label></div>");
+    document.getElementById("colors").innerHTML += "<option value=\"".concat(color, "\">");
 });
-colors.forEach(function (color) {
-    document.getElementById(color).onclick = function () {
-        // (de)selects select all
-        if (document.getElementById(color).checked) {
-            document.getElementById("selectAll").checked = true;
-            colors.forEach(function (col) {
-                if (!document.getElementById(col).checked) {
-                    document.getElementById("selectAll").checked = false;
-                }
-            });
-        }
-        else {
-            document.getElementById("selectAll").checked = false;
-        }
-        // hides all rows
-        allPieces.forEach(function (piece) {
-            document.getElementById("l".concat(piece.numbers[0], "row")).style.display = "none";
-        });
-        // resets search options
-        document.getElementById("pieces").innerHTML = "";
-        colors.forEach(function (col) {
-            if (document.getElementById(col).checked) {
-                allPieces.forEach(function (piece) {
-                    if (piece.color === col) {
-                        // shows rows that have checked colors
-                        document.getElementById("l".concat(piece.numbers[0], "row")).style.display = "table-row";
-                        // adds selected colors to search
-                        document.getElementById("pieces").innerHTML += "<option value=\"".concat(piece.name, "\">");
-                    }
-                });
-            }
-        });
-    };
-});
-// select all colors
-document.getElementById("selectAll").onclick = function () {
+document.getElementById("colorFilter").onchange = function () {
+    // hides all rows
+    allPieces.forEach(function (piece) {
+        document.getElementById("l".concat(piece.numbers[0], "row")).style.display = "none";
+    });
     // resets search options
     document.getElementById("pieces").innerHTML = "";
-    if (document.getElementById("selectAll").checked) {
-        colors.forEach(function (color) {
-            document.getElementById(color).checked = true;
-        });
-        allPieces.forEach(function (piece) {
-            // displays all colors
+    allPieces.forEach(function (piece) {
+        if (piece.color === document.getElementById("colorFilter").value) {
+            // shows rows for the selected color
             document.getElementById("l".concat(piece.numbers[0], "row")).style.display = "table-row";
-            // adds all colors to search
+            // adds selected color to search
             document.getElementById("pieces").innerHTML += "<option value=\"".concat(piece.name, "\">");
-        });
-    }
-    // hides all colors
-    else {
-        colors.forEach(function (color) {
-            document.getElementById(color).checked = false;
-            allPieces.forEach(function (piece) {
-                document.getElementById("l".concat(piece.numbers[0], "row")).style.display = "none";
-            });
-        });
-    }
+        }
+        // shows all pieces if no color is selected
+        else if (!colors.includes(document.getElementById("colorFilter").value)) {
+            document.getElementById("l".concat(piece.numbers[0], "row")).style.display = "table-row";
+        }
+    });
 };
 // show only searched pieces
 document.getElementById("search").onchange = function () {

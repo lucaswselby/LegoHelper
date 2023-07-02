@@ -12,10 +12,11 @@
     <header>
       <div><label for="pieceCounts">Piece Counts:</label><input type="text" id="pieceCounts"><input type="submit" id="pieceCountsSubmit" value="Submit"></div>
       <div id="errorText"></div>
-      <details id="colorFilters">
-        <summary>Filters</summary>
-        <div><input type="checkbox" id="selectAll" name="selectAll" checked><label for="selectAll">Select All</label></div>
-      </details>
+      <div>
+        <label for="colorFilter">Color:</label>
+        <input list="colors" name="colorFilter" id="colorFilter">
+        <datalist id="colors"></datalist>
+      </div>
       <div>
         <label for="search">Search:</label>
         <input list="pieces" name="search" id="search">

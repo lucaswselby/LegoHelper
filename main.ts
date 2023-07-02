@@ -1,3 +1,7 @@
+// Command Prompt:
+// cd OneDrive\Documents\GitHub\LegoHelper
+// tsc
+
 // initialize Lego class
 class Lego {
   _numbers: number[]
@@ -773,7 +777,7 @@ allPieces.forEach(piece => {
   };
 });
 
-// add color filters
+// add color filter
 let colors: string[] = [];
 allPieces.forEach(piece => {
   if (!colors.includes(piece.color)) {
@@ -781,78 +785,33 @@ allPieces.forEach(piece => {
   }
 });
 colors.forEach(color => {
-  (<HTMLDetailsElement> document.getElementById("colorFilters")).innerHTML += `<div><input type="checkbox" id="${color}" name="${color}" checked><label for="${color}">${color}</label></div>`;
+  (<HTMLDataListElement> document.getElementById("colors")).innerHTML += `<option value="${color}">`;
 });
-colors.forEach(color => {
-  (<HTMLInputElement> document.getElementById(color)).onclick = () => {
+(<HTMLInputElement> document.getElementById("colorFilter")).onchange = () => {
 
-    // (de)selects select all
-    if ((<HTMLInputElement> document.getElementById(color)).checked) {
-      (<HTMLInputElement> document.getElementById("selectAll")).checked = true;
-      colors.forEach(col => {
-        if (!(<HTMLInputElement> document.getElementById(col)).checked) {
-          (<HTMLInputElement> document.getElementById("selectAll")).checked = false;
-        }
-      });
-    }
-    else {
-      (<HTMLInputElement> document.getElementById("selectAll")).checked = false;
-    }
-
-    // hides all rows
-    allPieces.forEach(piece => {
-      (<HTMLInputElement> document.getElementById(`l${piece.numbers[0]}row`)).style.display = "none";
-    });
-
-    // resets search options
-    (<HTMLInputElement> document.getElementById("pieces")).innerHTML = "";
-
-    colors.forEach(col => {
-      if ((<HTMLInputElement> document.getElementById(col)).checked) {
-        allPieces.forEach(piece => {
-          if (piece.color === col) {
-        
-            // shows rows that have checked colors
-            (<HTMLTableRowElement> document.getElementById(`l${piece.numbers[0]}row`)).style.display = "table-row";
-
-            // adds selected colors to search
-            (<HTMLInputElement> document.getElementById("pieces")).innerHTML += `<option value="${piece.name}">`;
-          }          
-        });
-      }
-    });
-  }
-});
-
-// select all colors
-(<HTMLInputElement> document.getElementById("selectAll")).onclick = () => {
+  // hides all rows
+  allPieces.forEach(piece => {
+    (<HTMLInputElement> document.getElementById(`l${piece.numbers[0]}row`)).style.display = "none";
+  });
 
   // resets search options
   (<HTMLInputElement> document.getElementById("pieces")).innerHTML = "";
 
-  if ((<HTMLInputElement> document.getElementById("selectAll")).checked) {
-    colors.forEach(color => {
-      (<HTMLInputElement> document.getElementById(color)).checked = true;
-    });
-    allPieces.forEach(piece => {
-      
-      // displays all colors
+  allPieces.forEach(piece => {
+    if (piece.color === (<HTMLInputElement> document.getElementById("colorFilter")).value) {
+  
+      // shows rows for the selected color
       (<HTMLTableRowElement> document.getElementById(`l${piece.numbers[0]}row`)).style.display = "table-row";
 
-      // adds all colors to search
+      // adds selected color to search
       (<HTMLInputElement> document.getElementById("pieces")).innerHTML += `<option value="${piece.name}">`;
-    });
-  }
+    }
 
-  // hides all colors
-  else {
-    colors.forEach(color => {
-      (<HTMLInputElement> document.getElementById(color)).checked = false;
-      allPieces.forEach(piece => {
-        (<HTMLTableRowElement> document.getElementById(`l${piece.numbers[0]}row`)).style.display = "none";
-      });
-    });
-  }
+    // shows all pieces if no color is selected
+    else if (!colors.includes((<HTMLInputElement> document.getElementById("colorFilter")).value)) {
+      (<HTMLTableRowElement> document.getElementById(`l${piece.numbers[0]}row`)).style.display = "table-row";
+    }      
+  });
 }
 
 // show only searched pieces
