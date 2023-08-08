@@ -1399,3 +1399,56 @@ while (organizedCompletesets.length) {
     organizedCompletesets = removeIncompletesets(organizedCompletesets, currentPieceCounts);
 }
 };
+
+let input = `
+`;
+if (input.length) {
+  // removes unnecessary information
+  input = input.replaceAll("  +	", "");
+  input = input.replaceAll("*	", "");
+  input = input.replaceAll(/	PG	\d /g, "");
+  input = input.replaceAll("	PG	", "");
+  while (input.includes("  ")) {
+    input = input.replaceAll("  ", " ");
+  }
+  input = input.replaceAll("\n", "</br>");
+
+  // pulls data from remaining text
+  let addedPieces = [];
+  let addedPieceQuantities = [];
+  let pictureCodes = [];
+  while (input.length) {
+    let name = input.substring(0, input.indexOf("</br>"));
+    input = input.substring(input.indexOf("</br>") + "</br>".length);
+    let quantity = input.substring(0, input.indexOf("	"));
+    input = input.substring(input.indexOf("	") + "	".length);
+    let pictureCode = input.substring(0, input.indexOf("	"));
+    input = input.substring(input.indexOf("	") + "	".length);
+    let color = input.substring(0, input.indexOf(name) - 1);
+    input = input.substring(input.indexOf(name) + name.length + "</br>".length);
+    input = input.substring(input.indexOf("</br>") + "</br>".length); // removes Catalog line
+    let numbers = input.substring(0, input.indexOf("</br>")).split(" or ").sort((a, b) => a - b);
+    input = input.substring(input.indexOf("</br>") + "</br>".length);
+    addedPieces.push(`l${numbers[0]}`);
+    addedPieceQuantities.push(quantity);
+
+    // displays data
+    let addPiece = true;
+    allPieces.forEach(piece => {
+      if (piece.numbers[0] == numbers[0]) {
+        addPiece = false;
+      }
+    });
+    if (addPiece) {
+      pictureCodes.push({
+        pictureCode: pictureCode,
+        number: numbers[0]
+      });
+      document.getElementsByTagName("FOOTER")[0].innerHTML += `const l${numbers[0]} = new Lego([${numbers}], "${name}", "${color}");</br>`;
+    }
+  }
+  document.getElementsByTagName("FOOTER")[0].innerHTML += `</br>[${addedPieces}]</br>[${addedPieceQuantities}]</br>`;
+  for (let i = 0; i < pictureCodes.length; i++) {
+    document.getElementsByTagName("FOOTER")[0].innerHTML += `</br>${pictureCodes[i].pictureCode} ${pictureCodes[i].number}`;
+  }
+}
