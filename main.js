@@ -1314,7 +1314,7 @@ if (set.pieces.length != set.numberOfPieces.length) {
 // automates new sets
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 73;
+let customPartNumber = 72;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
