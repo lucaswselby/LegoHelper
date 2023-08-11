@@ -7,10 +7,14 @@ img {
     height: var(--img-size);
 }
 
-td {
+main td {
     height: var(--img-size);
     border: 1px solid black;
     font-size: 3vw;
+}
+footer table, footer th, footer td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
 header div {
