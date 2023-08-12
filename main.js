@@ -1318,6 +1318,60 @@ const l4219221 = new Lego([4219221,4548195], "Bionicle Foot with Ball Joint Sock
 const l4218956 = new Lego([4218956,4286359], "Bionicle Mask Huna (Toa Metru)", "Dark Red");
 const l4218960 = new Lego([4218960,4278744], "Bionicle Toa Metru Arm Lower Section with 2 Ball Joint", "Dark Red");
 const l4177440 = new Lego([4177440,4284480], "Bionicle 1 x 3 Tooth with Axle Hole", "Pearl Light Gray");
+const l73 = new Lego([73], "Minifigure Cape Cloth, Standard - Starched Fabric - 4.0cm Height with Light Gray Stars and Copyright Symbol Pattern", "Black");
+const l4153354 = new Lego([4153354], "Rat / Mouse", "Dark Gray");
+const l4120318 = new Lego([4120318,4159752], "Cone 1 x 1", "Dark Pink");
+const l4158958 = new Lego([4158958], "Minifigure, Headgear Hat, Wizard / Witch", "Dark Pink");
+const l4119498 = new Lego([4119498,4243576,6195315], "Plate, Round 1 x 1", "Dark Pink");
+const l4141174 = new Lego([4141174,4216479,6170298], "Plate, Round 1 x 1 with Flower Edge (4 Knobs / Petals)", "Dark Pink");
+const l4158342 = new Lego([4158342], "Container, Cupboard 2 x 3 x 2 - Solid Studs", "Dark Turquoise");
+const l4121532 = new Lego([4121532], "Panel 1 x 2 x 1", "Dark Turquoise");
+const l4141376 = new Lego([4141376], "Minifigure, Utensil Broom", "Earth Orange");
+const l4153281 = new Lego([4153281], "Owl, Rounded Features", "Light Gray");
+const l4158309 = new Lego([4158309], "Plate 8 x 8", "Light Green");
+const l74 = new Lego([74], "Minifigure, Utensil Book 2 x 3 with Red and Yellow Bottles, Flasks and Sparkles Pattern", "Light Turquoise");
+const l4158327 = new Lego([4158327], "Container, Cupboard 2 x 3 x 2 - Solid Studs", "Medium Orange");
+const l4158351 = new Lego([4158351], "Bar 1 x 6 with Hollow Studs", "Orange");
+const l4118787 = new Lego([4118787], "Brick 1 x 3", "Orange");
+const l4624801 = new Lego([4624801], "Panel 1 x 2 x 1", "Orange");
+const l4158362 = new Lego([4158362,4497174,4497175,6210229], "Plate 1 x 8", "Orange");
+const l4122468 = new Lego([4122468,4158355], "Plate 2 x 4", "Orange");
+const l4121741 = new Lego([4121741], "Plate 2 x 6", "Orange");
+const l4118828 = new Lego([4118828], "Slope 45 2 x 2", "Orange");
+const l4158353 = new Lego([4158353], "Minifigure, Headgear Hat, Wizard / Witch", "Purple");
+const l4159003 = new Lego([4159003], "Support 2 x 2 x 5 Bar on Tile Base with Solid Stud and Stop Ring", "Purple");
+const l75 = new Lego([75], "Minifigure, Utensil Book 2 x 3 with Mushrooms and Vine Pattern", "Red");
+const l4158307 = new Lego([4158307], "Plate 8 x 8", "Sand Green");
+const l4106556 = new Lego([4106556,6274736], "Minifigure, Utensil Crystal Ball Globe 2 x 2 x 2", "Trans-Clear");
+const l4100381 = new Lego([4100381], "Panel 1 x 2 x 3 - Solid Studs", "Trans-Clear");
+const l618843 = new Lego([618843,4567331], "Cone 1 x 1", "Trans-Dark Blue");
+const l4129911 = new Lego([4129911], "Tile 1 x 2 with Groove with Gold Stars Pattern", "Trans-Dark Blue");
+const l4143577 = new Lego([4143577,4222652,4655286,6291400], "Bar 4L (Lightsaber Blade / Wand)", "Trans-Dark Pink");
+const l4129857 = new Lego([4129857,4280215], "Container, Treasure Chest Bottom with Slots in Back", "Trans-Dark Pink");
+const l4129858 = new Lego([4129858], "Container, Treasure Chest Lid Curved with Thick Hinge", "Trans-Dark Pink");
+const l4128675 = new Lego([4128675], "Minifigure, Utensil Flask with Handle / Jug", "Trans-Dark Pink");
+const l4129917 = new Lego([4129917,6247796], "Rock 1 x 1 Jewel 24 Facet", "Trans-Dark Pink");
+const l3006848 = new Lego([3006848,6238046], "Brick, Round 1 x 1 Open Stud", "Trans-Green");
+const l4141532 = new Lego([4141532], "Plate, Round 1 x 1 with Flower Edge (4 Knobs / Petals)", "Trans-Light Blue");
+const l4119482 = new Lego([4119482,6247792], "Rock 1 x 1 Jewel 24 Facet", "Trans-Light Blue");
+const l4124054 = new Lego([4124054,6170186], "Bar 4L (Lightsaber Blade / Wand)", "Trans-Neon Green");
+const l458949 = new Lego([458949,618849], "Cone 1 x 1", "Trans-Neon Green");
+const l4118778 = new Lego([4118778], "Scorpion", "Trans-Neon Orange");
+const l4288245 = new Lego([4288245,6133300,6334830], "Arch 3 x 6 x 5 Ornamented", "White");
+const l4141530 = new Lego([4141530], "Brick, Round 1 x 1 x 2/3 with Flower Edge (4 Knobs on Base)", "White");
+const l625101 = new Lego([625101,4140370,4220184], "Cat, Crouching", "White");
+const l458901 = new Lego([458901], "Cone 1 x 1", "White");
+const l453601 = new Lego([453601,4109736,4520636,6360040], "Container, Cupboard 2 x 3 Drawer", "White");
+const l453301 = new Lego([453301,4248214,4261470], "Container, Cupboard 2 x 3 x 2 Door", "White");
+const l4108192 = new Lego([4108192,4140297,4226364], "Minifigure, Utensil Goblet", "White");
+const l256601 = new Lego([256601,4119517,4499753,4532219], "Plant, Tree Palm Top", "White");
+const l462301 = new Lego([462301], "Plate, Modified 1 x 2 with Bar Arm Up (Horizontal Arm 6mm)", "White");
+const l203901 = new Lego([203901,4107861,4119500], "Support 2 x 2 x 7 Lamp Post, 6 Base Flutes", "White");
+const l76 = new Lego([76], "Tile 1 x 2 with Groove with HP Spider, Bone, and Bag Pattern", "White");
+const l9341 = new Lego([9341,4583501,6006026], "Hips and Blue Legs", "Blue");
+const l4157065 = new Lego([4157065], "Hair Mid-Length", "Brown");
+const l77 = new Lego([77], "Torso Sweater with Big Collar Print, Medium Blue Arms, Yellow Hands", "Medium Blue");
+const l78 = new Lego([78], "Minifig Head Hermione Granger, Eyelashes, Peach Lips, Smile Print [Blocked Open Stud]", "Yellow");
 
 // initialize sets
 // set year from https://www.lego.com/en-us/service/buildinginstructions
@@ -1335,7 +1389,8 @@ const s8963 = new LegoSet("Rock Wrecker", 8963, 2009, [l4184645,l4535765,l71155,
 const s8111 = new LegoSet("River Dragon", 8111, 2007, [l4497254,l74326,l4290452,l4292017,l4521335,l256926,l409526,l4184645,l407026,l4515356,l306226,l4107182,l4515172,l383926,l604126,l428626,l244926,l459926,l4248204,l4107084,l3205426,l278026,l306926,l4211060,l4211002,l4211086,l4210935,l4498096,l4497253,l4211508,l4211815,l4288114,l302321,l302221,l379521,l254021,l4129539,l428621,l304021,l304921,l4234526,l4500462,l366021,l4142865,l4189936,l4119331,l654121,l370921,l306921,l4180533,l4180504,l4178728,l459805,l4217562,l65625,l4163015,l474043,l618844,l614144,l287701,l4163475,l379401,l241201,l458924], [4,1,1,1,1,1,1,1,1,1,2,2,1,2,2,1,1,1,1,2,1,2,1,1,1,1,3,2,2,2,2,6,2,1,1,2,2,2,2,2,2,1,2,4,2,2,2,2,1,1,1,2,1,1,2,1,1,1,2,2,2,6,2,2]);
 const s8902 = new LegoSet("Vezok", 8902, 2006, [l3206226,l370526,l3205426,l278026,l4189110,l29,l4287943,l4276529,l4284582,l4284567,l4279753,l4218719,l4210650,l4263624,l4211550,l4287936,l4279746,l4288100,l4287097,l4287093,l4287095,l4198400,l4288205,l4290480], [1,1,1,6,1,4,2,1,2,2,1,1,1,1,1,1,1,1,1,2,2,5,1,1]);
 const s8725 = new LegoSet("Balta", 8725, 2005, [l3206226,l653626,l278026,l4248305,l4219217,l4217832,l4242036,l4219221,l4218956,l4218960,l4211639,l4177440,l4178663], [1,1,1,4,2,1,1,3,1,2,1,2,2]);
-const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725];
+const s4723 = new LegoSet("Diagon Alley Shops", 4723, 2001, [l73,l70501,l4153354,l4120318,l4158958,l4119498,l4141174,l4158342,l4121532,l4141376,l4157270,l4153281,l4158309,l74,l4158327,l4158351,l4118787,l4624801,l4158362,l4122468,l4121741,l4118828,l4158353,l4159003,l4143210,l75,l4158307,l4106556,l4100381,l618843,l4129911,l4143577,l4129857,l4129858,l4128675,l4129917,l3006848,l4113955,l4124073,l4141532,l4119482,l4124054,l458949,l614149,l4118778,l612647,l4124108,l618841,l4288245,l4141530,l625101,l458901,l453601,l453301,l4108192,l256601,l462301,l203901,l76,l9341,l4157065,l77,l78], [1,1,1,1,1,8,1,1,1,1,1,1,1,1,3,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,2,1,1,4,2,1,1,1,2,1,1,1,1,1]);
+const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723];
 
 // checks each set for duplicate pieces
 sets.forEach(set => {
@@ -1386,7 +1441,7 @@ copy details from https://www.bricklink.com/v2/main.page
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 72;
+let customPartNumber = 78;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
