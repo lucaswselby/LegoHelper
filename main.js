@@ -1539,23 +1539,23 @@ if (noInput) {
   allPieces.forEach(piece => {
     document.getElementsByTagName("TABLE")[0].innerHTML +=
       `<tr id="l${piece.numbers[0]}row">
-      <td>${piece.picture}</td>
-      <td class="description">${piece.name}</td>
-      <td>
-          <div class="custom-number-input">
-          <input type="number" id="l${piece.numbers[0]}" min="0" value="${sets.reduce((prev, next) => {
-              let pieceCount = 0;
-              for (let i = 0; i < next.pieces.length; i++) {
-              if (next.pieces[i] === piece) {
-                  pieceCount += next.numberOfPieces[i];
-              }
-              }
-              return prev + pieceCount;
-          }, 0)}">
-          <button class="arrow up" id="l${piece.numbers[0]}up">▲</button>
-          <button class="arrow down" id="l${piece.numbers[0]}down">▼</button>
-          </div>
-      </td>
+        <td>${piece.picture}</td>
+        <td class="description">${piece.name}</td>
+        <td>
+            <div class="custom-number-input">
+            <input type="number" id="l${piece.numbers[0]}" min="0" value="${sets.reduce((prev, next) => {
+                let pieceCount = 0;
+                for (let i = 0; i < next.pieces.length; i++) {
+                if (next.pieces[i] === piece) {
+                    pieceCount += next.numberOfPieces[i];
+                }
+                }
+                return prev + pieceCount;
+            }, 0)}">
+            <button class="arrow up" id="l${piece.numbers[0]}up">▲</button>
+            <button class="arrow down" id="l${piece.numbers[0]}down">▼</button>
+            </div>
+        </td>
       </tr>`;
   });
 
