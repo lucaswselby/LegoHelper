@@ -1382,12 +1382,6 @@ if (input) {
   input = input.replaceAll("*	", "");
   input = input.replaceAll(/	PG	\d /g, "");
   input = input.replaceAll("	PG	", "");
-  if (input.includes("Part Color Code Missing")) {
-    // TO-DO: check if piece already exists with desc and color
-    while (input.includes("Part Color Code Missing")) {
-      input = input.replace("Part Color Code Missing", ++customPartNumber);
-    }
-  }
   while (input.includes("  ")) {
     input = input.replaceAll("  ", " ");
   }
@@ -1411,12 +1405,24 @@ if (input) {
     }
     input = input.substring(input.indexOf(name) + name.length + "</br>".length);
     input = input.substring(input.indexOf("</br>") + "</br>".length); // removes Catalog line
+    if (input.substring(0, input.indexOf("</br>")).includes("Part Color Code Missing")) {
+      let missingCode = true;
+      allPieces.forEach(piece => {
+        if (piece.name === name && piece.color === color) {
+          missingCode = false;
+          input = input.replace("Part Color Code Missing", piece.numbers[0]);
+        }
+      });
+      if (missingCode) {
+        input = input.replace("Part Color Code Missing", ++customPartNumber);
+      }
+    }
     let numbers = input.substring(0, input.indexOf("</br>")).split(" or ").sort((a, b) => a - b);
     input = input.substring(input.indexOf("</br>") + "</br>".length);
     addedPieces.push(`l${numbers[0]}`);
     addedPieceQuantities.push(quantity);
 
-    // displays data
+    // displays Lego variables to be added
     let addPiece = true;
     allPieces.forEach(piece => {
       if (piece.numbers[0] == numbers[0]) {
@@ -1432,7 +1438,9 @@ if (input) {
       document.getElementsByTagName("FOOTER")[0].innerHTML += `const l${numbers[0]} = new Lego([${numbers}], "${name}", "${color}");</br>`;
     }
   }
-  document.getElementsByTagName("FOOTER")[0].innerHTML += `</br>[${addedPieces}]</br>[${addedPieceQuantities}]</br></br>
+
+  // displays codes for pictures to be added
+  document.getElementsByTagName("FOOTER")[0].innerHTML += `</br>${addedPieces}</br>${addedPieceQuantities}</br></br>
   <table>
     <thead>
       <tr>
