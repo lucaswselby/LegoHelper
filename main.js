@@ -1417,27 +1417,25 @@ set.pieces.forEach(piece => {
 });
 
 allPieces.forEach(piece => {
+  // adds pictures to Lego objects
+  piece.picture = `<img src="images/${piece.numbers[0]}.jpg" alt="${piece.numbers[0]}" title="${piece.numbers[0]}">`;
 
-// adds pictures to Lego objects
-piece.picture = `<img src="images/${piece.numbers[0]}.jpg" alt="${piece.numbers[0]}" title="${piece.numbers[0]}">`;
-
-// adds options to search list
-document.getElementById("pieces").innerHTML += `<option value="${piece.name}">`;
+  // adds options to search list
+  document.getElementById("pieces").innerHTML += `<option value="${piece.name}">`;
 });
 
 // catches if set.pieces.length != set.numberOfPieces.length
 sets.forEach(set => {
-if (set.pieces.length != set.numberOfPieces.length) {
+  if (set.pieces.length != set.numberOfPieces.length) {
     document.getElementsByTagName("FOOTER")[0].innerHTML += `s${set.number}.pieces.length != s${set.number}.numberOfPieces.length<br/>`;
     document.getElementsByTagName("BODY")[0].style.backgroundColor = "red";
-}
+  }
 });
 
 // automates new sets
 /*
 use pictures from https://rebrickable.com/
 copy details from https://www.bricklink.com/v2/main.page
-
 */
 let input = ``;
 let noInput = input ? false : true;
@@ -1501,12 +1499,12 @@ if (input) {
         number: numbers[0],
         color: color
       });
-      document.getElementsByTagName("FOOTER")[0].innerHTML += `const l${numbers[0]} = new Lego([${numbers}], "${name}", "${color}");</br>`;
+      document.getElementsByTagName("FOOTER")[0].innerHTML += `const l${numbers[0]} = new Lego([${numbers.join(", ")}], "${name}", "${color}");</br>`;
     }
   }
 
   // displays codes for pictures to be added
-  document.getElementsByTagName("FOOTER")[0].innerHTML += `</br>${addedPieces}</br>${addedPieceQuantities}</br></br>
+  document.getElementsByTagName("FOOTER")[0].innerHTML += `</br>${addedPieces.join(", ")}</br>${addedPieceQuantities.join(", ")}</br></br>
   <table>
     <thead>
       <tr>
@@ -1534,164 +1532,164 @@ if (input) {
   });
 }
 
+// lists the current count of all pieces
+let loaded = 0;
+let increment = 100;
+const pieceCounts = () => allPieces.map(piece => document.getElementById(`l${piece.numbers[0]}`) ? document.getElementById(`l${piece.numbers[0]}`).value : sets.reduce((prev, next) => prev + next.pieces.includes(piece) ? next.numberOfPieces[next.pieces.indexOf(piece)] : 0, 0));
+const listPieceCounts = () => {
+  document.getElementById("pieceCounts").value = pieceCounts().join(", ");
+};
+
+// removes incomplete sets
+const removeIncompletesets = (organizedsets, currentPieceCounts) => {
+  return organizedsets.filter(set => {
+    for (let i = 0; i < set.pieces.length; i++) {
+      if (currentPieceCounts[allPieces.indexOf(set.pieces[i])] < set.numberOfPieces[i]) {
+          return false;
+      }
+    }
+    return true;
+  });
+};
+
+// lists the sets you are able to complete
+const listCompletedSets = () => {
+  // organizes sets by age and removes incomplete sets
+  let currentPieceCounts = [...pieceCounts()];
+  let organizedCompleteSets = removeIncompletesets(sets.sort((a, b) => a.year - b.year), currentPieceCounts);
+
+  // while there are sets remaining...
+  document.getElementById("organizedCompleteSets").innerHTML = "";
+  while (organizedCompleteSets.length) {
+
+    // adds next set to completable sets
+    document.getElementById("organizedCompleteSets").innerHTML += `<li>${organizedCompleteSets[0].name}</li>`;
+
+    // subtract set pieces from currentPieceCounts
+    for (let i = 0; i < organizedCompleteSets[0].pieces.length; i++) {
+      currentPieceCounts[allPieces.indexOf(organizedCompleteSets[0].pieces[i])] -= organizedCompleteSets[0].numberOfPieces[i];
+    }
+
+    // removes incomplete sets
+    organizedCompleteSets = removeIncompletesets(organizedCompleteSets, currentPieceCounts);
+  }
+};
+
+// loads more Lego pieces
+const loadMore = () => {
+  for (let i = loaded; i < loaded + increment && i < allPieces.length; i++) {
+    document.getElementsByTagName("TABLE")[0].innerHTML += `<tr id="l${allPieces[i].numbers[0]}row">
+      <td>${allPieces[i].picture}</td>
+      <td class="description">${allPieces[i].name}</td>
+      <td class="custom-number-input">
+        <input type="number" id="l${allPieces[i].numbers[0]}" min="0" value="${sets.reduce((prev, next) => {
+          let pieceCount = 0;
+          for (let j = 0; j < next.pieces.length; j++) {
+            if (next.pieces[j] === allPieces[i]) {
+              pieceCount += next.numberOfPieces[j];
+            }
+          }
+          return prev + pieceCount;
+        }, 0)}">
+        <button class="arrow up" id="l${allPieces[i].numbers[0]}up">▲</button>
+        <button class="arrow down" id="l${allPieces[i].numbers[0]}down">▼</button>
+      </td>
+    </tr>`;
+  }
+
+  for (let i = loaded; i < loaded + increment && i < allPieces.length; i++) {
+    // updates piece counts with typed input
+    document.getElementById(`l${allPieces[i].numbers[0]}`).onchange = () => {
+      listPieceCounts();
+      listCompletedSets();
+    };
+  
+    // arrow buttons increment the value
+    document.getElementById(`l${allPieces[i].numbers[0]}up`).onclick = () => {
+      document.getElementById(`l${allPieces[i].numbers[0]}`).value++;
+      listPieceCounts();
+      listCompletedSets();
+    };
+    document.getElementById(`l${allPieces[i].numbers[0]}down`).onclick = () => {
+      if (document.getElementById(`l${allPieces[i].numbers[0]}`).value > 0) {
+        document.getElementById(`l${allPieces[i].numbers[0]}`).value--;
+        listPieceCounts();
+        listCompletedSets();
+      }
+    };
+  }
+  loaded += increment;
+}
+document.getElementById("loadMore").onclick = loadMore;
+
 // display pieces with counters
 if (noInput) {
-  allPieces.forEach(piece => {
-    document.getElementsByTagName("TABLE")[0].innerHTML +=
-      `<tr id="l${piece.numbers[0]}row">
-        <td>${piece.picture}</td>
-        <td class="description">${piece.name}</td>
-        <td>
-            <div class="custom-number-input">
-            <input type="number" id="l${piece.numbers[0]}" min="0" value="${sets.reduce((prev, next) => {
-                let pieceCount = 0;
-                for (let i = 0; i < next.pieces.length; i++) {
-                if (next.pieces[i] === piece) {
-                    pieceCount += next.numberOfPieces[i];
-                }
-                }
-                return prev + pieceCount;
-            }, 0)}">
-            <button class="arrow up" id="l${piece.numbers[0]}up">▲</button>
-            <button class="arrow down" id="l${piece.numbers[0]}down">▼</button>
-            </div>
-        </td>
-      </tr>`;
-  });
-
-  // lists the current count of all pieces
-  const pieceCounts = () => allPieces.map(piece => {
-  return document.getElementById(`l${piece.numbers[0]}`).value;
-  });
-  const listPieceCounts = () => {
-  document.getElementById("pieceCounts").value = `${pieceCounts().join(", ")}`;
-  };
-
-  // updates piece counts with typed input
-  allPieces.forEach(piece => {
-  document.getElementById(`l${piece.numbers[0]}`).onchange = () => {
-      listPieceCounts();
-      listCompletedsets();
-  };
-  });
-
-  // arrow buttons increment the value
-  allPieces.forEach(piece => {
-  document.getElementById(`l${piece.numbers[0]}up`).onclick = () => {
-      document.getElementById(`l${piece.numbers[0]}`).value++;
-      listPieceCounts();
-      listCompletedsets();
-  };
-  document.getElementById(`l${piece.numbers[0]}down`).onclick = () => {
-      if (document.getElementById(`l${piece.numbers[0]}`).value > 0) {
-      document.getElementById(`l${piece.numbers[0]}`).value--;
-      listPieceCounts();
-      listCompletedsets();
-      }
-  };
-  });
+  loadMore();
 
   // add color filter
   let colors = [];
   allPieces.forEach(piece => {
-  if (!colors.includes(piece.color)) {
-      colors.push(piece.color);
-  }
+    if (!colors.includes(piece.color)) {
+        colors.push(piece.color);
+    }
   });
   colors.forEach(color => {
-  document.getElementById("colors").innerHTML += `<option value="${color}">`;
+    document.getElementById("colors").innerHTML += `<option value="${color}">`;
   });
   document.getElementById("colorFilter").onchange = () => {
+    // hides all rows
+    allPieces.forEach(piece => {
+        document.getElementById(`l${piece.numbers[0]}row`).style.display = "none";
+    });
 
-  // hides all rows
-  allPieces.forEach(piece => {
-      document.getElementById(`l${piece.numbers[0]}row`).style.display = "none";
-  });
+    // resets search options
+    document.getElementById("pieces").innerHTML = "";
 
-  // resets search options
-  document.getElementById("pieces").innerHTML = "";
-
-  allPieces.forEach(piece => {
+    allPieces.forEach(piece => {
       if (piece.color === document.getElementById("colorFilter").value) {
+        // shows rows for the selected color
+        document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
 
-      // shows rows for the selected color
-      document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
-
-      // adds selected color to search
-      document.getElementById("pieces").innerHTML += `<option value="${piece.name}">`;
+        // adds selected color to search
+        document.getElementById("pieces").innerHTML += `<option value="${piece.name}">`;
       }
 
       // shows all pieces if no color is selected
       else if (!colors.includes(document.getElementById("colorFilter").value)) {
-      document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
-      }      
-  });
+        document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
+      }
+    });
   }
 
   // show only searched pieces
   document.getElementById("search").onchange = () => {
-  allPieces.forEach(piece => {
+    allPieces.forEach(piece => {
       if (piece.name.includes(document.getElementById("search").value) && (!document.getElementById("colorFilter").value || document.getElementById("colorFilter").value === piece.color)) {
-      document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
+        document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
 
-      // highlights searched value in the description
-      document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].innerHTML = document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].textContent.replace(document.getElementById("search").value, `<span style="background-color: yellow;">${document.getElementById("search").value}</span>`);
+        // highlights searched value in the description
+        document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].innerHTML = document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].textContent.replace(document.getElementById("search").value, `<span style="background-color: yellow;">${document.getElementById("search").value}</span>`);
       }
       else {
-      document.getElementById(`l${piece.numbers[0]}row`).style.display = "none";
+        document.getElementById(`l${piece.numbers[0]}row`).style.display = "none";
 
-      // unhighlights searched words
-      document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].innerHTML = document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].textContent.replace(`<span style="background-color: yellow;">${document.getElementById("search").value}</span>`, document.getElementById("search").value);
+        // unhighlights searched words
+        document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].innerHTML = document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].textContent.replace(`<span style="background-color: yellow;">${document.getElementById("search").value}</span>`, document.getElementById("search").value);
       }
-  });
+    });
   }
 
   // submit button updates piece counters
   document.getElementById("pieceCountsSubmit").onclick = () => {
-  const counts = document.getElementById("pieceCounts").value.split(", ");
-  if (counts.length === allPieces.length) {
+    const counts = document.getElementById("pieceCounts").value.split(", ");
+    if (counts.length === allPieces.length) {
       for (let i = 0; i < counts.length; i++) {
-      document.getElementById(`l${allPieces[i].numbers[0]}`).value = counts[i];
+        document.getElementById(`l${allPieces[i].numbers[0]}`).value = counts[i];
       }
       document.getElementById("errorText").innerHTML = "Piece Counts Updated";
-  }
-  else {
+    }
+    else {
       document.getElementById("errorText").innerHTML = "Input does not match number of pieces.";
+    }
   }
-  }
-
-  // removes incomplete sets
-  const removeIncompletesets = (organizedsets, currentPieceCounts) => {
-  return organizedsets.filter(set => {
-      for (let i = 0; i < set.pieces.length; i++) {
-      if (currentPieceCounts[allPieces.indexOf(set.pieces[i])] < set.numberOfPieces[i]) {
-          return false;
-      }
-      }
-      return true;
-  });
-  };
-
-  // lists the sets you are able to complete
-  const listCompletedsets = () => {
-  // organizes sets by age and removes incomplete sets
-  let currentPieceCounts = [...pieceCounts()];
-  let organizedCompletesets = removeIncompletesets(sets.sort((a, b) => a.year - b.year), currentPieceCounts);
-
-  // while there are sets remaining...
-  document.getElementById("organizedCompleteSets").innerHTML = "";
-  while (organizedCompletesets.length) {
-
-      // adds next set to completable sets
-      document.getElementById("organizedCompleteSets").innerHTML += `<li>${organizedCompletesets[0].name}</li>`;
-
-      // subtract set pieces from currentPieceCounts
-      for (let i = 0; i < organizedCompletesets[0].pieces.length; i++) {
-      currentPieceCounts[allPieces.indexOf(organizedCompletesets[0].pieces[i])] -= organizedCompletesets[0].numberOfPieces[i];
-      }
-
-      // removes incomplete sets
-      organizedCompletesets = removeIncompletesets(organizedCompletesets, currentPieceCounts);
-  }
-  };
 }
