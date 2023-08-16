@@ -1409,19 +1409,16 @@ sets.forEach(set => {
 // initializes allPieces array
 let allPieces = [];
 sets.forEach(set => {
-set.pieces.forEach(piece => {
+  set.pieces.forEach(piece => {
     if (!allPieces.includes(piece)) {
-    allPieces.push(piece);
+      allPieces.push(piece);
     }
-});
+  });
 });
 
+// adds pictures to Lego objects
 allPieces.forEach(piece => {
-  // adds pictures to Lego objects
   piece.picture = `<img src="images/${piece.numbers[0]}.jpg" alt="${piece.numbers[0]}" title="${piece.numbers[0]}">`;
-
-  // adds options to search list
-  document.getElementById("pieces").innerHTML += `<option value="${piece.name}">`;
 });
 
 // catches if set.pieces.length != set.numberOfPieces.length
@@ -1541,7 +1538,7 @@ const listPieceCounts = () => {
 };
 
 // removes incomplete sets
-const removeIncompletesets = (organizedsets, currentPieceCounts) => {
+const removeIncompleteSets = (organizedsets, currentPieceCounts) => {
   return organizedsets.filter(set => {
     for (let i = 0; i < set.pieces.length; i++) {
       if (currentPieceCounts[allPieces.indexOf(set.pieces[i])] < set.numberOfPieces[i]) {
@@ -1556,7 +1553,7 @@ const removeIncompletesets = (organizedsets, currentPieceCounts) => {
 const listCompletedSets = () => {
   // organizes sets by age and removes incomplete sets
   let currentPieceCounts = [...pieceCounts()];
-  let organizedCompleteSets = removeIncompletesets(sets.sort((a, b) => a.year - b.year), currentPieceCounts);
+  let organizedCompleteSets = removeIncompleteSets(sets.sort((a, b) => a.year - b.year), currentPieceCounts);
 
   // while there are sets remaining...
   document.getElementById("organizedCompleteSets").innerHTML = "";
@@ -1571,7 +1568,7 @@ const listCompletedSets = () => {
     }
 
     // removes incomplete sets
-    organizedCompleteSets = removeIncompletesets(organizedCompleteSets, currentPieceCounts);
+    organizedCompleteSets = removeIncompleteSets(organizedCompleteSets, currentPieceCounts);
   }
 };
 
@@ -1595,6 +1592,9 @@ const loadMore = () => {
         <button class="arrow down" id="l${allPieces[i].numbers[0]}down">▼</button>
       </td>
     </tr>`;
+
+    // adds options to search list
+    document.getElementById("pieces").innerHTML += `<option value="${allPieces[i].name}">`;
   }
 
   for (let i = loaded; i < loaded + increment && i < allPieces.length; i++) {
@@ -1639,14 +1639,16 @@ if (noInput) {
   document.getElementById("colorFilter").onchange = () => {
     // hides all rows
     allPieces.forEach(piece => {
+      if (document.getElementById(`l${piece.numbers[0]}row`)) {
         document.getElementById(`l${piece.numbers[0]}row`).style.display = "none";
+      }
     });
 
     // resets search options
     document.getElementById("pieces").innerHTML = "";
 
     allPieces.forEach(piece => {
-      if (piece.color === document.getElementById("colorFilter").value) {
+      if (piece.color === document.getElementById("colorFilter").value && document.getElementById(`l${piece.numbers[0]}row`)) {
         // shows rows for the selected color
         document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
 
@@ -1655,7 +1657,7 @@ if (noInput) {
       }
 
       // shows all pieces if no color is selected
-      else if (!colors.includes(document.getElementById("colorFilter").value)) {
+      else if (!colors.includes(document.getElementById("colorFilter").value) && document.getElementById(`l${piece.numbers[0]}row`)) {
         document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
       }
     });
@@ -1664,13 +1666,13 @@ if (noInput) {
   // show only searched pieces
   document.getElementById("search").onchange = () => {
     allPieces.forEach(piece => {
-      if (piece.name.includes(document.getElementById("search").value) && (!document.getElementById("colorFilter").value || document.getElementById("colorFilter").value === piece.color)) {
+      if (piece.name.includes(document.getElementById("search").value) && (!document.getElementById("colorFilter").value || document.getElementById("colorFilter").value === piece.color) && document.getElementById(`l${piece.numbers[0]}row`)) {
         document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
 
         // highlights searched value in the description
         document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].innerHTML = document.getElementById(`l${piece.numbers[0]}row`).getElementsByClassName("description")[0].textContent.replace(document.getElementById("search").value, `<span style="background-color: yellow;">${document.getElementById("search").value}</span>`);
       }
-      else {
+      else if (document.getElementById(`l${piece.numbers[0]}row`)) {
         document.getElementById(`l${piece.numbers[0]}row`).style.display = "none";
 
         // unhighlights searched words
@@ -1681,15 +1683,20 @@ if (noInput) {
 
   // submit button updates piece counters
   document.getElementById("pieceCountsSubmit").onclick = () => {
-    const counts = document.getElementById("pieceCounts").value.split(", ");
-    if (counts.length === allPieces.length) {
-      for (let i = 0; i < counts.length; i++) {
-        document.getElementById(`l${allPieces[i].numbers[0]}`).value = counts[i];
+    if (loaded + increment >= allPieces.length) {
+      const counts = document.getElementById("pieceCounts").value.split(", ");
+      if (counts.length === allPieces.length) {
+        for (let i = 0; i < counts.length; i++) {
+          document.getElementById(`l${allPieces[i].numbers[0]}`).value = counts[i];
+        }
+        document.getElementById("errorText").innerHTML = "Piece Counts Updated";
       }
-      document.getElementById("errorText").innerHTML = "Piece Counts Updated";
+      else {
+        document.getElementById("errorText").innerHTML = "Input does not match number of pieces.";
+      }
     }
     else {
-      document.getElementById("errorText").innerHTML = "Input does not match number of pieces.";
+      document.getElementById("errorText").innerHTML = `Load all pieces before clicking ${document.getElementById("pieceCountsSubmit").value}.`;
     }
   }
 }
