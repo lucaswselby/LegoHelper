@@ -1530,8 +1530,6 @@ if (input) {
 }
 
 // lists the current count of all pieces
-let loaded = 0;
-let increment = 100;
 const pieceCounts = () => allPieces.map(piece => document.getElementById(`l${piece.numbers[0]}`) ? document.getElementById(`l${piece.numbers[0]}`).value : sets.reduce((prev, next) => prev + next.pieces.includes(piece) ? next.numberOfPieces[next.pieces.indexOf(piece)] : 0, 0));
 const listPieceCounts = () => {
   document.getElementById("pieceCounts").value = pieceCounts().join(", ");
@@ -1558,7 +1556,6 @@ const listCompletedSets = () => {
   // while there are sets remaining...
   document.getElementById("organizedCompleteSets").innerHTML = "";
   while (organizedCompleteSets.length) {
-
     // adds next set to completable sets
     document.getElementById("organizedCompleteSets").innerHTML += `<li>${organizedCompleteSets[0].name}</li>`;
 
@@ -1573,6 +1570,8 @@ const listCompletedSets = () => {
 };
 
 // loads more Lego pieces
+let loaded = 0;
+const increment = 100;
 const loadMore = () => {
   for (let i = loaded; i < loaded + increment && i < allPieces.length; i++) {
     document.getElementsByTagName("TABLE")[0].innerHTML += `<tr id="l${allPieces[i].numbers[0]}row">
@@ -1597,7 +1596,7 @@ const loadMore = () => {
     document.getElementById("pieces").innerHTML += `<option value="${allPieces[i].name}">`;
   }
 
-  for (let i = loaded; i < loaded + increment && i < allPieces.length; i++) {
+  for (let i = 0; i < loaded + increment && i < allPieces.length; i++) {
     // updates piece counts with typed input
     document.getElementById(`l${allPieces[i].numbers[0]}`).onchange = () => {
       listPieceCounts();
@@ -1619,8 +1618,19 @@ const loadMore = () => {
     };
   }
   loaded += increment;
+
+  // stops loading
+  if (loaded >= allPieces.length) {
+    document.getElementById("loading").innerHTML = "";
+  }
 }
-document.getElementById("loadMore").onclick = loadMore;
+// source: ChatGPT
+window.onscroll = () => {
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+      loadMore();
+  }
+};
+
 
 // display pieces with counters
 if (noInput) {
