@@ -1372,6 +1372,24 @@ const l9341 = new Lego([9341,4583501,6006026], "Hips and Blue Legs", "Blue");
 const l4157065 = new Lego([4157065], "Hair Mid-Length", "Brown");
 const l77 = new Lego([77], "Torso Sweater with Big Collar Print, Medium Blue Arms, Yellow Hands", "Medium Blue");
 const l78 = new Lego([78], "Minifig Head Hermione Granger, Eyelashes, Peach Lips, Smile Print [Blocked Open Stud]", "Yellow");
+const l79 = new Lego([79], "Plastic Shield (Undetermined Type) for Large Figures with Knights Kingdom King Mathias Lion Head and Crown Pattern", "[No Color/Any Color]");
+const l474026 = new Lego([474026], "Dish 2 x 2 Inverted (Radar)", "Black");
+const l4250279 = new Lego([4250279], "Large Figure Foot with Rotation Ball Joint Half (Vertical Side)", "Blue-Violet");
+const l80 = new Lego([80], "Large Figure Head with King Mathias Pattern - Black Line Around Face", "Blue-Violet");
+const l81 = new Lego([81], "Large Figure Torso KK with King Mathias Pattern - Series 1", "Blue-Violet");
+const l4250280 = new Lego([4250280], "Slope, Curved 1 x 2 x 2/3 Wing End", "Blue-Violet");
+const l4250278 = new Lego([4250278], "Slope, Curved 2 x 2 Lip", "Blue-Violet");
+const l4250277 = new Lego([4250277], "Slope, Curved 2 x 2 x 2/3 with Two Studs and Curved Sides", "Blue-Violet");
+const l4250276 = new Lego([4250276], "Slope, Curved 3 x 2 x 2/3 with Two Studs, Wing End", "Blue-Violet");
+const l4221624 = new Lego([4221624, 4244155], "Large Figure Shield Holder with Axle", "Dark Bluish Gray");
+const l4218207 = new Lego([4218207], "Technic, Brick Modified 2 x 2 with Axle Hole, Rotation Joint Ball Half (Vertical Side), Vertical Axle Hole End (Fist)", "Dark Bluish Gray");
+const l4235573 = new Lego([4235573], "Technic, Brick Modified 2 x 3 with Pin Holes, Rotation Joint Ball Half (Vertical Side), Rotation Joint Socket", "Dark Bluish Gray");
+const l4218281 = new Lego([4218281], "Technic, Brick Modified 2 x 2 with Pin Hole, Rotation Joint Ball Half (Horizontal Top), Rotation Joint Socket", "Light Bluish Gray");
+const l4218191 = new Lego([4218191], "Technic, Brick Modified 2 x 3 with Pin Holes, Rotation Joint Ball Half (Horizontal Top), Rotation Joint Socket", "Light Bluish Gray");
+const l82 = new Lego([82], "Cloth Cape, King Mathias Large Figure with 2 Neck Holes", "Light Gray");
+const l4217991 = new Lego([4217991], "Technic Rotation Joint Ball Loop with Two Perpendicular Pins with Friction", "Medium Blue");
+const l4252451 = new Lego([4252451, 4263485], "Large Figure Crown, King Mathias", "Reddish Gold");
+const l4220674 = new Lego([4220674], "Large Figure Sword, Jayko / King Mathias - Series 1", "Reddish Gold");
 
 // initialize sets
 // set year from https://www.lego.com/en-us/service/buildinginstructions
@@ -1390,7 +1408,8 @@ const s8111 = new LegoSet("River Dragon", 8111, 2007, [l4497254,l74326,l4290452,
 const s8902 = new LegoSet("Vezok", 8902, 2006, [l3206226,l370526,l3205426,l278026,l4189110,l29,l4287943,l4276529,l4284582,l4284567,l4279753,l4218719,l4210650,l4263624,l4211550,l4287936,l4279746,l4288100,l4287097,l4287093,l4287095,l4198400,l4288205,l4290480], [1,1,1,6,1,4,2,1,2,2,1,1,1,1,1,1,1,1,1,2,2,5,1,1]);
 const s8725 = new LegoSet("Balta", 8725, 2005, [l3206226,l653626,l278026,l4248305,l4219217,l4217832,l4242036,l4219221,l4218956,l4218960,l4211639,l4177440,l4178663], [1,1,1,4,2,1,1,3,1,2,1,2,2]);
 const s4723 = new LegoSet("Diagon Alley Shops", 4723, 2001, [l73,l70501,l4153354,l4120318,l4158958,l4119498,l4141174,l4158342,l4121532,l4141376,l4157270,l4153281,l4158309,l74,l4158327,l4158351,l4118787,l4624801,l4158362,l4122468,l4121741,l4118828,l4158353,l4159003,l4143210,l75,l4158307,l4106556,l4100381,l618843,l4129911,l4143577,l4129857,l4129858,l4128675,l4129917,l3006848,l4113955,l4124073,l4141532,l4119482,l4124054,l458949,l614149,l4118778,l612647,l4124108,l618841,l4288245,l4141530,l625101,l458901,l453601,l453301,l4108192,l256601,l462301,l203901,l76,l9341,l4157065,l77,l78], [1,1,1,1,1,8,1,1,1,1,1,1,1,1,3,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,2,1,1,4,2,1,1,1,2,1,1,1,1,1]);
-const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723];
+const s8809 = new LegoSet("King Mathias (Series 1) Limited Edition with Map and Cape, US", 8809, 2004, [l79, l474026, l4189110, l4250279, l80, l81, l4250280, l4250278, l4250277, l4250276, l4221624, l4218207, l4235573, l4218281, l4218191, l82, l4217991, l4252451, l4220674], [1, 1, 1, 2, 1, 1, 4, 2, 2, 4, 1, 2, 2, 2, 2, 1, 10, 1, 1]);
+const sets = [/*s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, */s8809];
 
 // checks each set for duplicate pieces
 sets.forEach(set => {
@@ -1436,7 +1455,7 @@ copy details from https://www.bricklink.com/v2/main.page
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 78;
+let customPartNumber = 82;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
