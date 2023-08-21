@@ -1645,7 +1645,7 @@ const loadMore = () => {
 }
 // source: ChatGPT
 window.onscroll = () => {
-  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && input) {
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && noInput) {
       loadMore();
   }
 };
