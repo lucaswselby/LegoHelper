@@ -1390,6 +1390,20 @@ const l82 = new Lego([82], "Cloth Cape, King Mathias Large Figure with 2 Neck Ho
 const l4217991 = new Lego([4217991], "Technic Rotation Joint Ball Loop with Two Perpendicular Pins with Friction", "Medium Blue");
 const l4252451 = new Lego([4252451, 4263485], "Large Figure Crown, King Mathias", "Reddish Gold");
 const l4220674 = new Lego([4220674], "Large Figure Sword, Jayko / King Mathias - Series 1", "Reddish Gold");
+const l83 = new Lego([83], "Plastic Shield (Undetermined Type) for Large Figures with Knights Kingdom Danju Wolf Pattern", "[No Color/Any Color]");
+const l4218223 = new Lego([4218223, 4238419], "Large Figure Foot with Rotation Ball Joint Half (Vertical Side)", "Dark Purple");
+const l84 = new Lego([84], "Large Figure Torso KK with Danju Pattern - Series 1", "Dark Purple");
+const l85 = new Lego([85], "Large Figure Visor, Danju", "Dark Purple");
+const l86 = new Lego([86], "Slope, Curved 2 x 2 x 2/3 with Two Studs and Curved Sides with Yellow Triangle on 3 Bars Pattern", "Dark Purple");
+const l4218673 = new Lego([4218673, 6073778], "Slope, Curved 3 x 2 x 2/3 with Two Studs, Wing End", "Dark Purple");
+const l4218235 = new Lego([4218235], "Technic, Brick Modified 2 x 2 with Axle Hole, Rotation Joint Ball Half (Vertical Side), Vertical Axle Hole End (Fist)", "Dark Purple");
+const l4218091 = new Lego([4218091], "Technic, Brick Modified 2 x 3 with Pin Holes, Rotation Joint Ball Half (Vertical Side), Rotation Joint Socket", "Dark Purple");
+const l4218788 = new Lego([4218788], "Vehicle, Fairing 1 x 2 Stepped with Two Pins", "Dark Purple");
+const l4218324 = new Lego([4218324], "Large Figure Sword, Danju - Series 1", "Flat Dark Gold");
+const l87 = new Lego([87], "Large Figure Head with Danju Pattern", "Light Bluish Gray");
+const l4220895 = new Lego([4220895, 4244143], "Large Figure Shield Holder with Axle", "Light Bluish Gray");
+const l3006340 = new Lego([3006340, 4187750, 6245306], "Dish 2 x 2 Inverted (Radar)", "Trans-Clear");
+const l4220498 = new Lego([4220498], "Technic Rotation Joint Ball Loop with Two Perpendicular Pins with Friction", "Yellow");
 
 // initialize sets
 // set year from https://www.lego.com/en-us/service/buildinginstructions
@@ -1409,7 +1423,8 @@ const s8902 = new LegoSet("Vezok", 8902, 2006, [l3206226,l370526,l3205426,l27802
 const s8725 = new LegoSet("Balta", 8725, 2005, [l3206226,l653626,l278026,l4248305,l4219217,l4217832,l4242036,l4219221,l4218956,l4218960,l4211639,l4177440,l4178663], [1,1,1,4,2,1,1,3,1,2,1,2,2]);
 const s4723 = new LegoSet("Diagon Alley Shops", 4723, 2001, [l73,l70501,l4153354,l4120318,l4158958,l4119498,l4141174,l4158342,l4121532,l4141376,l4157270,l4153281,l4158309,l74,l4158327,l4158351,l4118787,l4624801,l4158362,l4122468,l4121741,l4118828,l4158353,l4159003,l4143210,l75,l4158307,l4106556,l4100381,l618843,l4129911,l4143577,l4129857,l4129858,l4128675,l4129917,l3006848,l4113955,l4124073,l4141532,l4119482,l4124054,l458949,l614149,l4118778,l612647,l4124108,l618841,l4288245,l4141530,l625101,l458901,l453601,l453301,l4108192,l256601,l462301,l203901,l76,l9341,l4157065,l77,l78], [1,1,1,1,1,8,1,1,1,1,1,1,1,1,3,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,2,1,1,4,2,1,1,1,2,1,1,1,1,1]);
 const s8809 = new LegoSet("King Mathias (Series 1) Limited Edition with Map and Cape, US", 8809, 2004, [l79, l474026, l4189110, l4250279, l80, l81, l4250280, l4250278, l4250277, l4250276, l4221624, l4218207, l4235573, l4218281, l4218191, l82, l4217991, l4252451, l4220674], [1, 1, 1, 2, 1, 1, 4, 2, 2, 4, 1, 2, 2, 2, 2, 1, 10, 1, 1]);
-const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809];
+const s8782 = new LegoSet("Danju", 8782, 2004, [l83, l4189110, l4218223, l84, l85, l4218700, l86, l4218673, l4218235, l4218091, l4218788, l4218324, l87, l4220895, l4218281, l4218191, l3006340, l4220498], [1, 1, 2, 1, 1, 4, 2, 4, 2, 2, 4, 1, 1, 1, 2, 2, 1, 10]);
+const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809, s8782];
 
 // checks each set for duplicate pieces
 sets.forEach(set => {
@@ -1455,7 +1470,7 @@ copy details from https://www.bricklink.com/v2/main.page
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 82;
+let customPartNumber = 87;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
