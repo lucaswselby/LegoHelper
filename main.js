@@ -1404,6 +1404,18 @@ const l87 = new Lego([87], "Large Figure Head with Danju Pattern", "Light Bluish
 const l4220895 = new Lego([4220895, 4244143], "Large Figure Shield Holder with Axle", "Light Bluish Gray");
 const l3006340 = new Lego([3006340, 4187750, 6245306], "Dish 2 x 2 Inverted (Radar)", "Trans-Clear");
 const l4220498 = new Lego([4220498], "Technic Rotation Joint Ball Loop with Two Perpendicular Pins with Friction", "Yellow");
+const l246026 = new Lego([246026, 4258354, 6313191], "Tile, Modified 2 x 2 with Pin", "Black");
+const l88 = new Lego([88], "Large Figure Head with Danju, Sir Pattern - Series 2 (8791)", "Dark Bluish Gray");
+const l4220507 = new Lego([4220507], "Technic, Brick Modified 2 x 3 with Pin Holes, Rotation Joint Ball Half (Horizontal Top), Rotation Joint Socket", "Dark Bluish Gray");
+const l89 = new Lego([89], "Large Figure Torso KK with Danju, Sir Pattern - Series 2 - Wolf Head Relief", "Dark Purple");
+const l90 = new Lego([90], "Large Figure Visor, Danju with Gold Pattern", "Dark Purple");
+const l4261216 = new Lego([4261216], "Plate, Modified 2 x 2 with Pin Hole", "Dark Purple");
+const l4218290 = new Lego([4218290], "Technic, Brick Modified 2 x 2 with Pin Hole, Rotation Joint Ball Half (Horizontal Top), Rotation Joint Socket", "Dark Purple");
+const l4218210 = new Lego([4218210], "Technic Rotation Joint Ball Loop with Two Perpendicular Pins with Friction", "Light Bluish Gray");
+const l91 = new Lego([91], "Large Figure Shield, 2 x 4 Brick Relief, Danju Wolf with Dark Purple and Gold Pattern", "Pearl Light Gray");
+const l4255510 = new Lego([4255510], "Large Figure Armor, Leg Shin Guard Type 1", "Reddish Gold");
+const l4253714 = new Lego([4253714], "Large Figure Armor, Shoulder with Smooth Layered Plates", "Reddish Gold");
+const l4256812 = new Lego([4256812], "Large Figure Sword, Danju - Series 2", "Reddish Gold");
 
 // initialize sets
 // set year from https://www.lego.com/en-us/service/buildinginstructions
@@ -1424,7 +1436,8 @@ const s8725 = new LegoSet("Balta", 8725, 2005, [l3206226,l653626,l278026,l424830
 const s4723 = new LegoSet("Diagon Alley Shops", 4723, 2001, [l73,l70501,l4153354,l4120318,l4158958,l4119498,l4141174,l4158342,l4121532,l4141376,l4157270,l4153281,l4158309,l74,l4158327,l4158351,l4118787,l4624801,l4158362,l4122468,l4121741,l4118828,l4158353,l4159003,l4143210,l75,l4158307,l4106556,l4100381,l618843,l4129911,l4143577,l4129857,l4129858,l4128675,l4129917,l3006848,l4113955,l4124073,l4141532,l4119482,l4124054,l458949,l614149,l4118778,l612647,l4124108,l618841,l4288245,l4141530,l625101,l458901,l453601,l453301,l4108192,l256601,l462301,l203901,l76,l9341,l4157065,l77,l78], [1,1,1,1,1,8,1,1,1,1,1,1,1,1,3,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,2,1,1,4,2,1,1,1,2,1,1,1,1,1]);
 const s8809 = new LegoSet("King Mathias (Series 1) Limited Edition with Map and Cape, US", 8809, 2004, [l79, l474026, l4189110, l4250279, l80, l81, l4250280, l4250278, l4250277, l4250276, l4221624, l4218207, l4235573, l4218281, l4218191, l82, l4217991, l4252451, l4220674], [1, 1, 1, 2, 1, 1, 4, 2, 2, 4, 1, 2, 2, 2, 2, 1, 10, 1, 1]);
 const s8782 = new LegoSet("Danju", 8782, 2004, [l83, l4189110, l4218223, l84, l85, l4218700, l86, l4218673, l4218235, l4218091, l4218788, l4218324, l87, l4220895, l4218281, l4218191, l3006340, l4220498], [1, 1, 2, 1, 1, 4, 2, 4, 2, 2, 4, 1, 1, 1, 2, 2, 1, 10]);
-const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809, s8782];
+const s8791 = new LegoSet("Sir Danju", 8791, 2005, [l278026, l246026, l4189110, l88, l4218207, l4220507, l4218223, l89, l90, l4261216, l4218700, l4218673, l4218290, l4218091, l4218210, l91, l4255510, l4253714, l4256812], [2, 2, 2, 1, 2, 2, 2, 1, 1, 1, 4, 2, 2, 2, 10, 1, 2, 2, 1]);
+const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809, s8782, s8791];
 
 // checks each set for duplicate pieces
 sets.forEach(set => {
@@ -1470,7 +1483,7 @@ copy details from https://www.bricklink.com/v2/main.page
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 87;
+let customPartNumber = 91;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
