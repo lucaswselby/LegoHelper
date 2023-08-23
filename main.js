@@ -1416,6 +1416,19 @@ const l91 = new Lego([91], "Large Figure Shield, 2 x 4 Brick Relief, Danju Wolf 
 const l4255510 = new Lego([4255510], "Large Figure Armor, Leg Shin Guard Type 1", "Reddish Gold");
 const l4253714 = new Lego([4253714], "Large Figure Armor, Shoulder with Smooth Layered Plates", "Reddish Gold");
 const l4256812 = new Lego([4256812], "Large Figure Sword, Danju - Series 2", "Reddish Gold");
+const l92 = new Lego([92], "Plastic Shield (Undetermined Type) for Large Figures with Knights Kingdom Jayko Hawk Pattern", "[No Color/Any Color]");
+const l93 = new Lego([93], "Large Figure Head with Jayko Pattern", "Light Bluish Gray");
+const l4216361 = new Lego([4216361, 4238416], "Large Figure Foot with Rotation Ball Joint Half (Vertical Side)", "Medium Blue");
+const l94 = new Lego([94], "Large Figure Torso KK with Jayko Pattern - Series 1", "Medium Blue");
+const l95 = new Lego([95], "Large Figure Visor, Jayko", "Medium Blue");
+const l4218578 = new Lego([4218578], "Slope, Curved 1 x 2 x 2/3 Wing End", "Medium Blue");
+const l4163719 = new Lego([4163719], "Slope, Curved 2 x 2 x 2/3 with Two Studs and Curved Sides, Lip End", "Medium Blue");
+const l96 = new Lego([96], "Slope, Curved 2 x 2 x 2/3 with Two Studs and Curved Sides, Lip End with Four White Lines Pattern", "Medium Blue");
+const l4218566 = new Lego([4218566], "Slope, Curved 3 x 2 x 2/3 with Two Studs, Wing End", "Medium Blue");
+const l4216366 = new Lego([4216366], "Technic, Brick Modified 2 x 2 with Axle Hole, Rotation Joint Ball Half (Vertical Side), Vertical Axle Hole End (Fist)", "Medium Blue");
+const l4218097 = new Lego([4218097], "Technic, Brick Modified 2 x 3 with Pin Holes, Rotation Joint Ball Half (Vertical Side), Rotation Joint Socket", "Medium Blue");
+const l4218584 = new Lego([4218584], "Vehicle, Fairing 1 x 2 Stepped with Two Pins", "Medium Blue");
+const l4220504 = new Lego([4220504, 6352203], "Technic Rotation Joint Ball Loop with Two Perpendicular Pins with Friction", "White");
 
 // initialize sets
 // set year from https://www.lego.com/en-us/service/buildinginstructions
@@ -1437,7 +1450,8 @@ const s4723 = new LegoSet("Diagon Alley Shops", 4723, 2001, [l73,l70501,l4153354
 const s8809 = new LegoSet("King Mathias (Series 1) Limited Edition with Map and Cape, US", 8809, 2004, [l79, l474026, l4189110, l4250279, l80, l81, l4250280, l4250278, l4250277, l4250276, l4221624, l4218207, l4235573, l4218281, l4218191, l82, l4217991, l4252451, l4220674], [1, 1, 1, 2, 1, 1, 4, 2, 2, 4, 1, 2, 2, 2, 2, 1, 10, 1, 1]);
 const s8782 = new LegoSet("Danju", 8782, 2004, [l83, l4189110, l4218223, l84, l85, l4218700, l86, l4218673, l4218235, l4218091, l4218788, l4218324, l87, l4220895, l4218281, l4218191, l3006340, l4220498], [1, 1, 2, 1, 1, 4, 2, 4, 2, 2, 4, 1, 1, 1, 2, 2, 1, 10]);
 const s8791 = new LegoSet("Sir Danju", 8791, 2005, [l278026, l246026, l4189110, l88, l4218207, l4220507, l4218223, l89, l90, l4261216, l4218700, l4218673, l4218290, l4218091, l4218210, l91, l4255510, l4253714, l4256812], [2, 2, 2, 1, 2, 2, 2, 1, 1, 1, 4, 2, 2, 2, 10, 1, 2, 2, 1]);
-const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809, s8782, s8791];
+const s8783 = new LegoSet("Jayko", 8783, 2004, [l92, l4189110, l93, l4220895, l4218281, l4218191, l4216361, l94, l95, l4218578, l4163719, l96, l4218566, l4216366, l4218097, l4218584, l4220674, l3006340, l4220504], [1, 1, 1, 1, 2, 2, 2, 1, 1, 6, 2, 1, 4, 2, 2, 4, 1, 1, 10]);
+const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809, s8782, s8791, s8783];
 
 // checks each set for duplicate pieces
 sets.forEach(set => {
@@ -1483,7 +1497,7 @@ copy details from https://www.bricklink.com/v2/main.page
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 91;
+let customPartNumber = 96;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
