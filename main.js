@@ -1429,6 +1429,22 @@ const l4216366 = new Lego([4216366], "Technic, Brick Modified 2 x 2 with Axle Ho
 const l4218097 = new Lego([4218097], "Technic, Brick Modified 2 x 3 with Pin Holes, Rotation Joint Ball Half (Vertical Side), Rotation Joint Socket", "Medium Blue");
 const l4218584 = new Lego([4218584], "Vehicle, Fairing 1 x 2 Stepped with Two Pins", "Medium Blue");
 const l4220504 = new Lego([4220504, 6352203], "Technic Rotation Joint Ball Loop with Two Perpendicular Pins with Friction", "White");
+const l97 = new Lego([97], "Plastic Shield (Undetermined Type) for Large Figures with Knights Kingdom Santis Bear Pattern", "[No Color/Any Color]");
+const l98 = new Lego([98], "Large Figure Head with Santis Pattern", "Dark Bluish Gray");
+const l4218201 = new Lego([4218201, 4636472, 6021206], "Technic, Brick Modified 2 x 2 with Pin Hole, Rotation Joint Ball Half (Horizontal Top), Rotation Joint Socket", "Dark Bluish Gray");
+const l4218556 = new Lego([4218556], "Technic Rotation Joint Ball Loop with Two Perpendicular Pins with Friction", "Dark Tan");
+const l4220676 = new Lego([4220676], "Large Figure Sword, Santis - Series 1", "Pearl Sand Blue");
+const l4220512 = new Lego([4220512, 4238420], "Large Figure Foot with Rotation Ball Joint Half (Vertical Side)", "Red");
+const l99 = new Lego([99], "Large Figure Torso KK with Santis Pattern - Series 1", "Red");
+const l4220680 = new Lego([4220680], "Large Figure Visor, Santis", "Red");
+const l4220516 = new Lego([4220516, 6375708], "Slope, Curved 1 x 2 x 2/3 Wing End", "Red");
+const l4144413 = new Lego([4144413, 6247388], "Slope, Curved 2 x 2 Lip", "Red");
+const l4220515 = new Lego([4220515], "Slope, Curved 2 x 2 x 2/3 with Two Studs and Curved Sides", "Red");
+const l4162876 = new Lego([4162876, 4185521], "Slope, Curved 2 x 2 x 2/3 with Two Studs and Curved Sides, Lip End", "Red");
+const l4220806 = new Lego([4220806], "Slope, Curved 4 x 1 with Two Studs", "Red");
+const l4220514 = new Lego([4220514], "Technic, Brick Modified 2 x 2 with Axle Hole, Rotation Joint Ball Half (Vertical Side), Vertical Axle Hole End (Fist)", "Red");
+const l4220513 = new Lego([4220513], "Technic, Brick Modified 2 x 3 with Pin Holes, Rotation Joint Ball Half (Vertical Side), Rotation Joint Socket", "Red");
+const l4220517 = new Lego([4220517], "Vehicle, Fairing 1 x 2 Stepped with Two Pins", "Red");
 
 // initialize sets
 // set year from https://www.lego.com/en-us/service/buildinginstructions
@@ -1451,7 +1467,8 @@ const s8809 = new LegoSet("King Mathias (Series 1) Limited Edition with Map and 
 const s8782 = new LegoSet("Danju", 8782, 2004, [l83, l4189110, l4218223, l84, l85, l4218700, l86, l4218673, l4218235, l4218091, l4218788, l4218324, l87, l4220895, l4218281, l4218191, l3006340, l4220498], [1, 1, 2, 1, 1, 4, 2, 4, 2, 2, 4, 1, 1, 1, 2, 2, 1, 10]);
 const s8791 = new LegoSet("Sir Danju", 8791, 2005, [l278026, l246026, l4189110, l88, l4218207, l4220507, l4218223, l89, l90, l4261216, l4218700, l4218673, l4218290, l4218091, l4218210, l91, l4255510, l4253714, l4256812], [2, 2, 2, 1, 2, 2, 2, 1, 1, 1, 4, 2, 2, 2, 10, 1, 2, 2, 1]);
 const s8783 = new LegoSet("Jayko", 8783, 2004, [l92, l4189110, l93, l4220895, l4218281, l4218191, l4216361, l94, l95, l4218578, l4163719, l96, l4218566, l4216366, l4218097, l4218584, l4220674, l3006340, l4220504], [1, 1, 1, 1, 2, 2, 2, 1, 1, 6, 2, 1, 4, 2, 2, 4, 1, 1, 10]);
-const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809, s8782, s8791, s8783];
+const s8785 = new LegoSet("Santis", 8785, 2004, [l97, l4189110, l98, l4221624, l4218201, l4220507, l4218556, l4220676, l4220512, l99, l4220680, l4220516, l4144413, l4220515, l4162876, l4220806, l4220514, l4220513, l4220517, l3006340], [1, 1, 1, 1, 2, 2, 10, 1, 2, 1, 1, 4, 2, 2, 4, 2, 2, 2, 4, 1]);
+const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809, s8782, s8791, s8783, s8785];
 
 // checks each set for duplicate pieces
 sets.forEach(set => {
@@ -1497,7 +1514,7 @@ copy details from https://www.bricklink.com/v2/main.page
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 96;
+let customPartNumber = 99;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
