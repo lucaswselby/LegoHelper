@@ -1458,6 +1458,20 @@ const l4218587 = new Lego([4218587], "Vehicle, Fairing 1 x 2 Stepped with Two Pi
 const l104 = new Lego([104], "Large Figure Head with Vladek Pattern", "Dark Red");
 const l4220675 = new Lego([4220675], "Large Figure Sword, Vladek - Series 1", "Red");
 const l4220519 = new Lego([4220519], "Technic Rotation Joint Ball Loop with Two Perpendicular Pins with Friction", "Red");
+const l105 = new Lego([105], "Plastic Shield (Undetermined Type) for Large Figures with Knights Kingdom Rascus Monkey Pattern", "[No Color/Any Color]");
+const l106 = new Lego([106], "Large Figure Head with Rascus Pattern", "Dark Bluish Gray");
+const l4217975 = new Lego([4217975], "Technic Rotation Joint Ball Loop with Two Perpendicular Pins with Friction", "Dark Red");
+const l4218221 = new Lego([4218221, 4238418], "Large Figure Foot with Rotation Ball Joint Half (Vertical Side)", "Green");
+const l107 = new Lego([107], "Large Figure Torso KK with Rascus Pattern - Series 1", "Green");
+const l4220678 = new Lego([4220678], "Large Figure Visor, Rascus", "Green");
+const l4218752 = new Lego([4218752], "Slope, Curved 1 x 2 x 2/3 Wing End", "Green");
+const l4218697 = new Lego([4218697, 4544417], "Slope, Curved 2 x 2 x 2/3 with Two Studs and Curved Sides", "Green");
+const l108 = new Lego([108], "Slope, Curved 2 x 2 x 2/3 with Two Studs and Curved Sides with Ornate Yellow Lines Pattern", "Green");
+const l4218669 = new Lego([4218669, 6210500], "Slope, Curved 3 x 2 x 2/3 with Two Studs, Wing End", "Green");
+const l4218231 = new Lego([4218231], "Technic, Brick Modified 2 x 2 with Axle Hole, Rotation Joint Ball Half (Vertical Side), Vertical Axle Hole End (Fist)", "Green");
+const l4218085 = new Lego([4218085], "Technic, Brick Modified 2 x 3 with Pin Holes, Rotation Joint Ball Half (Vertical Side), Rotation Joint Socket", "Green");
+const l4218785 = new Lego([4218785], "Vehicle, Fairing 1 x 2 Stepped with Two Pins", "Green");
+const l109 = new Lego([109], "Large Figure Sword, Rascus - Series 1", "Yellow");
 
 // initialize sets
 // set year from https://www.lego.com/en-us/service/buildinginstructions
@@ -1482,6 +1496,7 @@ const s8791 = new LegoSet("Sir Danju", 8791, 2005, [l278026, l246026, l4189110, 
 const s8783 = new LegoSet("Jayko", 8783, 2004, [l92, l4189110, l93, l4220895, l4218281, l4218191, l4216361, l94, l95, l4218578, l4163719, l96, l4218566, l4216366, l4218097, l4218584, l4220674, l3006340, l4220504], [1, 1, 1, 1, 2, 2, 2, 1, 1, 6, 2, 1, 4, 2, 2, 4, 1, 1, 10]);
 const s8785 = new LegoSet("Santis", 8785, 2004, [l97, l4189110, l98, l4221624, l4218201, l4220507, l4218556, l4220676, l4220512, l99, l4220680, l4220516, l4144413, l4220515, l4162876, l4220806, l4220514, l4220513, l4220517, l3006340], [1, 1, 1, 1, 2, 2, 10, 1, 2, 1, 1, 4, 2, 2, 4, 2, 2, 2, 4, 1]);
 const s8786 = new LegoSet("Vladek", 8786, 2004, [l100, l4163524, l4216061, l101, l102, l330026, l103, l304826, l4216062, l4218083, l4218587, l4189110, l4221624, l4218201, l4220507, l104, l4220675, l4220519, l3006340], [1, 2, 2, 1, 1, 6, 6, 2, 2, 2, 4, 1, 1, 2, 2, 1, 1, 10, 1]);
+const s8784 = new LegoSet("Rascus", 8784, 2004, [l105, l4189110, l106, l4221624, l4218201, l4220507, l4217975, l4218221, l107, l4220678, l4218752, l4218697, l108, l4218669, l4218231, l4218085, l4218785, l3006340, l109], [1, 1, 1, 1, 2, 2, 10, 2, 1, 1, 6, 4, 2, 2, 2, 2, 4, 1, 1]);
 const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809, s8782, s8791, s8783, s8785, s8786];
 
 // checks each set for duplicate pieces
@@ -1528,7 +1543,7 @@ copy details from https://www.bricklink.com/v2/main.page
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 104;
+let customPartNumber = 109;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
