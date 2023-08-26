@@ -1497,6 +1497,24 @@ const l4288099 = new Lego([4288099, 4626750, 6078667], "Bionicle Zamor Sphere La
 const l4287089 = new Lego([4287089, 4548160], "Bionicle Hips / Lower Torso with 2 Ball Joint and 7 Tooth Half Gear", "Red");
 const l4284905 = new Lego([4284905], "Technic, Axle and Pin Connector 2 x 5 with 2 Ball Joint Sockets, Open Sides", "Red");
 const l4252659 = new Lego([4252659], "Technic, Axle and Pin Connector 2 x 7 with 2 Ball Joint Sockets, Rounded Ends", "Red");
+const l4162068 = new Lego([4162068], "Bionicle Bohrok Rib Cage, Liftarm 2 x 4 x 7 Angled", "Black");
+const l4163139 = new Lego([4163139], "Bionicle Bohrok Shoulder, Liftarm 1 x 3 x 7", "Black");
+const l112 = new Lego([112], "Bionicle Bohrok Windscreen 4 x 5 x 7 with Marbled Trans-Clear Pattern", "Black");
+const l4162076 = new Lego([4162076], "Bionicle Foot with Ball Joint Socket 2 x 3 x 5", "Black");
+const l4162063 = new Lego([4162063], "Bionicle Weapon 5 x 5 Shield with Dual Round Prongs", "Black");
+const l451926 = new Lego([451926], "Technic, Axle 3L", "Black");
+const l4114740 = new Lego([4114740], "Technic, Axle 5L", "Black");
+const l4119328 = new Lego([4119328], "Technic, Axle Connector 2 x 3 with Ball Joint Socket - Open Sides, Angled Forks with Closed Axle Holes", "Black");
+const l113 = new Lego([113], "Technic, Pin with Friction Ridges and Tow Ball (Undetermined Type)", "Black");
+const l4162083 = new Lego([4162083], "Bionicle Ball Joint 4 x 4 x 2 90 degrees with 2 Ball Joint and Axle Hole", "Dark Gray");
+const l4125332 = new Lego([4125332], "Rubber Belt Medium (Round Cross Section) - Approx. 3 x 3", "Green");
+const l114 = new Lego([114], "Bionicle Krana Holder 3 x 4 (Scoop / Bucket with Axle Hole)", "Light Gray");
+const l4162071 = new Lego([4162071], "Technic, Arm 1 x 7 with Gear 9 Tooth Double Bevel Ends", "Light Gray");
+const l4162072 = new Lego([4162072], "Technic, Arm 2 x 5 with 1/4 Gear 8 Tooth Double Bevel", "Light Gray");
+const l4154753 = new Lego([4154753], "Technic, Pin 3L without Friction Ridges", "Light Gray");
+const l115 = new Lego([115], "Bionicle Krana Mask Bo", "Lime");
+const l4163577 = new Lego([4163577], "Bionicle 1 x 3 Tooth with Axle Hole", "Trans-Neon Green");
+const l4163132 = new Lego([4163132], "Bionicle 2 x 3 Axle Connector with Tooth", "White");
 
 // initialize sets
 const s10123 = new LegoSet("Cloud City", 10123, 2003, [l0, l4164067, l611226, l300426, l4188306, l362226, l301026, l4218987, l300326, l300226, l300126, l245626, l300726, l330823, l265326, l434926, l613426, l73587, l371026, l346026, l244526, l302126, l302026, l303026, l303226, l395826, l304826, l4143982, l244926, l4100333, l370826, l4144025, l662826, l306926, l243126, l663626, l255526, l368026, l4206482, l4143005, l4218968, l4124050, l4164069, l300527, l611127, l300427, l245427, l301027, l300927, l300327, l300727, l4118869, l4118868, l365927, l330727, l245827, l4144532, l3000027, l4108048, l4106728, l302327, l371027, l302227, l302027, l4113911, l4121924, l4107763, l4114127, l4133505, l4124098, l428627, l4121970, l4109984, l1, l4112039, l394027, l4114529, l4109979, l4108155, l416227, l306827, l395702, l4185274, l245302, l611102, l300402, l4107533, l362202, l235702, l300102, l4114248, l614302, l4214931, l4159736, l4113203, l458902, l393702, l2, l3, l486502, l4171667, l302302, l302102, l302002, l614102, l403202, l254002, l379402, l4109642, l303902, l446002, l368402, l366502, l4220070, l655302, l4186007, l3200002, l370102, l4141499, l371302, l4141455, l367302, l281902, l4, l243102, l5, l6, l243202, l4116842, l7, l4160344, l4160326, l330705, l306205, l4114053, l4114055, l362305, l4107588, l4140562, l254005, l65625, l654105, l4108151, l416205, l4185177, l8, l306510, l3006840, l4124073, l4101716, l4107106, l614149, l3006447, l4153468, l614147, l4109765, l4124108, l3006841, l614141, l241241, l300401, l300901, l300301, l235701, l300101, l614301, l4203583, l4143254, l302101, l379501, l265401, l9, l428601, l10, l4143976, l366001, l4140502, l243101, l663601, l416201, l415001, l11, l4143673, l4141630, l12, l13, l4140068, l14, l4124172, l9339, l4124171, l4275310, l15, l16, l390125, l17, l18, l390126, l4219380, l19, l20, l21, l4124069, l4275334, l22, l23, l24, l25, l26, l74326, l27, l4275255, l28], [1, 2, 2, 10, 1, 2, 2, 1, 9, 1, 7, 2, 14, 2, 6, 4, 1, 1, 3, 2, 1, 2, 3, 2, 2, 1, 4, 6, 1, 1, 1, 1, 4, 1, 7, 1, 8, 1, 1, 3, 2, 2, 1, 12, 4, 1, 17, 6, 1, 6, 2, 5, 1, 6, 1, 8, 2, 1, 6, 1, 3, 8, 36, 4, 5, 1, 1, 1, 1, 7, 4, 4, 1, 1, 2, 1, 10, 8, 6, 8, 10, 2, 4, 2, 2, 4, 2, 4, 2, 5, 7, 1, 4, 2, 4, 1, 1, 1, 2, 1, 1, 2, 2, 4, 11, 3, 2, 1, 2, 1, 4, 6, 8, 1, 2, 2, 2, 6, 1, 2, 1, 1, 1, 1, 1, 2, 8, 1, 1, 1, 1, 1, 1, 11, 21, 2, 1, 1, 5, 1, 2, 3, 12, 4, 2, 1, 2, 2, 1, 2, 8, 22, 8, 4, 12, 10, 1, 2, 4, 9, 3, 4, 5, 2, 2, 1, 1, 3, 1, 1, 1, 4, 2, 1, 3, 2, 4, 2, 1, 2, 6, 1, 1, 4, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
@@ -1523,7 +1541,8 @@ const s8786 = new LegoSet("Vladek", 8786, 2004, [l100, l4163524, l4216061, l101,
 const s8784 = new LegoSet("Rascus", 8784, 2004, [l105, l4189110, l106, l4221624, l4218201, l4220507, l4217975, l4218221, l107, l4220678, l4218752, l4218697, l108, l4218669, l4218231, l4218085, l4218785, l3006340, l109], [1, 1, 1, 1, 2, 2, 10, 2, 1, 1, 6, 4, 2, 2, 2, 2, 4, 1, 1]);
 const s8792 = new LegoSet("Sir Jayko", 8792, 2005, [l278026, l246026, l4189110, l4218225, l110, l4218237, l4218113, l4257211, l4257212, l111, l4261128, l4218572, l4218566, l4218293, l4218097, l4254436, l4244770, l4256813, l4217986], [2, 2, 2, 2, 1, 2, 2, 1, 1, 1, 1, 4, 2, 2, 2, 2, 2, 1, 10]);
 const s8901 = new LegoSet("Hakann", 8901, 2006, [l3206226, l370526, l3205426, l278026, l4189110, l29, l4210650, l4263624, l4287942, l4284563, l4284584, l4284570, l4279750, l4218960, l4211550, l4284539, l4288098, l4288099, l4287089, l4284905, l4252659, l4119331, l4288205, l4124108, l4290480], [1, 1, 1, 6, 1, 4, 1, 1, 2, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 2, 5, 1, 1, 1]);
-const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809, s8782, s8791, s8783, s8785, s8786, s8784, s8792, s8901];
+const s8561 = new LegoSet("Nuhvok", 8561, 2002, [l4162068, l4163139, l112, l4162076, l4162063, l451926, l4114740, l370626, l4119328, l113, l4162083, l4125332, l114, l4162071, l4162072, l4154753, l115, l4163577, l4163132], [2, 2, 1, 2, 2, 5, 1, 2, 6, 2, 4, 1, 1, 2, 1, 1, 1, 2, 2]);
+const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809, s8782, s8791, s8783, s8785, s8786, s8784, s8792, s8901, s8561];
 
 // checks each set for duplicate pieces
 sets.forEach(set => {
@@ -1570,7 +1589,7 @@ set year from https://www.lego.com/en-us/service/buildinginstructions
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 111;
+let customPartNumber = 115;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
