@@ -2476,6 +2476,12 @@ const loadMore = () => {
   // stops loading
   if (loaded >= allPieces.length) {
     document.getElementById("loading").innerHTML = "";
+    document.getElementById("loadMore").remove();
+  }
+}
+document.getElementById("loadMore").onclick = () => {
+  if (noInput) {
+    loadMore();
   }
 }
 // source: ChatGPT

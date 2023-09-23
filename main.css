@@ -3,6 +3,12 @@
     --arrow-width: 50px;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
 img {
     width: var(--img-size);
 }
