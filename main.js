@@ -3277,6 +3277,37 @@ const l486401 = new Lego([486401, 4113016], "Panel 1 x 2 x 2 - Solid Studs", "Wh
 const l234001 = new Lego([234001, 6347936], "Tail 4 x 1 x 3", "White");
 const l393301 = new Lego([393301, 4141487], "Wedge, Plate 8 x 4 Wing Left", "White");
 const l393401 = new Lego([393401, 4141488], "Wedge, Plate 8 x 4 Wing Right", "White");
+const l280 = new Lego([280], "Torso Suit Jacket with Yellow Police Star Badge Print, Black Arms, Yellow Hands", "Black");
+const l4260843 = new Lego([4260843], "Minifig Neckwear Life Jacket [Old Style]", "Yellow");
+const l281 = new Lego([281], "Torso Police Vest, White Shirt, ID, Yellow Star Badge Print, White Arms, Yellow Hands", "Black");
+const l282 = new Lego([282], "Torso Leather Jacket, Yellow Star Police Badge Print, Black Arms and Hands", "Black");
+const l283 = new Lego([283], "Minifig Head, Standard with Red Lips, Eyelashes Print [Blocked Open Stud]", "Yellow");
+const l4117046 = new Lego([4117046], "Boat, Hull Unitary 32 x 10 x 1 2/3, Base", "Black");
+const l284 = new Lego([284], "Slope 33 3 x 4 with White 'POLICE' Red Line Pattern", "Black");
+const l4113870 = new Lego([4113870, 6065894], "Slope 45 10 x 2 x 2 Double", "Black");
+const l285 = new Lego([285], "String with End Studs 21L Overall", "Black");
+const l300923 = new Lego([300923], "Brick 1 x 6", "Blue");
+const l4111858 = new Lego([4111858], "Minifigure, Utensil Loudhailer / Megaphone / SW Blaster", "Blue");
+const l4114758 = new Lego([4114758], "Dish 2 x 2 Inverted (Radar)", "Chrome Silver");
+const l602027 = new Lego([602027, 4216824], "Bar 7 x 3 with 2 Clips (Ladder)", "Dark Gray");
+const l3003327 = new Lego([3003327], "Plate, Modified 2 x 2 with Bar Frame Octagonal", "Dark Gray");
+const l286 = new Lego([286], "Plate, Modified 1 x 2 with Bar Arm Up (Undetermined Type)", "Light Gray");
+const l256921 = new Lego([256921], "Antenna Whip 8H", "Red");
+const l614021 = new Lego([614021, 4280158, 4289557, 4561802], "Bar 1 x 6 with Hollow Studs", "Red");
+const l303721 = new Lego([303721], "Slope 45 2 x 4", "Red");
+const l302443 = new Lego([302443, 3000843, 4241126, 4247000, 4266417, 6252044], "Plate 1 x 1", "Trans-Dark Blue");
+const l4109710 = new Lego([4109710], "Slope 45 2 x 1", "Trans-Dark Blue");
+const l4116790 = new Lego([4116790], "Slope 33 3 x 6 with Inner Walls", "Trans-Green");
+const l4116788 = new Lego([4116788], "Windscreen 8 x 6 x 3 Wedge", "Trans-Green");
+const l4116791 = new Lego([4116791], "Boat, Hull Unitary 32 x 10 x 1 2/3, Top", "White");
+const l4253859 = new Lego([4253859, 6108866], "Boat, Mast 2 x 2 x 3 Inclined with Stud on Top and Two Sides", "White");
+const l4117061 = new Lego([4117061], "Brick, Modified 1 x 2 with Split U Clip Thick (Vertical Grip)", "White");
+const l254001 = new Lego([254001, 254051, 4140583], "Plate, Modified 1 x 2 with Bar Handle on Side - Free Ends", "White");
+const l82024 = new Lego([82024, 4261941], "Slope 45 2 x 2 with Black and Green Radar Screen, Digital '38', Buttons, and Dial Pattern", "White");
+const l447601 = new Lego([447601, 4142125], "Support 2 x 4 x 5 Stanchion Inclined, 5mm Wide Posts", "White");
+const l4106579 = new Lego([4106579, 4218501], "Minifigure, Utensil Camera Handheld Style with Compact Bar Handle", "Yellow");
+const l287 = new Lego([287], "Slope 45 2 x 4 with Red Digital '268' on Black Background, Map with Lines, Buttons, and Bar Gauges Pattern", "Yellow");
+const l459924 = new Lego([459924, 4256320], "Tap 1 x 1 with Hole in Nozzle End", "Yellow");
 
 // initialize sets
 const s10123 = new LegoSet("Cloud City", 10123, 2003, [l0, l4164067, l611226, l300426, l4188306, l362226, l301026, l4218987, l300326, l300226, l300126, l245626, l300726, l330823, l265326, l434926, l613426, l73587, l371026, l346026, l244526, l302126, l302026, l303026, l303226, l395826, l304826, l4143982, l244926, l4100333, l370826, l4144025, l662826, l306926, l243126, l663626, l255526, l368026, l4206482, l4143005, l4218968, l4124050, l4164069, l300527, l611127, l300427, l245427, l301027, l300927, l300327, l300727, l4118869, l4118868, l365927, l330727, l245827, l4144532, l3000027, l4108048, l4106728, l302327, l371027, l302227, l302027, l4113911, l4121924, l4107763, l4114127, l4133505, l4124098, l428627, l4121970, l4109984, l1, l4112039, l394027, l4114529, l4109979, l4108155, l416227, l306827, l395702, l4185274, l245302, l611102, l300402, l4107533, l362202, l235702, l300102, l4114248, l614302, l4214931, l4159736, l4113203, l458902, l393702, l2, l3, l486502, l4171667, l302302, l302102, l302002, l614102, l403202, l254002, l379402, l4109642, l303902, l446002, l368402, l366502, l4220070, l655302, l4186007, l3200002, l370102, l4141499, l371302, l4141455, l367302, l281902, l4, l243102, l5, l6, l243202, l4116842, l7, l4160344, l4160326, l330705, l306205, l4114053, l4114055, l362305, l4107588, l4140562, l254005, l65625, l654105, l4108151, l416205, l4185177, l8, l306510, l3006840, l4124073, l4101716, l4107106, l614149, l3006447, l4153468, l614147, l4109765, l4124108, l3006841, l614141, l241241, l300401, l300901, l300301, l235701, l300101, l614301, l4203583, l4143254, l302101, l379501, l265401, l9, l428601, l10, l4143976, l366001, l4140502, l243101, l663601, l416201, l415001, l11, l4143673, l4141630, l12, l13, l4140068, l14, l4124172, l9339, l4124171, l4275310, l15, l16, l390125, l17, l18, l390126, l4219380, l19, l20, l21, l4124069, l4275334, l22, l23, l24, l25, l26, l74326, l27, l4275255, l28], [1, 2, 2, 10, 1, 2, 2, 1, 9, 1, 7, 2, 14, 2, 6, 4, 1, 1, 3, 2, 1, 2, 3, 2, 2, 1, 4, 6, 1, 1, 1, 1, 4, 1, 7, 1, 8, 1, 1, 3, 2, 2, 1, 12, 4, 1, 17, 6, 1, 6, 2, 5, 1, 6, 1, 8, 2, 1, 6, 1, 3, 8, 36, 4, 5, 1, 1, 1, 1, 7, 4, 4, 1, 1, 2, 1, 10, 8, 6, 8, 10, 2, 4, 2, 2, 4, 2, 4, 2, 5, 7, 1, 4, 2, 4, 1, 1, 1, 2, 1, 1, 2, 2, 4, 11, 3, 2, 1, 2, 1, 4, 6, 8, 1, 2, 2, 2, 6, 1, 2, 1, 1, 1, 1, 1, 2, 8, 1, 1, 1, 1, 1, 1, 11, 21, 2, 1, 1, 5, 1, 2, 3, 12, 4, 2, 1, 2, 2, 1, 2, 8, 22, 8, 4, 12, 10, 1, 2, 4, 9, 3, 4, 5, 2, 2, 1, 1, 3, 1, 1, 1, 4, 2, 1, 3, 2, 4, 2, 1, 2, 6, 1, 1, 4, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
@@ -3345,7 +3376,8 @@ const s4708 = new LegoSet("Hogwarts Express", 4708, 2001, [l4157659, l253, l4107
 const s7316 = new LegoSet("Excavation Searcher", 7316, 2001, [l4142991, l264, l4144314, l4125231, l265, l4144315, l4144311, l188, l4143045, l4143662, l473526, l300526, l300126, l394126, l394226, l4143351, l393826, l4143372, l434926, l302326, l302126, l383226, l303126, l303226, l403226, l451926, l3200026, l655826, l4119589, l415026, l608725, l300325, l4107810, l371025, l4143356, l254025, l4143018, l4121971, l4141409, l243125, l241225, l245025, l300327, l235727, l287727, l4142959, l393727, l4125291, l4124434, l4143378, l346027, l379527, l4112526, l4110027, l4143358, l190, l366027, l447627, l4113884, l654127, l176, l241927, l4129577, l4112297, l300402, l301002, l611202, l300202, l4143056, l474002, l4125379, l194, l371002, l302202, l428202, l408102, l408502, l658302, l304002, l303902, l4109695, l374902, l4106377, l370002, l266, l243102, l306802, l243202, l267, l268, l4116784, l4143055, l4143359, l4143236, l4118829, l6054334, l4143347, l300121, l4143370, l4125229, l4164063, l407005, l4143366, l4129997, l4144580, l366605, l447705, l242005, l302005, l4129507, l329805, l621505, l4143349, l4120152, l4101763, l4143354, l4143355, l4185177, l269, l4143371, l4143049, l3006843, l4107106, l4143273, l4143272, l3006841, l618841, l614141, l270], [6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 2, 1, 6, 1, 35, 6, 1, 2, 1, 4, 4, 1, 2, 1, 4, 1, 1, 12, 3, 1, 13, 4, 6, 2, 1, 10, 4, 2, 2, 4, 3, 1, 12, 14, 16, 2, 1, 2, 3, 1, 1, 6, 4, 3, 1, 3, 2, 1, 2, 10, 1, 2, 5, 1, 7, 9, 1, 1, 14, 1, 2, 1, 2, 4, 12, 4, 4, 4, 2, 2, 3, 1, 2, 3, 1, 1, 4, 1, 2, 3, 4, 2, 1, 2, 1, 4, 4, 5, 6, 11, 1, 2, 8, 4, 1, 11, 2, 1, 6, 6, 1, 1, 1, 5, 1, 1, 1, 4, 2, 2, 1, 1, 15, 2]);
 const s4668 = new LegoSet("Outrigger Construction Crane", 4668, 2004, [l271, l272, l4144352, l235126, l4129975, l273, l237626, l3039126, l4180576, l4221663, l4210636, l4211089, l4298521, l4213607, l4210738, l4210727, l4211385, l4211701, l4195228, l4167504, l4154081, l274, l611124, l4153641, l275, l276, l4140704, l4144568, l4160392, l3232424, l243124, l4153120, l251224, l4140734, l4193789], [1, 1, 1, 1, 2, 1, 1, 6, 2, 1, 1, 1, 1, 2, 1, 1, 3, 1, 1, 1, 2, 1, 2, 1, 1, 3, 2, 1, 2, 1, 1, 4, 1, 10, 1]);
 const s1959 = new LegoSet("Ultra-Light", 1959, 1993, [l277, l9339, l244626, l244742, l278, l241502, l279, l462402, l313926, l242126, l300402, l306202, l292602, l448802, l74335, l366621, l302221, l379521, l486401, l379401, l234001, l393301, l393401], [1, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 2, 1, 1, 1]);
-const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809, s8782, s8791, s8783, s8785, s8786, s8784, s8792, s8901, s8561, s8692, s8572, s8570, s8971, s7018, s7047, s7647, s2259, s8362, s4856, s7016, s4881, s7776, s7703, s7703, s7771, s7255, s8779, s7021, s8015, s8015, s8061, s8756, s4097, s7572, s4855, s7134, s4970, s7104, s8451, s7311, s1479, s7151, s7317, s1371, s6829, s6829, s4990, s6919, s6579, s4708, s7316, s4668, s1959];
+const s6433 = new LegoSet("Police Harbour Patrol", 6433, 1999, [l390126, l9339, l157, l4260843, l448526, l278, l283, l4117046, l300326, l4247343, l396226, l303326, l284, l4116792, l4113870, l285, l300923, l4111858, l601923, l4114758, l4116794, l602027, l4113834, l3003327, l300102, l286, l4116785, l256921, l614021, l4113204, l302221, l303721, l9552, l302443, l4109710, l3005748, l4116790, l4116788, l614149, l614141, l73737, l4116791, l4253859, l300901, l4117061, l254001, l428601, l82024, l447601, l234001, l306224, l4106579, l287, l459924], [1, 3, 1, 3, 2, 1, 1, 1, 5, 1, 1, 1, 1, 1, 2, 2, 4, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 2, 4, 1, 1, 2, 1, 2, 2, 1, 1, 1, 2, 1, 1, 1, 1, 3, 2, 1, 2, 1, 1, 2, 1, 1, 1, 2]);
+const sets = [s10123, s8624, s7020, s2516, s2505, s8962, s7660, s7019, s8781, s5982, s8963, s8111, s8902, s8725, s4723, s8809, s8782, s8791, s8783, s8785, s8786, s8784, s8792, s8901, s8561, s8692, s8572, s8570, s8971, s7018, s7047, s7647, s2259, s8362, s4856, s7016, s4881, s7776, s7703, s7703, s7771, s7255, s8779, s7021, s8015, s8015, s8061, s8756, s4097, s7572, s4855, s7134, s4970, s7104, s8451, s7311, s1479, s7151, s7317, s1371, s6829, s6829, s4990, s6919, s6579, s4708, s7316, s4668, s1959, s6433];
 
 // checks each set for duplicate pieces
 sets.forEach(set => {
@@ -3392,7 +3424,7 @@ set year from https://www.lego.com/en-us/service/buildinginstructions
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 279;
+let customPartNumber = 287;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
