@@ -3983,6 +3983,7 @@ sets.forEach(set => {
     }
   });
 });
+allPieces = allPieces.sort((a, b) => a.numbers[0] - b.numbers[0]);
 
 // adds pictures to Lego objects
 allPieces.forEach(piece => {
