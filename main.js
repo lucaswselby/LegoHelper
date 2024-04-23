@@ -4200,6 +4200,7 @@ const listCompletedSets = () => {
 let loaded = 0;
 const increment = 100;
 const loadMore = () => {
+  // adds pieces to webpage
   for (let i = loaded; i < loaded + increment && i < allPieces.length; i++) {
     document.getElementsByTagName("TABLE")[0].innerHTML += `<tr id="l${allPieces[i].numbers[0]}row">
       <td>${allPieces[i].picture}</td>
@@ -4223,33 +4224,39 @@ const loadMore = () => {
     document.getElementById("pieces").innerHTML += `<option value="${allPieces[i].name}">`;
   }
 
-  for (let i = 0; i < loaded + increment && i < allPieces.length; i++) {
-    // updates piece counts with typed input
-    document.getElementById(`l${allPieces[i].numbers[0]}`).onchange = () => {
-      listPieceCounts();
-      listCompletedSets();
-    };
-  
-    // arrow buttons increment the value
-    document.getElementById(`l${allPieces[i].numbers[0]}up`).onclick = () => {
-      document.getElementById(`l${allPieces[i].numbers[0]}`).value++;
-      listPieceCounts();
-      listCompletedSets();
-    };
-    document.getElementById(`l${allPieces[i].numbers[0]}down`).onclick = () => {
-      if (document.getElementById(`l${allPieces[i].numbers[0]}`).value > 0) {
-        document.getElementById(`l${allPieces[i].numbers[0]}`).value--;
-        listPieceCounts();
-        listCompletedSets();
-      }
-    };
-  }
+  // updates loadedCount
   loaded += increment;
+  document.getElementById("loadedCount").innerHTML = `${loaded}/${allPieces.length}`;
 
   // stops loading
   if (loaded >= allPieces.length) {
-    document.getElementById("loading").innerHTML = "";
+    // removes loading button and ellipses
+    document.getElementById("loading").remove();
     document.getElementById("loadMore").remove();
+    document.getElementById("loadedCount").innerHTML = `${allPieces.length}/${allPieces.length}`;
+
+    // enables counters
+    for (let i = 0; i < loaded + increment && i < allPieces.length; i++) {
+      // updates piece counts with typed input
+      document.getElementById(`l${allPieces[i].numbers[0]}`).onchange = () => {
+        listPieceCounts();
+        listCompletedSets();
+      };
+    
+      // arrow buttons increment the value
+      document.getElementById(`l${allPieces[i].numbers[0]}up`).onclick = () => {
+        document.getElementById(`l${allPieces[i].numbers[0]}`).value++;
+        listPieceCounts();
+        listCompletedSets();
+      };
+      document.getElementById(`l${allPieces[i].numbers[0]}down`).onclick = () => {
+        if (document.getElementById(`l${allPieces[i].numbers[0]}`).value > 0) {
+          document.getElementById(`l${allPieces[i].numbers[0]}`).value--;
+          listPieceCounts();
+          listCompletedSets();
+        }
+      };
+    }
   }
 }
 document.getElementById("loadMore").onclick = () => {
