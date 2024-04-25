@@ -278,8 +278,9 @@ if (noInput) {
         colors.push(piece.color);
     }
   });
+  colors.sort((a, b) => {return a - b;})
   colors.forEach(color => {
-    document.getElementById("colors").innerHTML += `<option value="${color}">`;
+    document.getElementById("colorFilter").innerHTML += `<option value="${color}">${color}</option>`;
   });
   document.getElementById("colorFilter").onchange = () => {
     // hides all rows
@@ -311,7 +312,7 @@ if (noInput) {
   // show only searched pieces
   document.getElementById("search").onchange = () => {
     allPieces.forEach(piece => {
-      if (piece.name.includes(document.getElementById("search").value) && (!document.getElementById("colorFilter").value || document.getElementById("colorFilter").value === piece.color) && document.getElementById(`l${piece.numbers[0]}row`)) {
+      if (piece.name.includes(document.getElementById("search").value) && (document.getElementById("colorFilter").value === "All" || document.getElementById("colorFilter").value === piece.color) && document.getElementById(`l${piece.numbers[0]}row`)) {
         document.getElementById(`l${piece.numbers[0]}row`).style.display = "table-row";
 
         // highlights searched value in the description
