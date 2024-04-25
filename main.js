@@ -3,8 +3,8 @@ sets.forEach(set => {
     let pieces = [];
     set.pieces.forEach(piece => {
         if (pieces.includes(piece)) {
-            document.getElementsByTagName("BODY")[0].style.backgroundColor = "rgb(255, 0, 0)";
-            document.getElementsByTagName("FOOTER")[0].innerHTML = `l${piece.numbers[0]} is a duplicate in s${set.number}`;
+            document.getElementsByTagName("BODY")[0].style.backgroundColor = "red";
+            document.getElementsByTagName("HEADER")[0].innerHTML = `l${piece.numbers[0]} is a duplicate in s${set.number}`;
         }
         else {
             pieces.push(piece);
@@ -30,11 +30,27 @@ allPieces.forEach(piece => {
 
 // catches if set.pieces.length != set.numberOfPieces.length
 sets.forEach(set => {
-  if (set.pieces.length != set.numberOfPieces.length) {
-    document.getElementsByTagName("FOOTER")[0].innerHTML += `s${set.number}.pieces.length != s${set.number}.numberOfPieces.length<br/>`;
+  if (set.pieces.length !== set.numberOfPieces.length) {
+    document.getElementsByTagName("HEADER")[0].innerHTML += `</br>s${set.number}.pieces.length != s${set.number}.numberOfPieces.length<br/>`;
     document.getElementsByTagName("BODY")[0].style.backgroundColor = "red";
   }
 });
+
+// initializes allPieceCounts array
+let allPieceCounts = [];
+allPieces.forEach(piece => {
+  let sum = 0;
+  sets.forEach(set => {
+    if (set.pieces.includes(piece)) {
+      sum += set.numberOfPieces[set.pieces.indexOf(piece)];
+    }
+  });
+  allPieceCounts.push(sum);
+});
+if (allPieces.length !== allPieceCounts.length) {
+  document.getElementsByTagName("BODY").style.backgroundColor = "red";
+  document.getElementsByTagName("HEADER").innerHTML += "</br>allPieces.length !== allPieceCounts.length";
+}
 
 // automates new sets
 /*
@@ -131,15 +147,14 @@ if (input) {
   // turns the picture number green when you click on it
   pictureCodes.forEach(code => {
     document.getElementById(code.number).onclick = () => {
-      document.getElementById(code.number).style.backgroundColor = "rgb(0, 255, 0)";
+      document.getElementById(code.number).style.backgroundColor = "green";
     };
   });
 }
 
 // lists the current count of all pieces
-const pieceCounts = () => allPieces.map(piece => document.getElementById(`l${piece.numbers[0]}`) ? document.getElementById(`l${piece.numbers[0]}`).value : sets.reduce((prev, next) => prev + next.pieces.includes(piece) ? next.numberOfPieces[next.pieces.indexOf(piece)] : 0, 0));
 const listPieceCounts = () => {
-  document.getElementById("pieceCounts").value = pieceCounts().join(", ");
+  document.getElementById("pieceCounts").value = allPieceCounts.join(", ");
 };
 
 // removes incomplete sets
@@ -157,7 +172,7 @@ const removeIncompleteSets = (organizedsets, currentPieceCounts) => {
 // lists the sets you are able to complete
 const listCompletedSets = () => {
   // organizes sets by age and removes incomplete sets
-  let currentPieceCounts = [...pieceCounts()];
+  let currentPieceCounts = [...allPieceCounts];
   let organizedCompleteSets = removeIncompleteSets(sets.sort((a, b) => a.year - b.year), currentPieceCounts);
 
   // while there are sets remaining...
@@ -214,13 +229,13 @@ const loadMore = () => {
   
     // arrow buttons increment the value
     document.getElementById(`l${allPieces[i].numbers[0]}up`).onclick = () => {
-      document.getElementById(`l${allPieces[i].numbers[0]}`).value++;
+      allPieceCounts[i] = Number(++document.getElementById(`l${allPieces[i].numbers[0]}`).value);
       listPieceCounts();
       listCompletedSets();
     };
     document.getElementById(`l${allPieces[i].numbers[0]}down`).onclick = () => {
       if (document.getElementById(`l${allPieces[i].numbers[0]}`).value > 0) {
-        document.getElementById(`l${allPieces[i].numbers[0]}`).value--;
+        allPieceCounts[i] = Number(--document.getElementById(`l${allPieces[i].numbers[0]}`).value);
         listPieceCounts();
         listCompletedSets();
       }
@@ -313,20 +328,15 @@ if (noInput) {
 
   // submit button updates piece counters
   document.getElementById("pieceCountsSubmit").onclick = () => {
-    if (loaded + increment >= allPieces.length) {
-      const counts = document.getElementById("pieceCounts").value.split(", ");
-      if (counts.length === allPieces.length) {
-        for (let i = 0; i < counts.length; i++) {
-          document.getElementById(`l${allPieces[i].numbers[0]}`).value = counts[i];
-        }
-        document.getElementById("errorText").innerHTML = "Piece Counts Updated";
+    if (document.getElementById("pieceCounts").value.split(", ").length === allPieces.length) {
+      allPieceCounts = document.getElementById("pieceCounts").value.split(", ").map(value => {return Number(value)});
+      for (let i = 0; i < allPieceCounts.length && document.getElementById(`l${allPieces[i].numbers[0]}`); i++) {
+        document.getElementById(`l${allPieces[i].numbers[0]}`).value = allPieceCounts[i];
       }
-      else {
-        document.getElementById("errorText").innerHTML = "Input does not match number of pieces.";
-      }
+      document.getElementById("errorText").innerHTML = "Piece Counts Updated";
     }
     else {
-      document.getElementById("errorText").innerHTML = `Load all pieces before clicking ${document.getElementById("pieceCountsSubmit").value}.`;
+      document.getElementById("errorText").innerHTML = "Input does not match number of pieces.";
     }
   }
 }
