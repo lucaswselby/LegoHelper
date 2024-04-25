@@ -3965,3 +3965,6 @@ const l245221 = new Lego([245221, 4239012], "Hinge Plate 1 x 2 with 3 Fingers on
 const l500 = new Lego([500], "Slope 33 3 x 2 with White Number 3 and Stripes Pattern", "Red");
 const l307021 = new Lego([307021], "Tile 1 x 1", "Red");
 const l501 = new Lego([501], "Tile, Modified 1 x 2 Grille without Bottom Groove", "Yellow");
+const l256625 = new Lego([256625, 4177831], "Bar 1.2L with Top Stud and 4 Bar Arms Up (Palm Tree Top)", "Brown");
+const l4113023 = new Lego([4113023], "Panel 1 x 2 x 3 - Solid Studs", "Light Gray");
+const l395824 = new Lego([395824, 4550701, 6376458], "Plate 6 x 6", "Yellow");
