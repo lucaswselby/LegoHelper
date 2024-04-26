@@ -59,7 +59,7 @@ copy details from https://www.bricklink.com/v2/main.page
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 501;
+let customPartNumber = 503;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
@@ -147,7 +147,7 @@ if (input) {
   // turns the picture number green when you click on it
   pictureCodes.forEach(code => {
     document.getElementById(code.number).onclick = () => {
-      document.getElementById(code.number).style.backgroundColor = "green";
+      document.getElementById(code.number).style.backgroundColor = "lightgreen";
     };
   });
 }
