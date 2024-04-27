@@ -1,15 +1,15 @@
 // checks each set for duplicate pieces
 sets.forEach(set => {
-    let pieces = [];
-    set.pieces.forEach(piece => {
-        if (pieces.includes(piece)) {
-            document.getElementsByTagName("BODY")[0].style.backgroundColor = "red";
-            document.getElementsByTagName("HEADER")[0].innerHTML = `l${piece.numbers[0]} is a duplicate in s${set.number}`;
-        }
-        else {
-            pieces.push(piece);
-        }
-    });
+  let pieces = [];
+  set.pieces.forEach(piece => {
+      if (pieces.includes(piece)) {
+          document.getElementsByTagName("BODY")[0].style.backgroundColor = "red";
+          document.getElementsByTagName("HEADER")[0].innerHTML = `l${piece.numbers[0]} is a duplicate in s${set.number}`;
+      }
+      else {
+          pieces.push(piece);
+      }
+  });
 });
 
 // initializes allPieces array
@@ -59,7 +59,7 @@ copy details from https://www.bricklink.com/v2/main.page
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 504;
+let customPartNumber = 507;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
@@ -147,7 +147,7 @@ if (input) {
   // turns the picture number green when you click on it
   pictureCodes.forEach(code => {
     document.getElementById(code.number).onclick = () => {
-      document.getElementById(code.number).style.backgroundColor = "lightgreen";
+      document.getElementById(code.number).style.backgroundColor = "lime";
     };
   });
 }
