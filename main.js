@@ -192,35 +192,35 @@ const listCompletedSets = () => {
 };
 
 // loads more Lego pieces
-let loaded = 0;
-const increment = 100;
 const loadMore = () => {
   // adds pieces to webpage
-  for (let i = loaded; i < loaded + increment && i < allPieces.length; i++) {
-    document.getElementsByTagName("TABLE")[0].innerHTML += `<tr id="l${allPieces[i].numbers[0]}row">
-      <td>${allPieces[i].picture}</td>
-      <td class="description">${allPieces[i].name}</td>
-      <td class="custom-number-input">
-        <input type="number" id="l${allPieces[i].numbers[0]}" min="0" value="${sets.reduce((prev, next) => {
-          let pieceCount = 0;
-          for (let j = 0; j < next.pieces.length; j++) {
-            if (next.pieces[j] === allPieces[i]) {
-              pieceCount += next.numberOfPieces[j];
-            }
+  for (let i = 0; i < allPieces.length; i++) {
+    let newRow = document.createElement("tr");
+    newRow.setAttribute("id", `l${allPieces[i].numbers[0]}row`);
+    newRow.style.display = "none";
+    newRow.innerHTML = `<td>${allPieces[i].picture}</td>
+    <td class="description">${allPieces[i].name}</td>
+    <td class="custom-number-input">
+      <input type="number" id="l${allPieces[i].numbers[0]}" min="0" value="${sets.reduce((prev, next) => {
+        let pieceCount = 0;
+        for (let j = 0; j < next.pieces.length; j++) {
+          if (next.pieces[j] === allPieces[i]) {
+            pieceCount += next.numberOfPieces[j];
           }
-          return prev + pieceCount;
-        }, 0)}">
-        <button class="arrow up" id="l${allPieces[i].numbers[0]}up">▲</button>
-        <button class="arrow down" id="l${allPieces[i].numbers[0]}down">▼</button>
-      </td>
-    </tr>`;
+        }
+        return prev + pieceCount;
+      }, 0)}">
+      <button class="arrow up" id="l${allPieces[i].numbers[0]}up">▲</button>
+      <button class="arrow down" id="l${allPieces[i].numbers[0]}down">▼</button>
+    </td>`;
+    document.getElementsByTagName("TABLE")[0].appendChild(newRow);
 
     // adds options to search list
     document.getElementById("pieces").innerHTML += `<option value="${allPieces[i].name}">`;
   }
 
   // enables counters
-  for (let i = 0; i < loaded + increment && i < allPieces.length; i++) {
+  for (let i = 0; i < allPieces.length; i++) {
     // updates piece counts with typed input
     document.getElementById(`l${allPieces[i].numbers[0]}`).onchange = () => {
       listPieceCounts();
@@ -241,31 +241,7 @@ const loadMore = () => {
       }
     };
   }
-
-  // updates loadedCount
-  loaded += increment;
-  document.getElementById("loadedCount").innerHTML = `${loaded}/${allPieces.length}`;
-
-  // stops loading
-  if (loaded >= allPieces.length) {
-    // removes loading button and ellipses
-    document.getElementById("loading").remove();
-    document.getElementById("loadMore").remove();
-    document.getElementById("loadedCount").innerHTML = `${allPieces.length}/${allPieces.length}`;
-  }
 }
-document.getElementById("loadMore").onclick = () => {
-  if (noInput) {
-    loadMore();
-  }
-}
-// source: ChatGPT
-window.onscroll = () => {
-  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && noInput) {
-      loadMore();
-  }
-};
-
 
 // display pieces with counters
 if (noInput) {
@@ -278,7 +254,7 @@ if (noInput) {
         colors.push(piece.color);
     }
   });
-  colors.sort((a, b) => {return a - b;})
+  colors.sort((a, b) => {return a < b ? -1 : 1;});
   colors.forEach(color => {
     document.getElementById("colorFilter").innerHTML += `<option value="${color}">${color}</option>`;
   });
