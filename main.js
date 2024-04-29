@@ -191,13 +191,16 @@ const listCompletedSets = () => {
   }
 };
 
-// loads more Lego pieces
-const loadMore = () => {
+// display pieces with counters
+if (noInput) {
+
   // adds pieces to webpage
   for (let i = 0; i < allPieces.length; i++) {
     let newRow = document.createElement("tr");
     newRow.setAttribute("id", `l${allPieces[i].numbers[0]}row`);
-    newRow.style.display = "none";
+    if (sets.length > 1) {
+      newRow.style.display = "none";
+    }
     newRow.innerHTML = `<td>${allPieces[i].picture}</td>
     <td class="description">${allPieces[i].name}</td>
     <td class="custom-number-input">
@@ -241,11 +244,6 @@ const loadMore = () => {
       }
     };
   }
-}
-
-// display pieces with counters
-if (noInput) {
-  loadMore();
 
   // add color filter
   let colors = [];
