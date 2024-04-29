@@ -59,7 +59,7 @@ copy details from https://www.bricklink.com/v2/main.page
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 516;
+let customPartNumber = 527;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
