@@ -57,7 +57,75 @@ if (allPieces.length !== allPieceCounts.length) {
 use pictures from https://rebrickable.com/
 copy details from https://www.bricklink.com/v2/main.page
 */
-let input = ``;
+let input = `Torso Mechanical, Battle Droid
+*	1	30375	Blue Torso Mechanical, Battle Droid
+Catalog: Parts: Minifigure, Body Part
+4144309 or 4508613	PG	
+  +	Arm Mechanical, Battle Droid
+*	2	30377	Dark Turquoise Arm Mechanical, Battle Droid
+Catalog: Parts: Minifigure, Body Part
+4142991	PG	
+  +	Minifigure, Head, Modified Martian with Clip, Eyes Plain Pattern
+*	1	x117px1	Dark Turquoise Minifigure, Head, Modified Martian with Clip, Eyes Plain Pattern
+Catalog: Parts: Minifigure, Head, Modified
+Part Color Code Missing	PG	
+  +	Legs Martian Angular
+*	1	30530	Orange Legs Martian Angular
+Catalog: Parts: Minifigure, Legs, Modified
+4143045
+Hinge Brick 1 x 2 Top Plate
+*	1	3938	Black Hinge Brick 1 x 2 Top Plate
+Catalog: Parts: Hinge
+393826	PG	
+  +	Hinge Plate 1 x 2 Locking with 1 Finger on Top
+*	2	30383	Black Hinge Plate 1 x 2 Locking with 1 Finger on Top
+Catalog: Parts: Hinge
+6338799 or 3038326 or 4142992 or 4144575	PG	
+  +	Plate, Round 2 x 2 with Rounded Bottom (Boat Stud)
+*	1	2654	Black Plate, Round 2 x 2 with Rounded Bottom (Boat Stud)
+Catalog: Parts: Plate, Round
+4617551 or 265426 or 4278359	PG	
+  +	Brick, Modified 1 x 2 with Grille / Fluted Profile
+*	1	2877	Dark Gray Brick, Modified 1 x 2 with Grille / Fluted Profile
+Catalog: Parts: Brick, Modified
+287727 or 4124092	PG	
+  +	Plate 2 x 6
+*	1	3795	Dark Gray Plate 2 x 6
+Catalog: Parts: Plate
+379527	PG	
+  +	Plate, Modified 1 x 2 with Bar Handle on Side - Free Ends
+*	1	2540	Dark Gray Plate, Modified 1 x 2 with Bar Handle on Side - Free Ends
+Catalog: Parts: Plate, Modified
+254027 or 4109721 or 4140589	PG	
+  +	Tile 1 x 2 with Life on Mars (LoM) Elliptical Display Pattern
+*	1	3069px12	Dark Gray Tile 1 x 2 with Life on Mars (LoM) Elliptical Display Pattern
+Catalog: Parts: Tile, Decorated
+Part Color Code Missing	PG	
+  +	Plate 2 x 6
+*	1	3795	Green Plate 2 x 6
+Catalog: Parts: Plate
+379528	PG	
+  +	Dish 4 x 4 Inverted (Radar) with Solid Stud with Life on Mars (LoM) Hoses and Machinery Pattern
+*	1	3960px3	Light Gray Dish 4 x 4 Inverted (Radar) with Solid Stud with Life on Mars (LoM) Hoses and Machinery Pattern
+Catalog: Parts: Dish, Decorated
+Part Color Code Missing	PG	
+  +	Hinge Brick 1 x 2 Base
+*	1	3937	Light Gray Hinge Brick 1 x 2 Base
+Catalog: Parts: Hinge
+393702	PG	
+  +	Hinge Plate 1 x 8 with Angled Side Extensions, 9 Teeth and Rounded Plate Underside
+*	2	30407	Light Gray Hinge Plate 1 x 8 with Angled Side Extensions, 9 Teeth and Rounded Plate Underside
+Catalog: Parts: Hinge
+4215615 or 4143114	PG	
+  +	Tile, Modified 1 x 2 Grille with Bottom Groove
+*	2	2412b	Orange Tile, Modified 1 x 2 Grille with Bottom Groove
+Catalog: Parts: Tile, Modified
+4125254	PG	
+  +	Wedge, Plate 3 x 6 Cut Corners
+*	1	2419	Sand Green Wedge, Plate 3 x 6 Cut Corners
+Catalog: Parts: Wedge, Plate
+4143042
+`;
 let noInput = input ? false : true;
 let customPartNumber = 541;
 if (input) {
