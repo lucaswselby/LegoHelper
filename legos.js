@@ -4094,3 +4094,4 @@ const l615726 = new Lego([615726, 6387246], "Plate, Modified 2 x 2 with Wheels H
 const l395902 = new Lego([395902, 395952, 4254948], "Minifigure, Utensil Space Gun / Torch", "Light Gray");
 const l409501 = new Lego([409501, 409551, 4294998], "Bar 6.6L with Stop Ring (Patio Umbrella Stand)", "White");
 const l543 = new Lego([543], "Tile 1 x 2 with Gauges, Buttons and '85' Pattern", "White");
+const l300201 = new Lego([300201, 300251], "Brick 2 x 3", "White");
