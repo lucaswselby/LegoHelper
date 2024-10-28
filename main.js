@@ -204,7 +204,7 @@ if (noInput) {
     newRow.innerHTML = `<td>${allPieces[i].picture}</td>
     <td class="description">${allPieces[i].name}</td>
     <td class="custom-number-input">
-      <input type="number" id="l${allPieces[i].numbers[0]}" min="0" value="${sets.reduce((prev, next) => {
+      <input type="number" id="l${allPieces[i].numbers[0]}" min="0" value="<!--${sets.reduce((prev, next) => {
         let pieceCount = 0;
         for (let j = 0; j < next.pieces.length; j++) {
           if (next.pieces[j] === allPieces[i]) {
@@ -212,7 +212,7 @@ if (noInput) {
           }
         }
         return prev + pieceCount;
-      }, 0)}">
+      }, 0)}-->0">
       <button class="arrow up" id="l${allPieces[i].numbers[0]}up">▲</button>
       <button class="arrow down" id="l${allPieces[i].numbers[0]}down">▼</button>
     </td>`;
