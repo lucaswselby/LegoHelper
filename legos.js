@@ -3951,7 +3951,6 @@ const l245321 = new Lego([245321, 4160953, 4188181, 4212410], "Brick 1 x 1 x 5 -
 const l245421 = new Lego([245421, 4212414], "Brick 1 x 2 x 5", "Red");
 const l254221 = new Lego([254221, 4106939, 4189099], "Minifigure, Utensil Oar / Paddle", "Red");
 const l383921 = new Lego([383921, 4286611], "Plate, Modified 1 x 2 with Bar Handles - Flat Ends, Low Attachment", "Red");
-const l493 = new Lego([493], "Cattle Horns", "White");
 const l494 = new Lego([494], "Cloth Sail 9 x 11, 3 Holes with Black Stripes Pattern", "White");
 const l495 = new Lego([495], "Cloth Sail Triangular Curved with Islander Pattern", "White");
 const l496 = new Lego([496], "Cloth Sail Triangular Small with Black Stripes Pattern", "White");
