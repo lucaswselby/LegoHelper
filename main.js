@@ -59,7 +59,7 @@ copy details from https://www.bricklink.com/v2/main.page
 */
 let input = ``;
 let noInput = input ? false : true;
-let customPartNumber = 545; // 493 is available
+let customPartNumber = 546;
 if (input) {
   // removes unnecessary information
   input = input.replaceAll("  +	", "");
@@ -315,3 +315,13 @@ if (noInput) {
     }
   }
 }
+
+// DEBUG
+const pieceNames = allPieces.map(piece => {return piece.name;});
+let uniquePieceNames = [];
+pieceNames.forEach(piece => {
+  if (!uniquePieceNames.includes(piece)) {
+    uniquePieceNames.push(piece);
+  }
+});
+console.log(uniquePieceNames.length);
