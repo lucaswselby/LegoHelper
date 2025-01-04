@@ -315,13 +315,3 @@ if (noInput) {
     }
   }
 }
-
-// DEBUG
-const pieceNames = allPieces.map(piece => {return piece.name;});
-let uniquePieceNames = [];
-pieceNames.forEach(piece => {
-  if (!uniquePieceNames.includes(piece)) {
-    uniquePieceNames.push(piece);
-  }
-});
-console.log(uniquePieceNames.length);
